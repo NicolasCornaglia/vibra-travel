@@ -1,4 +1,10 @@
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,27 +17,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0px;
-}
-
-body {
-  margin: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
 }
 
 /* 
 Color Pallete
 
-#d8e2dc light grey
-
-#ffffff white
-
-#ffcad4 light pink 
-
 #f4acb7 pink
-
+#ffffff white
+#d8e2dc light grey
+#ffcad4 light pink
 #9d8189 dark grey/pink
 */

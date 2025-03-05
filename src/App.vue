@@ -2,7 +2,11 @@
   <div class="app">
     <Header />
     <main class="content">
-      <RouterView />
+      <router-view v-slot="{ Component }">
+        <transition name="page" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </main>
     <Footer />
   </div>
@@ -16,16 +20,16 @@ import Footer from './components/Footer.vue';
 
 <style>
 .app {
-  font-family: Arial, sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1500px;
 }
 
-.content {
-  padding: 1rem;
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s ease;
 }
 
-.page {
-  margin-top: 1rem;
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
 }
 </style>

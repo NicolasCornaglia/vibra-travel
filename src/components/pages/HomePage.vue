@@ -11,7 +11,6 @@
 
   <style scoped>
     .page {
-        margin: 0px;
         background-color: #d8e2dc;
     }
 </style>

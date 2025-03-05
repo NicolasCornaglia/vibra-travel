@@ -17,8 +17,15 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes
+  history: createWebHistory(),
+  routes,
+  scrollBehavior: (to, from, savedPosition) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(savedPosition || { top: 0 })
+      }, 300)
+    })
+  }
 })
 
 export default router
