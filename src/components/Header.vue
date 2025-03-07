@@ -15,15 +15,21 @@
               <RouterLink to="/terms" class="nav-link" @click="closeMenu">T&Cs</RouterLink>
               <RouterLink to="/faq" class="nav-link" @click="closeMenu">FAQ's</RouterLink>
           </div>
-          
-          <!-- Moved language selector inside nav-menu -->
-          <div class="lang-selector">
+
+          <div class="lang-selector-mobile">
               <select v-model="selectedLanguage" @change="changeLanguage">
                   <option value="en">EN</option>
                   <option value="es">ES</option>
               </select>
           </div>
       </nav>
+
+      <div class="lang-selector">
+        <select v-model="selectedLanguage" @change="changeLanguage">
+            <option class="lang-option" value="en">EN</option>
+            <option class="lang-option" value="es">ES</option>
+        </select>
+      </div>
 
       <!-- Mobile Menu Button -->
       <button class="mobile-menu-btn" :class="{ 'is-active': isMenuOpen }" @click="toggleMenu">
@@ -108,6 +114,15 @@ const changeLanguage = () => {
   transform: scaleX(1);
 }
 
+.lang-selector {
+    display: block;
+}
+
+.lang-selector-mobile {
+  display: none;
+}
+
+.lang-selector-mobile select,
 .lang-selector select {
   padding: 0.5rem;
   border: none;
@@ -118,15 +133,28 @@ const changeLanguage = () => {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #333;
+  font-weight: 500;
+  /* Add a subtle dropdown arrow using background image */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3e%3cpath fill='none' d='M0 0h24v24H0z'/%3e%3cpath d='M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z' fill='rgba(51,51,51,0.7)'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 1rem;
+  padding-right: 1.5rem;
+  transition: all 0.3s ease;
 }
 
+/* Style for open dropdown */
+.lang-selector-mobile select:focus,
 .lang-selector select:focus {
   outline: none;
+  background-color: rgba(244, 172, 183, 0.1); /* Light pink that matches your underline color */
+  box-shadow: 0 2px 0 #f4acb7; /* Subtle underline effect using your existing pink color */
 }
 
 .mobile-menu-btn {
+  display: none;
   background-color: #ffffff;
   border: none;
   position: relative;
@@ -165,44 +193,78 @@ const changeLanguage = () => {
 }
 
 .mobile-menu-btn.is-active span:nth-child(3) {
-  transform: translateY(-11px) rotate(-45deg);
+  transform: translateY(-12px) rotate(-45deg);
 }
 
 @media (max-width: 768px) {
-  .nav-menu {
+  .lang-selector {
     display: none;
+  }
+
+  .lang-selector-mobile {
+    display: block;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .nav-menu {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     flex-direction: column;
-    background-color: #f5f5f5;
     padding: 1rem;
     gap: 1rem;
     z-index: 1000;
+    
+    /* Initial state - start with 0 height */
+    max-height: 0;
+    overflow: hidden;
     opacity: 0;
-    transform: translateY(-20px);
-    transition: all 0.3s ease;
+    pointer-events: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+    /* Gradient background from solid white to 70% opacity */
+    background: linear-gradient(to bottom, 
+                rgba(255, 255, 255, 1) 0%, 
+                rgba(255, 255, 255, 0.7) 100%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    
+    /* Combined transition */
+    transition: max-height 0.4s ease-in-out, 
+                opacity 0.3s ease-in-out,
+                padding 0.4s ease-in-out;
   }
 
   .nav-menu.nav-active {
+    /* Active state - expand to full height */
     display: flex;
+    max-height: 500px; /* Set this to a value larger than your menu will ever be */
     opacity: 1;
-    transform: translateY(0);
+    pointer-events: auto;
+    padding: 1rem;
   }
-
+  
   .nav-links {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     width: 100%;
-  }
 
-  .lang-selector {
+    /* Add a border separator */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+  }
+  
+  .lang-selector-mobile {
+    display: block;
+    padding-top: 0.5rem;
     width: 100%;
     text-align: center;
-    padding-top: 1rem;
-    border-top: 1px solid #ddd;
   }
 }
 </style>

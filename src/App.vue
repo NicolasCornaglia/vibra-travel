@@ -20,7 +20,8 @@ import Footer from './components/Footer.vue';
 
 <style>
 .app {
-  max-width: 1500px;
+/*   max-width: 1500px;
+  margin: 0 auto; */
 }
 
 .page-enter-active,
