@@ -2,7 +2,7 @@
   <div class="header-container">
       <!-- Logo Column -->
       <div class="logo">
-          test logo
+        <img src="../assets/photos/1.png" alt="logo" class="logo-img" @click="redirectToHome">
       </div>
 
       <!-- Navigation Column -->
@@ -17,18 +17,12 @@
           </div>
 
           <div class="lang-selector-mobile">
-              <select v-model="selectedLanguage" @change="changeLanguage">
-                  <option value="en">EN</option>
-                  <option value="es">ES</option>
-              </select>
+            <LanguageSelector />
           </div>
       </nav>
 
       <div class="lang-selector">
-        <select v-model="selectedLanguage" @change="changeLanguage">
-            <option class="lang-option" value="en">EN</option>
-            <option class="lang-option" value="es">ES</option>
-        </select>
+        <LanguageSelector />
       </div>
 
       <!-- Mobile Menu Button -->
@@ -41,11 +35,15 @@
 </template>
 
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
-import { ref } from 'vue'
+import { RouterLink } from 'vue-router';
+import { ref } from 'vue';
+import LanguageSelector from './LanguageSelector.vue';
 
 const isMenuOpen = ref(false)
-const selectedLanguage = ref('en')
+
+const redirectToHome = () => {
+  window.location.href = '/';
+}
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
@@ -55,10 +53,6 @@ const closeMenu = () => {
   isMenuOpen.value = false
 }
 
-const changeLanguage = () => {
-  // Implement language change logic here
-  console.log('Language changed to:', selectedLanguage.value)
-}
 </script>
 
 <style scoped>
@@ -69,11 +63,27 @@ const changeLanguage = () => {
   padding: 1rem 2rem;
   background-color: #ffffff;
   position: relative;
+  height: 100px;
+  z-index: 100;
 }
 
-.logo img {
-  height: 40px;
-  width: auto;
+.logo {
+  height: 80px; /* Set container height */
+  display: flex;
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures no overflow from scaling */
+  border-radius: 6px; /* Rounded corners */
+}
+
+ .logo-img {
+  cursor: pointer;
+  display: block;
+  border-radius: 6px; /* Rounded corners */
+  height: 100%; /* Scale the image to make it appear closer */
+  width: auto; /* Maintain aspect ratio */
+  border-radius: 6px; /* Apply rounded corners to the image too */
 }
 
 .nav-menu {
@@ -120,37 +130,6 @@ const changeLanguage = () => {
 
 .lang-selector-mobile {
   display: none;
-}
-
-.lang-selector-mobile select,
-.lang-selector select {
-  padding: 0.5rem;
-  border: none;
-  border-radius: 4px;
-  background-color: transparent;
-  cursor: pointer;
-  outline: none;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  font-size: 0.9rem;
-  color: #333;
-  font-weight: 500;
-  /* Add a subtle dropdown arrow using background image */
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3e%3cpath fill='none' d='M0 0h24v24H0z'/%3e%3cpath d='M12 15l-4.243-4.243 1.415-1.414L12 12.172l2.828-2.829 1.415 1.414z' fill='rgba(51,51,51,0.7)'/%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 1rem;
-  padding-right: 1.5rem;
-  transition: all 0.3s ease;
-}
-
-/* Style for open dropdown */
-.lang-selector-mobile select:focus,
-.lang-selector select:focus {
-  outline: none;
-  background-color: rgba(244, 172, 183, 0.1); /* Light pink that matches your underline color */
-  box-shadow: 0 2px 0 #f4acb7; /* Subtle underline effect using your existing pink color */
 }
 
 .mobile-menu-btn {
@@ -202,16 +181,22 @@ const changeLanguage = () => {
   }
 
   .lang-selector-mobile {
-    display: block;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1001;
+    width: 100%;
+    padding: 10px 0;
   }
 
   .mobile-menu-btn {
     display: block;
+    z-index: 1002;
   }
   
   .nav-menu {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 100px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -221,7 +206,7 @@ const changeLanguage = () => {
     
     /* Initial state - start with 0 height */
     max-height: 0;
-    overflow: hidden;
+    overflow: visible;
     opacity: 0;
     pointer-events: none;
     padding-top: 0;
@@ -243,7 +228,7 @@ const changeLanguage = () => {
   .nav-menu.nav-active {
     /* Active state - expand to full height */
     display: flex;
-    max-height: 500px; /* Set this to a value larger than your menu will ever be */
+    max-height: calc(100vh - 100px);
     opacity: 1;
     pointer-events: auto;
     padding: 1rem;
@@ -260,11 +245,5 @@ const changeLanguage = () => {
     padding-bottom: 1rem;
   }
   
-  .lang-selector-mobile {
-    display: block;
-    padding-top: 0.5rem;
-    width: 100%;
-    text-align: center;
-  }
 }
 </style>
