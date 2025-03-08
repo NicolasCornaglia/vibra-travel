@@ -62,8 +62,6 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside));
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
-  position: relative;
-  z-index: 1;
 }
 
 .dropdown-menu {
@@ -107,7 +105,6 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside));
     left: 50%;
     transform: translateX(-50%);
     z-index: 1003;
-    overflow-y: auto;
   }
 }
 </style>

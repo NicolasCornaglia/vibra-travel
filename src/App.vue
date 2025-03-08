@@ -16,6 +16,7 @@
 import { RouterView } from 'vue-router'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue';
+
 </script>
 
 <style>
@@ -23,6 +24,8 @@ import Footer from './components/Footer.vue';
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .content {
