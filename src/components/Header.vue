@@ -10,8 +10,8 @@
           <div class="nav-links">
               <RouterLink to="/" class="nav-link" @click="closeMenu">HOME</RouterLink>
               <RouterLink to="/about" class="nav-link" @click="closeMenu">PADEL</RouterLink>
-              <RouterLink to="/sports" class="nav-link" @click="closeMenu">SPORTS</RouterLink>
-              <RouterLink to="/contact" class="nav-link" @click="closeMenu">CONTACT</RouterLink>
+              <RouterLink to="/" class="nav-link" @click="closeMenu">SPORTS</RouterLink>
+              <RouterLink to="/" class="nav-link" @click="closeMenu">CONTACT</RouterLink>
               <RouterLink to="/terms" class="nav-link" @click="closeMenu">T&Cs</RouterLink>
               <RouterLink to="/faq" class="nav-link" @click="closeMenu">FAQ's</RouterLink>
           </div>
@@ -35,19 +35,20 @@
 </template>
 
 <script setup lang="ts">
-import { RouterLink } from 'vue-router';
+import { RouterLink, useRouter } from 'vue-router';
 import { ref } from 'vue';
 import LanguageSelector from './LanguageSelector.vue';
 
-const isMenuOpen = ref(false)
+const router = useRouter();
+const isMenuOpen = ref(false);
 
 const redirectToHome = () => {
-  window.location.href = '/';
-}
+  router.push('/');
+};
 
 const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value
-}
+  isMenuOpen.value = !isMenuOpen.value;
+};
 
 const closeMenu = () => {
   isMenuOpen.value = false
