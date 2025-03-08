@@ -17,8 +17,8 @@
             <div class="footer-section">
                 <h3>WHO ARE WE?</h3>
                 <p><RouterLink to="/about"><span>About Us</span></RouterLink></p>
-                <p><RouterLink to="/t&c"><span>Terms & Conditions</span></RouterLink></p>
-                <p><RouterLink to="/t&c"><span>Contact Us</span></RouterLink></p>
+                <p><RouterLink to="/terms"><span>Terms & Conditions</span></RouterLink></p>
+                <p><RouterLink to="/terms"><span>Contact Us</span></RouterLink></p>
                 <p><RouterLink to="/faq"><span>FAQ</span></RouterLink></p>
             </div>
         </div>
@@ -32,15 +32,15 @@ import { RouterLink } from 'vue-router';
 
 <style scoped>
 .footer {
-    background-color: #ffffff;
+    background-color: #f5f5f5;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     padding: 20px;
-    margin-top: 20px;
 }
 
 .footer-logo img {
+    border-radius: 50%;
     width: 25vw;
     max-width: 200px;
 }

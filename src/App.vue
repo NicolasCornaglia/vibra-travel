@@ -24,7 +24,6 @@ import Footer from './components/Footer.vue';
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
-  max-width: 1500px;
   margin: 0 auto;
 }
 
