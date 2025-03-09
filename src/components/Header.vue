@@ -9,8 +9,8 @@
       <nav class="nav-menu" :class="{ 'nav-active': isMenuOpen }">
           <div class="nav-links">
               <RouterLink to="/" class="nav-link" @click="closeMenu">HOME</RouterLink>
-              <RouterLink to="/about" class="nav-link" @click="closeMenu">PADEL</RouterLink>
-              <RouterLink to="/" class="nav-link" @click="closeMenu">SPORTS</RouterLink>
+              <RouterLink to="/padel" class="nav-link" @click="closeMenu">PADEL</RouterLink>
+              <RouterLink to="/sports" class="nav-link" @click="closeMenu">SPORTS</RouterLink>
               <RouterLink to="/" class="nav-link" @click="closeMenu">CONTACT</RouterLink>
               <RouterLink to="/terms" class="nav-link" @click="closeMenu">T&Cs</RouterLink>
               <RouterLink to="/faq" class="nav-link" @click="closeMenu">FAQ's</RouterLink>

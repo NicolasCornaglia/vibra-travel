@@ -99,6 +99,7 @@ import FAQ from '../FAQ.vue';
 }
 
 .terms-content-title {
+  margin-top: 20px;
   padding: 40px;
   display: flex;
   flex-direction: column;

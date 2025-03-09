@@ -5,7 +5,6 @@ export const appState = reactive({
   languages: [
     { label: 'English', value: 'en' },
     { label: 'Español', value: 'es' },
-    { label: 'Français', value: 'fr' }
   ]
 });
 

@@ -62,6 +62,11 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside));
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.dropdown-toggle:hover {
+  background: var(--color-pink);
 }
 
 .dropdown-menu {

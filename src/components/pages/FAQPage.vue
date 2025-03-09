@@ -1,7 +1,7 @@
 <template>
     <div class="faq">
       <div class="faq-title">
-        <img src="../../assets/photos/terms.jpg" alt="Terms & Conditions image" />
+        <img src="../../assets/photos/faq.PNG" alt="Terms & Conditions image" />
         <h1>Frequently Asked Questions</h1>
       </div>
       <div class="faq-content">
