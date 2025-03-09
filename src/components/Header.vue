@@ -11,7 +11,7 @@
               <RouterLink to="/" class="nav-link" @click="closeMenu">HOME</RouterLink>
               <RouterLink to="/padel" class="nav-link" @click="closeMenu">PADEL</RouterLink>
               <RouterLink to="/sports" class="nav-link" @click="closeMenu">SPORTS</RouterLink>
-              <RouterLink to="/" class="nav-link" @click="closeMenu">CONTACT</RouterLink>
+              <a href="#" class="nav-link" @click.prevent="scrollToContact(); closeMenu()">CONTACT</a>
               <RouterLink to="/terms" class="nav-link" @click="closeMenu">T&Cs</RouterLink>
               <RouterLink to="/faq" class="nav-link" @click="closeMenu">FAQ's</RouterLink>
           </div>
@@ -36,13 +36,25 @@
 
 <script setup lang="ts">
 import { RouterLink, useRouter } from 'vue-router';
-import { ref } from 'vue';
+import { ref, nextTick } from 'vue';
 import LanguageSelector from './LanguageSelector.vue';
 
 const router = useRouter();
 const isMenuOpen = ref(false);
 
-const redirectToHome = () => {
+const scrollToContact = async () => {
+  if (router.currentRoute.value.path !== '/') {
+    await router.push('/');
+    await nextTick();
+  }
+  
+  setTimeout(() => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 500);
+};const redirectToHome = () => {
   router.push('/');
 };
 

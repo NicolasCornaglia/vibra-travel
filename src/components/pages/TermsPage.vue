@@ -38,18 +38,17 @@
           </div>
 
           <div class="terms-content-text-item">
-            <h3>Cancellation Policy REVIEW PENDING</h3>
+            <h3>Cancellation Policy</h3>
             <p>
               The participant is entitled to cancel the whole experience with full
               refund up to 48h before arrival. Let's dive deep into every specific
               scenario depending on the selected package:
             </p>
             <p>
-              30% NON-REFUNDABLE DEPOSIT FOR ACCOMMODATION? 
-              HOW MUCH FUNDED AND WHEN? 
+              30% NON-REFUNDABLE DEPOSIT FOR ACCOMMODATION
             </p>
             <p>
-              30% PAID UPON BOOKING REMAINING 7 DAYS BEFORE ARRIVAL? 
+              30% PAID UPON BOOKING 
             </p>
           </div>
         </div>

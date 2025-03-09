@@ -6,8 +6,8 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>DESTINATIONS</h3>
-                <p><RouterLink to="/barcelona"><span>Barcelona</span></RouterLink></p>
-                <p><RouterLink to="/sevilla"><span>Sevilla</span></RouterLink></p>
+                <p><a href="#" @click.prevent="scrollToLocations"><span>Barcelona</span></a></p>
+                <p><a href="#" @click.prevent="scrollToLocations"><span>Sevilla</span></a></p>
             </div>
             <div class="footer-section">
                 <h3>WHAT DO WE OFFER?</h3>
@@ -16,9 +16,9 @@
             </div>
             <div class="footer-section">
                 <h3>WHO ARE WE?</h3>
-                <p><RouterLink to="/about"><span>About Us</span></RouterLink></p>
+                <p><a href="#" @click.prevent="scrollToAbout"><span>About Us</span></a></p>
                 <p><RouterLink to="/terms"><span>Terms & Conditions</span></RouterLink></p>
-                <p><RouterLink to="/terms"><span>Contact Us</span></RouterLink></p>
+                <p><a href="#" @click.prevent="scrollToContact"><span>Contact Us</span></a></p>
                 <p><RouterLink to="/faq"><span>FAQ</span></RouterLink></p>
             </div>
         </div>
@@ -27,7 +27,55 @@
 </template>
 
 <script setup lang="ts">
-import { RouterLink } from 'vue-router';
+import { useRouter } from 'vue-router';
+import { nextTick } from 'vue';
+const router = useRouter();
+
+const scrollToLocations = async () => {
+  // First check if we're already on the home page
+  if (router.currentRoute.value.path !== '/') {
+    // If not, navigate to home page first and wait for navigation to complete
+    await router.push('/');
+    // Wait for next tick to ensure component is mounted
+    await nextTick();
+  }
+  
+  // Use a slightly longer timeout to ensure the page has fully rendered
+  setTimeout(() => {
+    const element = document.getElementById('locations');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 500);
+};
+
+const scrollToAbout = async () => {
+  if (router.currentRoute.value.path !== '/') {
+    await router.push('/');
+    await nextTick();
+  }
+  
+  setTimeout(() => {
+    const element = document.getElementById('about');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 500);
+}
+
+const scrollToContact = async () => {
+  if (router.currentRoute.value.path !== '/') {
+    await router.push('/');
+    await nextTick();
+  }
+  
+  setTimeout(() => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 500);
+};
 </script>
 
 <style scoped>

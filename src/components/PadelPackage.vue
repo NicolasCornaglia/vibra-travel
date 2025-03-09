@@ -21,14 +21,21 @@
           </ul>
         </div>
         <div class="package-cta">
-          <a href="#contact" class="btn-book">Book Now</a>
+          <a href="#" @click.prevent="scrollToContact" class="btn-book">
+          Book Now
+        </a>
         </div>
       </div>
     </section>
 </template>
 
 <script setup lang="ts">
-
+const scrollToContact = () => {
+  const element = document.getElementById('contact');
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 </script>
 
 <style scoped>

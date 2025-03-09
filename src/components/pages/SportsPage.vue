@@ -24,22 +24,22 @@
           expert guidance, and a seamless experience. Let us create a customized
           sports trip that matches your goals!
         </p>
-
-        <div class="sports-content-image">
-        contact us component #TODO
-        </div>
       </div>
-
-
+    </div>
+    <div class="sports-content-contact">
+      <Contact />
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Contact from "../Contact.vue";
+</script>
 
 <style scoped>
 .sports {
   position: relative;
+  margin: 0 auto;
 }
 
 .sports-title {
@@ -69,7 +69,7 @@
 .sports-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,6 +81,11 @@
   justify-content: center;
 }
 
+.sports-content-contact {
+  width: 100vw;
+  background-color: #ffffff !important;
+  padding: 40px 0 0 0;
+}
 .terms-black {
   color: #333;
 }

@@ -48,8 +48,9 @@
           </p>
         </div>
         <div class="cta-button">
-          <a href="#contact"
-            >Contact us today to start planning your perfect sports trip!</a
+          <a href="#" @click.prevent="scrollToContact">
+            Contact us today to start planning your perfect sports trip!
+            </a
           >
         </div>
       </div>
@@ -57,48 +58,7 @@
 
     <PadelPackage />
 
-    <!-- Locations Section -->
-    <section id="locations" class="locations-section">
-      <div class="section-header">
-        <h2>Locations</h2>
-      </div>
-
-      <div class="location-cards">
-        <div class="location-card">
-          <div class="location-image barcelona-img"></div>
-          <div class="location-content">
-            <h3>Barcelona</h3>
-            <p>
-              Barcelona is a city where sport and culture come together in a
-              spectacular setting. Home to legendary teams, world-class
-              facilities, and a deep passion for athletics, it's the perfect
-              destination for sports enthusiasts. From training at top venues to
-              exploring iconic landmarks like the Sagrada Familia and Las
-              Ramblas, Barcelona offers an unforgettable mix of competition,
-              history, and Mediterranean charm. Whether playing, training, or
-              simply soaking in the atmosphere, this city is a dream for any
-              sports traveller.
-            </p>
-          </div>
-        </div>
-
-        <div class="location-card">
-          <div class="location-image sevilla-img"></div>
-          <div class="location-content">
-            <h3>Sevilla</h3>
-            <p>
-              Sevilla, set along the Guadalquivir River, is a city known for its
-              sports culture, sunny weather, and vibrant atmosphere. With
-              excellent training facilities and top football teams, it's a great
-              destination for sports groups. After training or competition,
-              enjoy the city's historic sites like the Alcázar and Plaza de
-              España, all under the warm Andalusian sun. Sevilla offers the
-              perfect balance of sporting action and cultural exploration.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Locations />
 
     <!-- About Us Section -->
     <section id="about" class="about-section">
@@ -117,96 +77,22 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-      <div class="section-header">
-        <h2>Contact Us</h2>
-      </div>
-      <div class="contact-container">
-        <div class="contact-info">
-          <div class="contact-item">
-            <span class="contact-label">Phone:</span>
-            <span class="contact-value">+34 744484995</span>
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">Email:</span>
-            <span class="contact-value">Info@vibratravel.com</span>
-          </div>
-          <div class="social-links">
-            <a href="#" class="social-link">Whatsapp</a>
-            <a href="#" class="social-link">Instagram</a>
-          </div>
-        </div>
-
-        <div class="contact-form">
-          <form @submit.prevent="submitForm">
-            <div class="form-group">
-              <label for="name">Name:</label>
-              <input type="text" id="name" v-model="formData.name" required />
-            </div>
-            <div class="form-group">
-              <label for="surname">Surname:</label>
-              <input
-                type="text"
-                id="surname"
-                v-model="formData.surname"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                v-model="formData.email"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="message">Message:</label>
-              <textarea
-                id="message"
-                v-model="formData.message"
-                rows="4"
-                required
-              ></textarea>
-            </div>
-            <div class="form-submit">
-              <button type="submit" class="btn-contact">Send Message</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
+     <div>
+      <Contact />
+     </div>
   </div>
 </template>
 
-<script setup>
-import { ref, computed } from "vue";
+<script setup lang="ts">
 import PadelPackage from "../PadelPackage.vue";
+import Locations from "../Locations.vue";
+import Contact from "../Contact.vue";
 
-// Reactive form data
-const formData = ref({
-  name: "",
-  surname: "",
-  email: "",
-  message: "",
-});
-
-// Get current year for copyright
-const currentYear = computed(() => new Date().getFullYear());
-
-// Form submission handler
-const submitForm = () => {
-  console.log("Form submitted:", formData.value);
-  // Here you would typically send the data to your backend
-  // For now, just reset the form
-  formData.value = {
-    name: "",
-    surname: "",
-    email: "",
-    message: "",
-  };
-  alert("Thank you for your message! We will get back to you soon.");
+const scrollToContact = () => {
+  const element = document.getElementById('contact');
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
 };
 </script>
 
@@ -362,55 +248,7 @@ section {
   border: 2px solid var(--color-pink);
 }
 
-/* Locations Section */
-.locations-section {
-  background-color: #f9f9f9;
-}
 
-.location-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-}
-
-.location-card {
-  flex: 1;
-  min-width: 300px;
-  max-width: 500px;
-  background: white;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0);
-  transition: transform 0.3s ease-in-out;
-}
-
-.location-card:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.location-image {
-  height: 200px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.barcelona-img {
-  background-image: url("../../assets/photos/bcn.webp");
-}
-
-.sevilla-img {
-  background-image: url("../../assets/photos/seville.webp");
-}
-
-.location-content {
-  padding: 1.5rem;
-}
-
-.location-content h3 {
-  color: #f4acb7;
-}
 
 /* About Section */
 .about-section {
@@ -423,90 +261,12 @@ section {
   text-align: center;
 }
 
-/* Contact Section */
-.contact-section {
-  background-color: #f9f9f9;
-}
 
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.contact-info {
-  flex: 1;
-  min-width: 300px;
-}
-
-.contact-item {
-  margin-bottom: 1rem;
-}
-
-.contact-label {
-  margin-right: 0.5rem;
-}
-
-.social-links {
-  margin-top: 2rem;
-}
-
-.social-link {
-  display: inline-block;
-  margin-right: 1rem;
-  color: #f4acb7;
-}
-
-.contact-form {
-  flex: 2;
-  min-width: 300px;
-}
-
-.form-group {
-  margin-bottom: 1.5rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-}
-
-.btn-contact {
-  font-weight: bold;
-  display: inline-block;
-  background-color: #f4acb7;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 6px;
-  border: 2px solid transparent;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.btn-contact:hover {
-  cursor: pointer;
-  background-color: var(--color-white);
-  color: var(--color-pink);
-  border: 2px solid var(--color-pink);
-}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   section {
     padding: 3rem 1.5rem;
-  }
-
-  .location-card {
-    min-width: 100%;
   }
 
   .home-video-section {
