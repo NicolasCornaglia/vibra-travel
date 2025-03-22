@@ -60,7 +60,7 @@ import Contact from "../Contact.vue";
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(--color-white);
   text-align: center;
   width: 100%;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -83,15 +83,15 @@ import Contact from "../Contact.vue";
 
 .sports-content-contact {
   width: 100vw;
-  background-color: #ffffff !important;
+  background-color: var(--color-white) !important;
   padding: 40px 0 0 0;
 }
 .terms-black {
-  color: #333;
+  color: var(--color-dark-grey);
 }
 
 .terms-pink {
-  color: #f4acb7;
+  color: var(--color-pink);
 }
 
 @media (max-width: 768px) {

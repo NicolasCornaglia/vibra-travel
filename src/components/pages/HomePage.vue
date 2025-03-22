@@ -105,7 +105,7 @@ const scrollToContact = () => {
 }
 
 .home-container {
-  color: #333;
+  color: var(--color-dark-grey);
 }
 
 h1,
@@ -141,7 +141,7 @@ section {
 }
 
 .section-header h2 {
-  color: #333;
+  color: var(--color-dark-grey);
   position: relative;
   display: inline-block;
 }
@@ -151,7 +151,7 @@ section {
   position: absolute;
   width: 50%;
   height: 3px;
-  background-color: #f4acb7;
+  background-color: var(--color-pink);
   bottom: -10px;
   left: 25%;
 }
@@ -190,7 +190,7 @@ section {
 }
 
 .video-overlay h1 {
-  color: white;
+  color: var(--color-white);
   text-transform: uppercase;
 }
 
@@ -208,7 +208,7 @@ section {
 
 /* Intro Section */
 .intro-section {
-  background-color: #f9f9f9;
+  background-color: var(--color-light-grey);
   padding: 2rem 2rem;
 }
 
@@ -219,7 +219,7 @@ section {
 }
 
 .intro-content h2 {
-  color: #f4acb7;
+  color: var(--color-pink);
   margin-bottom: 2rem;
 }
 
@@ -234,8 +234,8 @@ section {
 
 .cta-button a {
   display: inline-block;
-  background-color: #f4acb7;
-  color: white;
+  background-color: var(--color-pink);
+  color: var(--color-white);
   padding: 1rem 2rem;
   border-radius: 6px;
   border: 2px solid transparent;

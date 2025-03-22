@@ -28,6 +28,15 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Color Palette */
+  --color-pink: #f4acb7;
+  --color-white: #ffffff;
+  --color-light-grey: #f9f9f9;
+  --color-light-pink: #ffcad4;
+  --color-dark-grey-pink: #9d8189;
+  --color-dark-grey: #333;
+
 }
 
 /* Typography base styles */
@@ -72,15 +81,4 @@ p {
     --font-size-3xl: 1.5rem;    /* 24px */
     --font-size-4xl: 1.875rem;  /* 30px */
   }
-}
-
-/* Your existing color palette */
-:root {
-  /* Color Palette */
-  --color-pink: #f4acb7;
-  --color-white: #ffffff;
-  --color-light-grey: #f5f5f5;
-  --color-light-pink: #ffcad4;
-  --color-dark-grey-pink: #9d8189;
-  --color-text: #333;
 }

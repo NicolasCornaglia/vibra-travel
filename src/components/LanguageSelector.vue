@@ -56,8 +56,8 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside));
 }
 
 .dropdown-toggle {
-  background: #ffcad4;
-  color: white;
+  background: var(--color-pink);
+  color: var(--color-white);
   padding: 5px;
   border-radius: 6px;
   text-align: center;
@@ -66,7 +66,7 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside));
 }
 
 .dropdown-toggle:hover {
-  background: var(--color-pink);
+  background: var(--color-light-pink);
 }
 
 .dropdown-menu {
@@ -75,7 +75,7 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside));
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  background: white;
+  background: var(--color-white);
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   list-style: none;
@@ -92,8 +92,8 @@ onUnmounted(() => document.removeEventListener('click', onClickOutside));
 }
 
 .dropdown-menu li:hover {
-  background: #ffcad4;
-  color: white;
+  background: var(--color-light-pink);
+  color: var(--color-white);
   border-radius: 6px;
 }
 

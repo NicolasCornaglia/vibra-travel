@@ -123,7 +123,7 @@ const scrollToContact = async () => {
 }
 
 .footer-section p a:hover {
-    color: #f4acb7;
+    color: var(--color-pink);
 }
 
 

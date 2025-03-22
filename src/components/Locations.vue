@@ -56,9 +56,6 @@
   padding: 0;
 }
 
-.home-container {
-  color: #333;
-}
 
 h1,
 h2,
@@ -93,7 +90,7 @@ section {
 }
 
 .section-header h2 {
-  color: #333;
+  color: var(--color-dark-grey);
   position: relative;
   display: inline-block;
 }
@@ -103,14 +100,14 @@ section {
   position: absolute;
   width: 50%;
   height: 3px;
-  background-color: #f4acb7;
+  background-color: var(--color-pink);
   bottom: -10px;
   left: 25%;
 }
 
 /* Locations Section */
 .locations-section {
-  background-color: #f9f9f9;
+  background-color: var(--color-light-grey);
 }
 
 .location-cards {
@@ -124,7 +121,7 @@ section {
   flex: 1;
   min-width: 300px;
   max-width: 500px;
-  background: white;
+  background: var(--color-white);
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0);
@@ -155,7 +152,7 @@ section {
 }
 
 .location-content h3 {
-  color: #f4acb7;
+  color: var(--color-pink);
 }
 
 @media (max-width: 768px) {

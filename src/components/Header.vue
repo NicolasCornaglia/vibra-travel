@@ -74,7 +74,7 @@ const closeMenu = () => {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #ffffff;
+  background-color: var(--color-white);
   position: relative;
   height: 100px;
   z-index: 100;
@@ -87,16 +87,14 @@ const closeMenu = () => {
   justify-content: center;
   align-items: center;
   overflow: hidden; /* Ensures no overflow from scaling */
-  border-radius: 6px; /* Rounded corners */
+  border-radius: 50%; 
 }
 
  .logo-img {
   cursor: pointer;
   display: block;
-  border-radius: 6px; /* Rounded corners */
-  height: 100%; /* Scale the image to make it appear closer */
-  width: auto; /* Maintain aspect ratio */
-  border-radius: 6px; /* Apply rounded corners to the image too */
+  height: 100%; 
+  width: auto; 
 }
 
 .nav-menu {
@@ -113,7 +111,7 @@ const closeMenu = () => {
 
 .nav-link {
   position: relative;
-  color: #333;
+  color: var(--color-dark-grey);
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
@@ -127,7 +125,7 @@ const closeMenu = () => {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #f4acb7;
+  background-color: var(--color-pink);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -147,7 +145,7 @@ const closeMenu = () => {
 
 .mobile-menu-btn {
   display: none;
-  background-color: #ffffff;
+  background-color: var(--color-white);
   border: none;
   position: relative;
   width: 30px;
@@ -159,7 +157,7 @@ const closeMenu = () => {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #333;
+  background-color: var(--color-dark-grey);
   transition: all 0.3s ease;
 }
 

@@ -85,7 +85,7 @@ import FAQ from '../FAQ.vue';
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(--color-white);
   text-align: center;
   width: 100%;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -108,7 +108,7 @@ import FAQ from '../FAQ.vue';
 
 
 .terms-pink {
-  color: #f4acb7;
+  color: var(--color-pink);
 }
 
 .terms-content-text-item {

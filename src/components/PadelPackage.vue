@@ -30,11 +30,22 @@
 </template>
 
 <script setup lang="ts">
-const scrollToContact = () => {
-  const element = document.getElementById('contact');
-  if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
+import { useRouter } from 'vue-router';
+import { nextTick } from 'vue';
+const router = useRouter();
+
+const scrollToContact = async () => {
+  if (router.currentRoute.value.path !== '/') {
+    await router.push('/');
+    await nextTick();
   }
+  
+  setTimeout(() => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 500);
 };
 </script>
 
@@ -156,7 +167,7 @@ section {
 .btn-book {
   font-weight: bold;
   display: inline-block;
-  background-color: #f4acb7;
+  background-color: var(--color-pink);
   color: white;
   padding: 1rem 2rem;
   border-radius: 6px;

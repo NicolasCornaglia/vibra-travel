@@ -104,7 +104,7 @@ const submitEmail = async () => {
 }
 
 .home-container {
-  color: #333;
+  color: var(--color-dark-grey);
 }
 
 h1,
@@ -140,7 +140,7 @@ section {
 }
 
 .section-header h2 {
-  color: #333;
+  color: var(--color-dark-grey);
   position: relative;
   display: inline-block;
 }
@@ -150,14 +150,14 @@ section {
   position: absolute;
   width: 50%;
   height: 3px;
-  background-color: #f4acb7;
+  background-color: var(--color-pink);
   bottom: -10px;
   left: 25%;
 }
 
 /* Contact Section */
 .contact-section {
-  background-color: #f9f9f9;
+  background-color: var(--color-light-grey);
 }
 
 .contact-container {
@@ -188,8 +188,8 @@ section {
 
 .social-link {
   display: inline-block;
-  color: #f4acb7;
-  border: 1px solid #f4acb7;
+  color: var(--color-pink);
+  border: 1px solid var(--color-pink);
   border-radius: 6px;
 }
 
@@ -218,8 +218,8 @@ section {
 .btn-contact {
   font-weight: bold;
   display: inline-block;
-  background-color: #f4acb7;
-  color: white;
+  background-color: var(--color-pink);
+  color: var(--color-white);
   padding: 1rem 2rem;
   border-radius: 6px;
   border: 2px solid transparent;

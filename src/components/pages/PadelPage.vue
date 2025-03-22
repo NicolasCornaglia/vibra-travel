@@ -63,7 +63,7 @@ import AdditionalActivities from "../AdditionalActivities.vue";
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(--color-white);
   text-align: center;
   width: 100%;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -85,11 +85,11 @@ import AdditionalActivities from "../AdditionalActivities.vue";
 }
 
 .terms-black {
-  color: #333;
+  color: var(--color-dark-grey);
 }
 
 .terms-pink {
-  color: #f4acb7;
+  color: var(--color-pink);
 }
 
 .padel-content-activities {
