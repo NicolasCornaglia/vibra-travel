@@ -7,11 +7,11 @@
       <div class="contact-info">
         <div class="contact-item">
           <span class="contact-label">Phone:</span>
-          <span class="contact-value">+34 744484995</span>
+          <span class="contact-value"><a href="tel:+34 744484995">+34 744484995</a></span>
         </div>
         <div class="contact-item">
           <span class="contact-label">Email:</span>
-          <span class="contact-value">Charlie@vibra-travel.com</span>
+          <span class="contact-value">info@vibra-travel.com</span>
         </div>
         <div class="social-link">
           <a
@@ -22,7 +22,7 @@
           >
         </div>
         <div class="social-link">
-          <a href="https://instagram.com" class="social-link" target="_blank"
+          <a href="https://www.instagram.com/vibr.atravel/" class="social-link" target="_blank"
             >Instagram</a
           >
         </div>
@@ -78,6 +78,7 @@ const formData = ref({
 });
 
 // Form submission handler
+//TODO: modify email receiver to be info@vibra-travel.com. asked for current password.
 const submitEmail = async () => {
   try {
     await emailjs.send(
