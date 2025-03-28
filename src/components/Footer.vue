@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <div class="footer-logo">
-            <img src="../assets/photos/1.png" alt="logo">
+            <img src="../assets/photos/logo.jpg" alt="logo">
         </div>
         <div class="footer-content">
             <div class="footer-section">
@@ -82,15 +82,24 @@ const scrollToContact = async () => {
 .footer {
     background-color: #f5f5f5;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     padding: 20px;
+}
+
+.footer-logo {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #FFFFFF;
 }
 
 .footer-logo img {
     border-radius: 50%;
-    width: 25vw;
-    max-width: 200px;
+    width: 20vw;
+    max-width: 150px;
 }
 
 .footer-content {
@@ -99,7 +108,6 @@ const scrollToContact = async () => {
     justify-content: space-evenly;
     align-items: flex-start;
     width: 70vw;
-    margin-left: 20px;
     max-width: 1100px;
 }
 

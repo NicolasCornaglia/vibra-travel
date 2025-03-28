@@ -12,7 +12,7 @@
             <span class="terms-black">YOUR GAME!</span>
           </div>
         </h2>
-        <p>
+        <p class="padel-description">
           Immerse yourself in the world of padel with our expertly curated
           trips, designed for players of all levels. Train on top-tier courts,
           refine your skills with professional coaching, and compete in friendly
@@ -82,6 +82,10 @@ import AdditionalActivities from "../AdditionalActivities.vue";
   padding: 40px;
   display: flex;
   justify-content: center;
+}
+
+.padel-description {
+  padding-bottom: 20px;
 }
 
 .terms-black {

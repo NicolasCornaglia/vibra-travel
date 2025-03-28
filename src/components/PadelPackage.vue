@@ -77,7 +77,7 @@ a {
   font-weight: bold;
   padding: 8px 12px;
   border-radius: 6px;
-  transition: background-color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover {
@@ -105,7 +105,7 @@ section {
   position: absolute;
   width: 50%;
   height: 3px;
-  background-color: #f4acb7;
+  background-color: var(--color-pink);
   bottom: -10px;
   left: 25%;
 }
@@ -115,7 +115,7 @@ section {
 }
 
 .package-card {
-  max-width: 500px;
+  width: 500px;
   margin: 0 auto;
   background: white;
   border-radius: 6px;
@@ -124,7 +124,7 @@ section {
 }
 
 .package-header {
-  background-color: #f4acb7;
+  background-color: var(--color-pink);
   color: white;
   padding: 1.5rem;
   text-align: center;
@@ -185,6 +185,10 @@ section {
 @media (max-width: 768px) {
   section {
     padding: 3rem 1.5rem;
+  }
+
+  .package-card {
+    width: 80vw;
   }
 }
 </style>

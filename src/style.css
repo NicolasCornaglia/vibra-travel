@@ -9,7 +9,7 @@ html {
 }
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Acumin Pro','Elsa';
   line-height: 1.5;
   font-weight: 400;
   color: #333;
@@ -30,11 +30,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
 
   /* Color Palette */
-  --color-pink: #f4acb7;
+  --color-pink: #d81b60;
   --color-white: #ffffff;
   --color-light-grey: #f9f9f9;
-  --color-light-pink: #ffcad4;
-  --color-dark-grey-pink: #9d8189;
+  --color-light-pink: #f4acb7;
+  --color-dark-grey-pink: #d0b8dc;
   --color-dark-grey: #333;
 
 }

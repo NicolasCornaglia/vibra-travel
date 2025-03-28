@@ -206,6 +206,7 @@ section {
 
   .activities-card {
     margin: 10px auto;
+    width: 80vw;
   }
 }
 </style>

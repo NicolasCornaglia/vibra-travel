@@ -2,7 +2,7 @@
   <div class="header-container">
       <!-- Logo Column -->
       <div class="logo">
-        <img src="../assets/photos/1.png" alt="logo" class="logo-img" @click="redirectToHome">
+        <img src="../assets/photos/logo.jpg" alt="logo" class="logo-img" @click="redirectToHome">
       </div>
 
       <!-- Navigation Column -->
@@ -76,12 +76,14 @@ const closeMenu = () => {
   padding: 1rem 2rem;
   background-color: var(--color-white);
   position: relative;
-  height: 100px;
+  height: 110px;
   z-index: 100;
+  max-width: 1500px;
+  margin: auto;
 }
 
 .logo {
-  height: 80px; /* Set container height */
+  height: 100px; /* Set container height */
   display: flex;
   object-fit: contain;
   justify-content: center;

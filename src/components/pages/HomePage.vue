@@ -8,7 +8,7 @@
         height="1440"
         src="https://www.youtube.com/embed/uJICKq3RaSg?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&loop=1&playlist=uJICKq3RaSg"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share: loop"
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
         loading="lazy"
@@ -213,7 +213,7 @@ section {
 }
 
 .intro-content {
-  max-width: 900px;
+  max-width: 1500px;
   margin: 0 auto;
   text-align: center;
 }
@@ -256,7 +256,7 @@ section {
 }
 
 .about-content {
-  max-width: 800px;
+  max-width: 1500px;
   margin: 0 auto;
   text-align: center;
 }
