@@ -59,7 +59,7 @@ const scrollToContact = async () => {
 }
 
 .home-container {
-  color: #333;
+  color: black;
 }
 
 h1,
@@ -95,7 +95,7 @@ section {
 }
 
 .section-header h2 {
-  color: #333;
+  color: black;
   position: relative;
   display: inline-block;
 }

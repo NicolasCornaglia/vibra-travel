@@ -87,7 +87,7 @@ import Contact from "../Contact.vue";
   padding: 40px 0 0 0;
 }
 .terms-black {
-  color: var(--color-dark-grey);
+  color: var(--color-black);
 }
 
 .terms-pink {

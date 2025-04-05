@@ -90,7 +90,7 @@ section {
 }
 
 .section-header h2 {
-  color: var(--color-dark-grey);
+  color: var(--color-black);
   position: relative;
   display: inline-block;
 }

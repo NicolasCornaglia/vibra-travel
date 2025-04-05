@@ -113,7 +113,7 @@ const closeMenu = () => {
 
 .nav-link {
   position: relative;
-  color: var(--color-dark-grey);
+  color: var(--color-black);
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
@@ -159,7 +159,7 @@ const closeMenu = () => {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--color-dark-grey);
+  background-color: var(--color-black);
   transition: all 0.3s ease;
 }
 

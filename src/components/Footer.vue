@@ -80,7 +80,8 @@ const scrollToContact = async () => {
 
 <style scoped>
 .footer {
-    background-color: #f5f5f5;
+    color: var(--color-white);
+    background-color: var(--color-pink);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -93,7 +94,7 @@ const scrollToContact = async () => {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
 }
 
 .footer-logo img {
@@ -125,13 +126,13 @@ const scrollToContact = async () => {
 
 .footer-section p a {
     text-decoration: none;
-    color: #000;
+    color: var(--color-black);
     font-size: 0.9rem;
     width: 20vw;
 }
 
 .footer-section p a:hover {
-    color: var(--color-pink);
+    color: var(--color-white);
 }
 
 

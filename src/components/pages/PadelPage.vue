@@ -89,7 +89,7 @@ import AdditionalActivities from "../AdditionalActivities.vue";
 }
 
 .terms-black {
-  color: var(--color-dark-grey);
+  color: var(--color-black);
 }
 
 .terms-pink {

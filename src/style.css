@@ -12,7 +12,7 @@ html {
   font-family: 'Acumin Pro','Elsa';
   line-height: 1.5;
   font-weight: 400;
-  color: #333;
+  color: black;
 
   /* Base font sizes */
   --font-size-xs: 0.75rem;    /* 12px */
@@ -30,12 +30,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
 
   /* Color Palette */
-  --color-pink: #d81b60;
+  --color-pink: #ff4c38;
   --color-white: #ffffff;
   --color-light-grey: #f9f9f9;
-  --color-light-pink: #f4acb7;
+  --color-light-pink: #9B848B;
   --color-dark-grey-pink: #d0b8dc;
-  --color-dark-grey: #333;
+  --color-black: black;
 
 }
 
