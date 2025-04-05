@@ -1,7 +1,7 @@
 <template>
   <div class="padel">
     <div class="padel-title">
-      <img src="../../assets/photos/padel.jpg" alt="Padel image" />
+      <img v-lazy="padelImage" alt="Padel image" />
       <h1>{{ t('padelPage.padel') }}</h1>
     </div>
     <div class="padel-content">
@@ -27,6 +27,7 @@
 </template>
 
 <script setup lang="ts">
+import padelImage from '../../assets/photos/padel.jpg';
 import PadelPackage from "../PadelPackage.vue";
 import AdditionalActivities from "../AdditionalActivities.vue";
 import { useI18n } from 'vue-i18n';

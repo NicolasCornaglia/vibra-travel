@@ -3,7 +3,7 @@
     <div class="terms">
       <div class="terms-title">
         <img
-          src="../../assets/photos/terms.jpg"
+          v-lazy="termsImg"
           alt="Terms & Conditions image"
         />
         <h1>Terms & Conditions</h1>
@@ -58,6 +58,7 @@
 </template>
 
 <script setup lang="ts">
+import termsImg from '../../assets/photos/terms.jpg'
 import FAQ from "../FAQ.vue";
 </script>
 

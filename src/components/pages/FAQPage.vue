@@ -1,7 +1,7 @@
 <template>
     <div class="faq">
       <div class="faq-title">
-        <img src="../../assets/photos/faq.PNG" alt="Terms & Conditions image" />
+        <img v-lazy="faqImg" alt="Terms & Conditions image" />
         <h1>Frequently Asked Questions</h1>
       </div>
       <div class="faq-content">
@@ -13,6 +13,7 @@
   </template>
   
   <script setup lang="ts">
+  import faqImg from '../../assets/photos/FAQ.png'
   import FAQ from '../FAQ.vue';
   </script>
   

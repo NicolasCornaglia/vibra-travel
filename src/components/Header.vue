@@ -2,7 +2,7 @@
   <div class="header-container">
     <!-- Logo Column -->
     <div class="logo">
-      <img src="../assets/photos/logo.jpg" alt="logo" class="logo-img" @click="redirectToHome">
+      <img v-lazy="logoUrl" alt="logo" class="logo-img" @click="redirectToHome">
     </div>
 
     <!-- Navigation Column -->
@@ -35,6 +35,7 @@
 </template>
 
 <script setup lang="ts">
+import logoUrl from '../assets/photos/logo.jpg'
 import { RouterLink, useRouter } from 'vue-router';
 import { ref, nextTick, watch } from 'vue';
 import { useI18n } from 'vue-i18n';

@@ -2,7 +2,7 @@
   <div class="sports">
     <div class="sports-title">
       <img
-        src="../../assets/photos/sports.jpg"
+        v-lazy="sportsImg"
         alt="Sports image"
       />
       <h1>{{ t('sportsPage.sports') }}</h1>
@@ -31,6 +31,7 @@
 </template>
 
 <script setup lang="ts">
+import sportsImg from '../../assets/photos/sports.jpg'
 import AdditionalActivities from "../AdditionalActivities.vue";
 import Contact from "../Contact.vue";
 import { useI18n } from 'vue-i18n';

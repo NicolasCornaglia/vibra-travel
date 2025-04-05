@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="footer-logo">
-      <img src="../assets/photos/logo.jpg" alt="logo">
+      <img v-lazy="'../assets/photos/logo.jpg'" alt="logo">
     </div>
     <div class="footer-content">
       <div class="footer-section">
