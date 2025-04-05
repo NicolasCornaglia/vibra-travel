@@ -14,7 +14,7 @@
         loading="lazy"
       ></iframe>
       <div class="video-overlay">
-        <h1>Welcome to Vibra Travel</h1>
+        <h1>{{ t("home.welcome") }}</h1>
       </div>
     </div>
 
@@ -24,27 +24,23 @@
         <h2>Your Ultimate Sports Experience in Spain!</h2>
         <div class="intro-text">
           <p>
-            At Vibra Travel, we create
-            <span class="bold">personalised sports trips</span> across
-            <span class="bold">Spain</span>, combining top-level training with
-            authentic cultural experiences.
-          </p>
+            {{ t("home.introText1_1") }}
+            <span class="bold">{{ t("home.introText1_2") }}</span>
+            {{ t("home.introText1_3") }}
+            <span class="bold">{{ t("home.introText1_4") }}</span>
+            {{ t("home.introText1_5") }}
 
-          <p>
             <span class="bold">
-              Improve your padel skills through tailored lessons with top-level
-              coaches—all while immersing yourself in Spain’s rich culture.
+              {{ t("home.introText2_1") }}
             </span>
-          </p>
 
-          <p>
-            Experience the perfect blend of
-            <span class="bold">sport and culture.</span>
+            {{ t("home.introText3_1") }}
+            <span class="bold">{{ t("home.introText3_2") }}</span>
           </p>
         </div>
         <div class="cta-button">
           <a href="#" @click.prevent="scrollToContact">
-            Contact us today to start planning!
+            {{ t("home.ctaButton") }}
           </a>
         </div>
       </div>
@@ -57,21 +53,12 @@
     <!-- About Us Section -->
     <section id="about" class="about-section">
       <div class="section-header">
-        <h2>Who We Are</h2>
+        <h2>{{ t("home.aboutTitle") }}</h2>
       </div>
       <div class="about-content">
         <h4>Charles Dowsing</h4>
         <p>
-          Having lived in Spain for over a decade, I’ve developed a deep passion
-          for its culture, lifestyle, and especially its sports scene. As an
-          avid padel player, I’ve seen firsthand how this dynamic sport has
-          become one of the fastest-growing in the world. With years of
-          experience organizing work placements and cultural experiences for
-          groups, I understand what makes a trip to Spain truly special—whether
-          it’s finding the best spots for padel, immersing in local culture, or
-          creating memorable moments that blend sport and leisure. That’s why I
-          started my padel experience company—to combine my expertise with my
-          passion and offer unforgettable sports-focused experiences in Spain.
+          {{ t("home.aboutContent") }}
         </p>
       </div>
     </section>
@@ -84,9 +71,12 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
 import PadelPackageHome from "../PadelPackageHome.vue";
 import Locations from "../Locations.vue";
 import Contact from "../Contact.vue";
+
+const { t } = useI18n();
 
 const scrollToContact = () => {
   const element = document.getElementById("contact");

@@ -3,51 +3,42 @@
   <section :style="{ backgroundColor: props.backgroundColor }">
     <div id="activities" class="activities-section">
       <div class="section-header">
-        <h2>Additional Activities</h2>
+        <h2>{{ t('additionalActivities.additionalActivities') }}</h2>
       </div>
       <div class="activities-container">
         <div class="activities-card">
           <div class="activities-header">
-            <h3>Cultural Activities</h3>
+            <h3>{{ t('additionalActivities.culturalActivities') }}</h3>
           </div>
           <div class="activities-features">
             <ul>
-              <li>Traditional Cooking Class</li>
-              <li>Bike Tour and Bike Rental</li>
-              <li>Kayak or SUP (Stand-Up Paddleboarding)</li>
-              <li>Flamenco Show</li>
-              <li>Spanish Language Class</li>
-              <li>City Tour</li>
-              <li>Stadium Tour</li>
-              <li>Watch a Local Football Game</li>
-              <li>Hiking</li>
+              <li>{{ t('additionalActivities.cookingClass') }}</li>
+              <li>{{ t('additionalActivities.bikeTour') }}</li>
+              <li>{{ t('additionalActivities.kayakSup') }}</li>
+              <li>{{ t('additionalActivities.flamencoShow') }}</li>
+              <li>{{ t('additionalActivities.spanishClass') }}</li>
+              <li>{{ t('additionalActivities.cityTour') }}</li>
+              <li>{{ t('additionalActivities.stadiumTour') }}</li>
+              <li>{{ t('additionalActivities.localFootball') }}</li>
+              <li>{{ t('additionalActivities.hiking') }}</li>
             </ul>
           </div>
         </div>
         <div class="activities-card" v-if="props.showRelevantInfo">
           <div class="activities-header">
-            <h3>Relevant Information</h3>
+            <h3>{{ t('additionalActivities.relevantInfo') }}</h3>
           </div>
           <div class="activities-features">
             <ul>
-              <li>
-                All Packages available in Barcelona and Sevilla. Other
-                destinations available upon request.
-              </li>
-              <li>Activity for all levels.</li>
-              <li>English/Spanish Speaking Coaches</li>
-              <li>
-                Meet your trainer directly at the court. You'll be informed
-                about court number and trainer name.
-              </li>
-              <li>Warm up at the beginning of each session.</li>
-              <li>Strategy and Final Feedback at the end of each session.</li>
-              <li>
-                Bring sportswear and a racket. If you don't have a racket, we'll
-                provide one for you
-              </li>
-              <li>The club has changing rooms and showers.</li>
-              <li>The club has water fountains or vending machine.</li>
+              <li>{{ t('additionalActivities.availableDestinations') }}</li>
+              <li>{{ t('additionalActivities.allLevels') }}</li>
+              <li>{{ t('additionalActivities.englishSpanishCoaches') }}</li>
+              <li>{{ t('additionalActivities.meetTrainer') }}</li>
+              <li>{{ t('additionalActivities.warmUp') }}</li>
+              <li>{{ t('additionalActivities.strategyFeedback') }}</li>
+              <li>{{ t('additionalActivities.bringSportswear') }}</li>
+              <li>{{ t('additionalActivities.changingRooms') }}</li>
+              <li>{{ t('additionalActivities.waterFountains') }}</li>
             </ul>
           </div>
         </div>
@@ -58,6 +49,9 @@
 
 <script setup lang="ts">
 import { defineProps } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 const props = defineProps({
   backgroundColor: {
@@ -163,10 +157,6 @@ section {
   margin: 0;
 }
 
-.activities-price {
-  margin-top: 0.5rem;
-}
-
 .activities-features {
   padding: 2rem;
 }
@@ -185,29 +175,6 @@ section {
   position: absolute;
   left: 0;
   color: var(--color-pink);
-}
-
-.activities-cta {
-  text-align: center;
-  padding: 0 2rem 2rem;
-}
-
-.btn-book {
-  font-weight: bold;
-  display: inline-block;
-  background-color: var(--color-pink);
-  color: var(--color-white);
-  padding: 1rem 2rem;
-  border-radius: 6px;
-  border: 2px solid transparent;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.btn-book:hover {
-  cursor: pointer;
-  background-color: var(--color-white);
-  color: var(--color-pink);
-  border: 2px solid var(--color-pink);
 }
 
 @media (max-width: 768px) {

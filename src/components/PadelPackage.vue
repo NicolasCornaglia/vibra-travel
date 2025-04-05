@@ -2,75 +2,58 @@
   <!-- Padel Package Highlight -->
   <section id="packages" class="package-section">
     <div class="section-header">
-      <h2>Our Featured Packages</h2>
+      <h2>{{ t('padelPackage.featuredPackages') }}</h2>
     </div>
     <div class="cards">
       <div class="package-card">
         <div class="package-header">
-          <h3>100% Customised</h3>
+          <h3>{{ t('padelPackage.customisedPackage') }}</h3>
           <div class="package-desc">
-            Let us craft the perfect padel getaway for you, tailored to your
-            preferences and skill level. We’ll design a personalised itinerary
-            that offers an unforgettable padel experience in Spain. From
-            on-court action to immersive cultural experiences, customise every
-            detail to make the most of your trip. start designing your perfect
-            padel adventure today!
+            {{ t('padelPackage.customisedDescription') }}
           </div>
         </div>
         <div class="package-features">
           <ul>
-            <li>100% customised</li>
-            <li>Private Training</li>
-            <li>All skill levels</li>
-            <li>Various Accommodation options (Hotels, Apartments, Villas)</li>
-            <li>Additional cultural experiences</li>
-            <li>Individual, Couple and Group options</li>
-            <li>
-              1 Padel lesson per day (2-hour lesson with Elite padel coach)
-            </li>
-            <li>1 Padel tournament with locals</li>
-            <li>Free play (Free court time)</li>
-            <li>Additional padel lessons available on request</li>
-            <li>Airport transfers available</li>
+            <li>{{ t('padelPackage.customisedPackage') }}</li>
+            <li>{{ t('padelPackage.privateTraining') }}</li>
+            <li>{{ t('padelPackage.allSkillLevels') }}</li>
+            <li>{{ t('padelPackage.variousAccommodation') }}</li>
+            <li>{{ t('padelPackage.additionalCultural') }}</li>
+            <li>{{ t('padelPackage.individualCoupleGroup') }}</li>
+            <li>{{ t('padelPackage.padelLesson') }}</li>
+            <li>{{ t('padelPackage.padelTournament') }}</li>
+            <li>{{ t('padelPackage.freePlay') }}</li>
+            <li>{{ t('padelPackage.additionalLessons') }}</li>
+            <li>{{ t('padelPackage.airportTransfers') }}</li>
           </ul>
         </div>
         <div class="package-cta">
           <a href="#" @click.prevent="scrollToContact" class="btn-book">
-            Book Now
+            {{ t('padelPackage.bookNow') }}
           </a>
         </div>
       </div>
       <div class="package-card">
         <div class="package-header">
-          <h3>Team Building</h3>
+          <h3>{{ t('padelPackage.teamBuilding') }}</h3>
           <div class="package-desc">
-            Customised experiences for companies, teams or school groups
-            combining sports based collaborative challenges with unique cultural
-            experiences. Enhance your team’s collaboration with our
-            one-of-a-kind padel team-building experiences. Through strategic
-            play and engaging challenges, we nurture teamwork and communication
-            while immersing everyone in the excitement of this fast-paced sport.
-            Our skilled instructors make sure all participants, from beginners
-            to pros, feel confident and involved. And to top it off, we’ll
-            immerse your team in genuine Spanish experiences for a truly
-            memorable adventure!
+            {{ t('padelPackage.teamBuildingDescription') }}
           </div>
         </div>
         <div class="package-features">
           <ul>
-            <li>100% customised</li>
-            <li>Team based padel training</li>
-            <li>All skill levels</li>
-            <li>Options for additional sports </li>
-            <li>Various Accommodation options</li>
-            <li>Additional cultural experiences</li>
-            <li>Airport transfer available </li>
-
+            <li>{{ t('padelPackage.customisedPackage') }}</li>
+            <li>{{ t('padelPackage.teamBasedTraining') }}</li>
+            <li>{{ t('padelPackage.allSkillLevels') }}</li>
+            <li>{{ t('padelPackage.additionalSports') }}</li>
+            <li>{{ t('padelPackage.variousAccommodation') }}</li>
+            <li>{{ t('padelPackage.additionalCultural') }}</li>
+            <li>{{ t('padelPackage.airportTransfer') }}</li>
           </ul>
         </div>
         <div class="package-cta">
           <a href="#" @click.prevent="scrollToContact" class="btn-book">
-            Book Now
+            {{ t('padelPackage.bookNow') }}
           </a>
         </div>
       </div>
@@ -81,6 +64,9 @@
 <script setup lang="ts">
 import { useRouter } from "vue-router";
 import { nextTick } from "vue";
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 const router = useRouter();
 
 const scrollToContact = async () => {

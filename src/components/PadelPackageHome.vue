@@ -2,49 +2,50 @@
   <!-- Padel Package Highlight -->
   <section id="packages" class="package-section">
     <div class="section-header">
-      <h2>Our Featured Packages</h2>
+      <h2>{{ t('padelPackageHome.featuredPackages') }}</h2>
     </div>
     <div class="cards">
       <div class="package-card">
         <div class="package-header">
-          <h3>100% Customised</h3>
+          <h3>{{ t('padelPackageHome.customisedPackage') }}</h3>
           <div class="package-price">
-            Shape your padel experience to fit your skill level and preferences. Design your own itinerary combining padel training with cultural activities. 
+            {{ t('padelPackageHome.customisedDescription') }}
           </div>
         </div>
         <div class="package-features">
           <ul>
-            <li>100% customised </li>
-            <li>Private Training</li>
-            <li>All skill levels</li>
-            <li>Various Accommodation options</li>
-            <li>Additional cultural experiences</li>
+            <li>{{ t('padelPackageHome.customisedPackage') }}</li>
+            <li>{{ t('padelPackageHome.privateTraining') }}</li>
+            <li>{{ t('padelPackageHome.allSkillLevels') }}</li>
+            <li>{{ t('padelPackageHome.variousAccommodation') }}</li>
+            <li>{{ t('padelPackageHome.additionalCultural') }}</li>
           </ul>
         </div>
         <div class="package-cta">
           <a href="/padel" class="btn-book">
-            Learn More
+            {{ t('padelPackageHome.learnMore') }}
           </a>
         </div>
       </div>
       <div class="package-card">
         <div class="package-header">
-          <h3>Team Building</h3>
-          <div class="package-price">Experiences for companies, teams or school groups combining sports based collaborative challenges with unique cultural activities.
+          <h3>{{ t('padelPackageHome.teamBuilding') }}</h3>
+          <div class="package-price">
+            {{ t('padelPackageHome.teamBuildingDescription') }}
           </div>
         </div>
         <div class="package-features">
           <ul>
-            <li>100% customised</li>
-            <li>Team based training</li>
-            <li>All skill levels</li>
-            <li>Various Accommodation options</li>
-            <li>Additional cultural experiences</li>
+            <li>{{ t('padelPackageHome.customisedPackage') }}</li>
+            <li>{{ t('padelPackageHome.privateTraining') }}</li>
+            <li>{{ t('padelPackageHome.allSkillLevels') }}</li>
+            <li>{{ t('padelPackageHome.variousAccommodation') }}</li>
+            <li>{{ t('padelPackageHome.additionalCultural') }}</li>
           </ul>
         </div>
         <div class="package-cta">
           <a href="/padel" class="btn-book">
-            Learn More
+            {{ t('padelPackageHome.learnMore') }}
           </a>
         </div>
       </div>
@@ -53,6 +54,9 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 </script>
 
 <style scoped>
@@ -120,13 +124,6 @@ section {
 }
 
 .package-card {
-/*   width: 500px;
-  margin: 20px auto;
-  background: white;
-  border-radius: 6px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  overflow: hidden; */
-
   flex: 1;
   min-width: 300px;
   max-width: 500px;

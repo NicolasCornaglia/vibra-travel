@@ -3,26 +3,20 @@
     <div class="sports-title">
       <img
         src="../../assets/photos/sports.jpg"
-        alt="Terms & Conditions image"
+        alt="Sports image"
       />
-      <h1>Sports</h1>
+      <h1>{{ t('sportsPage.sports') }}</h1>
     </div>
     <div class="sports-content">
       <div class="terms-content-title">
         <h2 class="sports-content-title">
           <div>
-            <span class="terms-white">LOOKING FOR </span>
-            <span class="terms-pink">MORE THAN PADEL</span>?
+            <span class="terms-white">{{ t('sportsPage.title1') }} </span>
+            <span class="terms-pink">{{ t('sportsPage.title2') }} </span>?
           </div>
         </h2>
         <p>
-          At Vibra Travel, we offer tailor-made sports packages across a wide
-          range of disciplines. Whether you’re looking for a sport-specific
-          experience or a mix of different activities, we can design the perfect
-          program to suit your group’s needs. From football and padel to
-          basketball, tennis, swimming, and more, we provide top facilities,
-          expert guidance, and a seamless experience. Let us create a customised
-          sports trip that matches your goals!
+          {{ t('sportsPage.sportsDescription') }}
         </p>
       </div>
     </div>
@@ -39,6 +33,9 @@
 <script setup lang="ts">
 import AdditionalActivities from "../AdditionalActivities.vue";
 import Contact from "../Contact.vue";
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 </script>
 
 <style scoped>

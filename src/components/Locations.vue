@@ -2,21 +2,16 @@
   <!-- Locations Section -->
   <section id="locations" class="locations-section">
     <div class="section-header">
-      <h2>Locations</h2>
+      <h2>{{ t('locationsComponent.locations') }}</h2>
     </div>
 
     <div class="location-cards">
       <div class="location-card">
         <div class="location-image barcelona-img"></div>
         <div class="location-content">
-          <h3>Barcelona</h3>
+          <h3>{{ t('locationsComponent.barcelona') }}</h3>
           <p>
-            Barcelona is a city where sport and culture come together in a
-            spectacular setting. Home to legendary teams, world-class
-            facilities, and a deep passion for athletics, it’s the perfect
-            destination for sports enthusiasts. Whether playing, training, or
-            simply soaking in the atmosphere, this city is a dream for any
-            sports traveller.
+            {{ t('locationsComponent.barcelonaDescription') }}
           </p>
         </div>
       </div>
@@ -24,14 +19,9 @@
       <div class="location-card">
         <div class="location-image sevilla-img"></div>
         <div class="location-content">
-          <h3>Sevilla</h3>
+          <h3>{{ t('locationsComponent.sevilla') }}</h3>
           <p>
-            Sevilla is a city celebrated for its rich sports culture, year-round
-            sunshine, and lively atmosphere. Boasting top-tier training
-            facilities and elite football clubs, it’s an ideal destination for
-            sports groups. With its sun-drenched plazas, mouthwatering tapas,
-            passionate flamenco, and endless charm, Andalusia truly embodies the
-            spirit of Spain.
+            {{ t('locationsComponent.sevillaDescription') }}
           </p>
         </div>
       </div>
@@ -39,7 +29,11 @@
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+</script>
 
 <style scoped>
 /* Base Styles */

@@ -1,21 +1,19 @@
 <template>
   <div class="padel">
     <div class="padel-title">
-      <img src="../../assets/photos/padel.jpg" alt="Terms & Conditions image" />
-      <h1>Padel</h1>
+      <img src="../../assets/photos/padel.jpg" alt="Padel image" />
+      <h1>{{ t('padelPage.padel') }}</h1>
     </div>
     <div class="padel-content">
       <div class="terms-content-title">
         <h2 class="padel-content-title">
           <div>
-            <span class="terms-pink">PLAY </span>
-            <span class="terms-black">YOUR GAME!</span>
+            <span class="terms-pink">{{ t('padelPage.padelTitle1') }} </span>
+            <span class="terms-black">{{ t('padelPage.padelTitle2') }}</span>
           </div>
         </h2>
         <p class="padel-description">
-          Contact us to arrange your exclusive padel trip in Spain, carefully
-          crafted to meet the needs of every enthusiast!  Join us for an
-          unforgettable adventure in BARCELONA or SEVILLA!
+          {{ t('padelPage.padelDescription') }}
         </p>
       </div>
     </div>
@@ -26,12 +24,14 @@
       <AdditionalActivities />
     </div>
   </div>
-  
 </template>
 
 <script setup lang="ts">
 import PadelPackage from "../PadelPackage.vue";
 import AdditionalActivities from "../AdditionalActivities.vue";
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 </script>
 
 <style scoped>

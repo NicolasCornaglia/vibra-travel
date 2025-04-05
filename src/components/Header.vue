@@ -1,60 +1,70 @@
 <template>
   <div class="header-container">
-      <!-- Logo Column -->
-      <div class="logo">
-        <img src="../assets/photos/logo.jpg" alt="logo" class="logo-img" @click="redirectToHome">
+    <!-- Logo Column -->
+    <div class="logo">
+      <img src="../assets/photos/logo.jpg" alt="logo" class="logo-img" @click="redirectToHome">
+    </div>
+
+    <!-- Navigation Column -->
+    <nav class="nav-menu" :class="{ 'nav-active': isMenuOpen }">
+      <div class="nav-links">
+        <RouterLink to="/" class="nav-link" @click="closeMenu">{{ t('header.home') }}</RouterLink>
+        <RouterLink to="/padel" class="nav-link" @click="closeMenu">{{ t('header.padel') }}</RouterLink>
+        <RouterLink to="/sports" class="nav-link" @click="closeMenu">{{ t('header.sports') }}</RouterLink>
+        <a href="#" class="nav-link" @click.prevent="scrollToContact(); closeMenu()">{{ t('header.contact') }}</a>
+        <RouterLink to="/terms" class="nav-link" @click="closeMenu">{{ t('header.terms') }}</RouterLink>
+        <RouterLink to="/faq" class="nav-link" @click="closeMenu">{{ t('header.faq') }}</RouterLink>
       </div>
 
-      <!-- Navigation Column -->
-      <nav class="nav-menu" :class="{ 'nav-active': isMenuOpen }">
-          <div class="nav-links">
-              <RouterLink to="/" class="nav-link" @click="closeMenu">HOME</RouterLink>
-              <RouterLink to="/padel" class="nav-link" @click="closeMenu">PADEL</RouterLink>
-              <RouterLink to="/sports" class="nav-link" @click="closeMenu">SPORTS</RouterLink>
-              <a href="#" class="nav-link" @click.prevent="scrollToContact(); closeMenu()">CONTACT</a>
-              <RouterLink to="/terms" class="nav-link" @click="closeMenu">T&Cs</RouterLink>
-              <RouterLink to="/faq" class="nav-link" @click="closeMenu">FAQ's</RouterLink>
-          </div>
-
-          <div class="lang-selector-mobile">
-            <LanguageSelector />
-          </div>
-      </nav>
-
-      <div class="lang-selector">
+      <div class="lang-selector-mobile">
         <LanguageSelector />
       </div>
+    </nav>
 
-      <!-- Mobile Menu Button -->
-      <button class="mobile-menu-btn" :class="{ 'is-active': isMenuOpen }" @click="toggleMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-      </button>
+    <div class="lang-selector">
+      <LanguageSelector />
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" :class="{ 'is-active': isMenuOpen }" @click="toggleMenu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 </template>
 
 <script setup lang="ts">
 import { RouterLink, useRouter } from 'vue-router';
-import { ref, nextTick } from 'vue';
+import { ref, nextTick, watch } from 'vue';
+import { useI18n } from 'vue-i18n';
 import LanguageSelector from './LanguageSelector.vue';
+import { appState } from '../stores/appState';
 
+const { t, locale } = useI18n();
 const router = useRouter();
 const isMenuOpen = ref(false);
+
+// Watch for changes in the selected language and update the locale
+watch(() => appState.selectedLanguage, (newLanguage) => {
+  locale.value = newLanguage;
+});
 
 const scrollToContact = async () => {
   if (router.currentRoute.value.path !== '/') {
     await router.push('/');
     await nextTick();
   }
-  
+
   setTimeout(() => {
     const element = document.getElementById('contact');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }, 500);
-};const redirectToHome = () => {
+};
+
+const redirectToHome = () => {
   router.push('/');
 };
 
@@ -63,9 +73,8 @@ const toggleMenu = () => {
 };
 
 const closeMenu = () => {
-  isMenuOpen.value = false
-}
-
+  isMenuOpen.value = false;
+};
 </script>
 
 <style scoped>
@@ -75,11 +84,15 @@ const closeMenu = () => {
   align-items: center;
   padding: 1rem 2rem;
   background-color: var(--color-white);
-  position: relative;
+  position: fixed; /* Changed from relative to fixed */
+  top: 0; /* Position at the very top */
+  left: 0; /* Stretch from left */
+  right: 0; /* Stretch to right */
   height: 110px;
   z-index: 100;
-  max-width: 1500px;
-  margin: auto;
+  max-width: 100%; /* Changed from 1500px to 100% */
+  margin: 0 auto; /* Remove top/bottom margin */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visibility */
 }
 
 .logo {
@@ -89,14 +102,14 @@ const closeMenu = () => {
   justify-content: center;
   align-items: center;
   overflow: hidden; /* Ensures no overflow from scaling */
-  border-radius: 50%; 
+  border-radius: 50%;
 }
 
- .logo-img {
+.logo-img {
   cursor: pointer;
   display: block;
-  height: 100%; 
-  width: auto; 
+  height: 100%;
+  width: auto;
 }
 
 .nav-menu {
@@ -138,7 +151,7 @@ const closeMenu = () => {
 }
 
 .lang-selector {
-    display: block;
+  display: block;
 }
 
 .lang-selector-mobile {
@@ -206,8 +219,9 @@ const closeMenu = () => {
     display: block;
     z-index: 1002;
   }
-  
+
   .nav-menu {
+    top: 110px;
     position: fixed;
     top: 100px;
     left: 0;
@@ -216,7 +230,7 @@ const closeMenu = () => {
     padding: 1rem;
     gap: 1rem;
     z-index: 1000;
-    
+
     /* Initial state - start with 0 height */
     max-height: 0;
     overflow: visible;
@@ -224,16 +238,16 @@ const closeMenu = () => {
     pointer-events: none;
     padding-top: 0;
     padding-bottom: 0;
-    
+
     /* Gradient background from solid white to 70% opacity */
-    background: linear-gradient(to bottom, 
-                rgba(255, 255, 255, 1) 0%, 
+    background: linear-gradient(to bottom,
+                rgba(255, 255, 255, 1) 0%,
                 rgba(255, 255, 255, 0.7) 100%);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    
+
     /* Combined transition */
-    transition: max-height 0.4s ease-in-out, 
+    transition: max-height 0.4s ease-in-out,
                 opacity 0.3s ease-in-out,
                 padding 0.4s ease-in-out;
   }
@@ -246,7 +260,7 @@ const closeMenu = () => {
     pointer-events: auto;
     padding: 1rem;
   }
-  
+
   .nav-links {
     display: flex;
     flex-direction: column;
@@ -257,6 +271,5 @@ const closeMenu = () => {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding-bottom: 1rem;
   }
-  
 }
 </style>

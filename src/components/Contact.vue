@@ -1,61 +1,54 @@
 <template>
   <section id="contact" class="contact-section" :style="{ backgroundColor: props.backgroundColor }">
     <div class="section-header">
-      <h2>Contact Us</h2>
+      <h2>{{ t('contactComponent.contactUs') }}</h2>
     </div>
     <div class="contact-container">
       <div class="contact-info">
         <div class="contact-item">
           <span class="contact-value bold">info@vibra-travel.com</span>
         </div>
-        <div >
-          <span class="contact-value"><a class="social-link" href="tel:+34 744484995">+34 744484995</a></span>
+        <div>
+          <span class="contact-value">
+            <a class="social-link" href="tel:+34744484995">+34 744484995</a>
+          </span>
         </div>
-        <div >
+        <div>
           <a
             href="https://api.whatsapp.com/send?phone=34744484995"
             class="social-link"
             target="_blank"
-            >Whatsapp</a
           >
+            {{ t('contactComponent.whatsapp') }}
+          </a>
         </div>
-        <div >
-          <a href="https://www.instagram.com/vibr.atravel/" class="social-link" target="_blank"
-            >Instagram</a
-          >
+        <div>
+          <a href="https://www.instagram.com/vibr.atravel/" class="social-link" target="_blank">
+            {{ t('contactComponent.instagram') }}
+          </a>
         </div>
       </div>
 
       <div class="contact-form">
         <form @submit.prevent="submitEmail">
           <div class="form-group">
-            <label for="name">Name:</label>
+            <label for="name">{{ t('contactComponent.name') }}:</label>
             <input type="text" id="name" v-model="formData.name" required />
           </div>
           <div class="form-group">
-            <label for="surname">Surname:</label>
-            <input
-              type="text"
-              id="surname"
-              v-model="formData.surname"
-              required
-            />
+            <label for="surname">{{ t('contactComponent.surname') }}:</label>
+            <input type="text" id="surname" v-model="formData.surname" required />
           </div>
           <div class="form-group">
-            <label for="email">Email:</label>
+            <label for="email">{{ t('contactComponent.email') }}:</label>
             <input type="email" id="email" v-model="formData.email" required />
           </div>
           <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea
-              id="message"
-              v-model="formData.message"
-              rows="4"
-              required
-            ></textarea>
+            <label for="message">{{ t('contactComponent.message') }}:</label>
+            <textarea id="message" v-model="formData.message" rows="4" required></textarea>
           </div>
           <div class="form-submit">
-            <button type="submit" class="btn-contact">Send Email</button>
+            <button type="submit" class="btn-contact">{{ t('contactComponent.sendEmail') }}</button>
           </div>
         </form>
       </div>
@@ -67,6 +60,9 @@
 import { ref } from "vue";
 import emailjs from "@emailjs/browser";
 import { defineProps } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 const props = defineProps({
   backgroundColor: {
@@ -74,6 +70,7 @@ const props = defineProps({
     default: 'var(--color-light-grey)', // Default background color
   }
 });
+
 // Reactive form data
 const formData = ref({
   name: "",
@@ -83,16 +80,15 @@ const formData = ref({
 });
 
 // Form submission handler
-//TODO: modify email receiver to be info@vibra-travel.com. asked for current password.
 const submitEmail = async () => {
   try {
     await emailjs.send(
-      'service_hq1j668', 
-      'template_241dg9q', 
+      'service_hq1j668',
+      'template_241dg9q',
       formData.value,
       'U5ho_79mVcusJquXG' // Add your public key here as well
     );
-    alert("Thank you for your message! We will get back to you soon.");
+    alert(t('contactComponent.thankYouMessage'));
     formData.value = { name: "", surname: "", email: "", message: "" };
   } catch (error) {
     console.error(error);
@@ -129,7 +125,6 @@ a {
   border-radius: 6px;
   transition: background-color 0.3s ease-in-out;
 }
-
 
 section {
   padding: 4rem 2rem;

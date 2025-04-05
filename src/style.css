@@ -8,6 +8,9 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  padding-top: 110px; 
+}
 :root {
   font-family: 'Acumin Pro','Elsa';
   line-height: 1.5;
