@@ -13,26 +13,20 @@
           </div>
         </h2>
         <p class="padel-description">
-          Immerse yourself in the world of padel with our expertly curated
-          trips, designed for players of all levels. Train on top-tier courts,
-          refine your skills with professional coaching, and compete in friendly
-          tournaments against local players. From perfecting your bandeja to
-          mastering the vibora, every moment on the court is an opportunity to
-          grow and enjoy the sport you love. Off the court, relax with your
-          team, explore stunning destinations, and soak in the vibrant padel
-          culture that Spain is famous for. Whether you're here to improve your
-          game or simply have fun, our padel trips promise an unforgettable
-          experience. Serve up your next adventure with Vibra Travel!
+          Contact us to arrange your exclusive padel trip in Spain, carefully
+          crafted to meet the needs of every enthusiast!  Join us for an
+          unforgettable adventure in BARCELONA or SEVILLA!
         </p>
       </div>
-    </div>
-    <div class="padel-content-activities">
-      <AdditionalActivities />
     </div>
     <div>
       <PadelPackage />
     </div>
+    <div class="padel-content-activities">
+      <AdditionalActivities />
+    </div>
   </div>
+  
 </template>
 
 <script setup lang="ts">
@@ -86,6 +80,7 @@ import AdditionalActivities from "../AdditionalActivities.vue";
 
 .padel-description {
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .terms-black {

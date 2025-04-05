@@ -1,61 +1,53 @@
 <template>
-<!-- Locations Section -->
-<section id="locations" class="locations-section">
-      <div class="section-header">
-        <h2>Locations</h2>
-      </div>
+  <!-- Locations Section -->
+  <section id="locations" class="locations-section">
+    <div class="section-header">
+      <h2>Locations</h2>
+    </div>
 
-      <div class="location-cards">
-        <div class="location-card">
-          <div class="location-image barcelona-img"></div>
-          <div class="location-content">
-            <h3>Barcelona</h3>
-            <p>
-              Barcelona is a city where sport and culture come together in a
-              spectacular setting. Home to legendary teams, world-class
-              facilities, and a deep passion for athletics, it's the perfect
-              destination for sports enthusiasts. From training at top venues to
-              exploring iconic landmarks like the Sagrada Familia and Las
-              Ramblas, Barcelona offers an unforgettable mix of competition,
-              history, and Mediterranean charm. Whether playing, training, or
-              simply soaking in the atmosphere, this city is a dream for any
-              sports traveller.
-            </p>
-          </div>
-        </div>
-
-        <div class="location-card">
-          <div class="location-image sevilla-img"></div>
-          <div class="location-content">
-            <h3>Sevilla</h3>
-            <p>
-              Sevilla, set along the Guadalquivir River, is a city known for its
-              sports culture, sunny weather, and vibrant atmosphere. With
-              excellent training facilities and top football teams, it's a great
-              destination for sports groups. After training or competition,
-              enjoy the city's historic sites like the Alcázar and Plaza de
-              España, all under the warm Andalusian sun. Sevilla offers the
-              perfect balance of sporting action and cultural exploration.
-            </p>
-          </div>
+    <div class="location-cards">
+      <div class="location-card">
+        <div class="location-image barcelona-img"></div>
+        <div class="location-content">
+          <h3>Barcelona</h3>
+          <p>
+            Barcelona is a city where sport and culture come together in a
+            spectacular setting. Home to legendary teams, world-class
+            facilities, and a deep passion for athletics, it’s the perfect
+            destination for sports enthusiasts. Whether playing, training, or
+            simply soaking in the atmosphere, this city is a dream for any
+            sports traveller.
+          </p>
         </div>
       </div>
-    </section>
+
+      <div class="location-card">
+        <div class="location-image sevilla-img"></div>
+        <div class="location-content">
+          <h3>Sevilla</h3>
+          <p>
+            Sevilla is a city celebrated for its rich sports culture, year-round
+            sunshine, and lively atmosphere. Boasting top-tier training
+            facilities and elite football clubs, it’s an ideal destination for
+            sports groups. With its sun-drenched plazas, mouthwatering tapas,
+            passionate flamenco, and endless charm, Andalusia truly embodies the
+            spirit of Spain.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
-
 /* Base Styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 
 h1,
 h2,
@@ -129,7 +121,7 @@ section {
 }
 
 .location-card:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .location-image {
@@ -156,9 +148,9 @@ section {
 }
 
 @media (max-width: 768px) {
-    
   .location-card {
-    min-width: 100%;
+    min-width: 80%;
+    margin: auto;
   }
 }
 </style>

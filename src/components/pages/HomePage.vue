@@ -21,42 +21,36 @@
     <!-- Home/Intro Section -->
     <section id="home" class="intro-section">
       <div class="intro-content">
-        <h2>Your Ultimate Sports Trip Partner in Spain!</h2>
+        <h2>Your Ultimate Sports Experience in Spain!</h2>
         <div class="intro-text">
           <p>
-            At Vibra Travel we specialise in organizing tailor-made sports trips
-            across Spain for all types of groups. Whether you're a sports team,
-            a school or college group, or simply a group of enthusiasts looking
-            for an unforgettable experience, we have the perfect trip for you.
+            At Vibra Travel, we create
+            <span class="bold">personalised sports trips</span> across
+            <span class="bold">Spain</span>, combining top-level training with
+            authentic cultural experiences.
           </p>
 
           <p>
-            Our expertly crafted itineraries include everything you need for a
-            seamless and exciting trip— top-quality accommodation, hassle-free
-            transfers, high-quality sports facilities, and real local
-            experiences. With our deep local knowledge, we ensure your group
-            gets the best training, competition, and cultural immersion,
-            including language classes, guided tours, and insider tips to make
-            the most of your stay.
+            <span class="bold">
+              Improve your padel skills through tailored lessons with top-level
+              coaches—all while immersing yourself in Spain’s rich culture.
+            </span>
           </p>
 
           <p>
-            From elite teams to grassroots clubs, school groups to corporate
-            sports getaways, we take care of every detail so you can focus on
-            enjoying the experience. Get ready for a sports trip like no
-            other—where passion meets adventure in the heart of Spain!
+            Experience the perfect blend of
+            <span class="bold">sport and culture.</span>
           </p>
         </div>
         <div class="cta-button">
           <a href="#" @click.prevent="scrollToContact">
-            Contact us today to start planning your perfect sports trip!
-            </a
-          >
+            Contact us today to start planning!
+          </a>
         </div>
       </div>
     </section>
 
-    <PadelPackage />
+    <PadelPackageHome />
 
     <Locations />
 
@@ -66,32 +60,38 @@
         <h2>Who We Are</h2>
       </div>
       <div class="about-content">
+        <h4>Charles Dowsing</h4>
         <p>
-          At Vibra Travel, we're passionate about connecting sports enthusiasts
-          with authentic Spanish experiences. Our team of local experts creates
-          personalized sports trips that blend high-quality training with
-          cultural immersion, ensuring every group enjoys the best Spain has to
-          offer both on and off the field.
+          Having lived in Spain for over a decade, I’ve developed a deep passion
+          for its culture, lifestyle, and especially its sports scene. As an
+          avid padel player, I’ve seen firsthand how this dynamic sport has
+          become one of the fastest-growing in the world. With years of
+          experience organizing work placements and cultural experiences for
+          groups, I understand what makes a trip to Spain truly special—whether
+          it’s finding the best spots for padel, immersing in local culture, or
+          creating memorable moments that blend sport and leisure. That’s why I
+          started my padel experience company—to combine my expertise with my
+          passion and offer unforgettable sports-focused experiences in Spain.
         </p>
       </div>
     </section>
 
     <!-- Contact Section -->
-     <div>
+    <div>
       <Contact />
-     </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import PadelPackage from "../PadelPackage.vue";
+import PadelPackageHome from "../PadelPackageHome.vue";
 import Locations from "../Locations.vue";
 import Contact from "../Contact.vue";
 
 const scrollToContact = () => {
-  const element = document.getElementById('contact');
+  const element = document.getElementById("contact");
   if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
+    element.scrollIntoView({ behavior: "smooth" });
   }
 };
 </script>
@@ -248,8 +248,6 @@ section {
   border: 2px solid var(--color-pink);
 }
 
-
-
 /* About Section */
 .about-section {
   background-color: #fff;
@@ -260,8 +258,6 @@ section {
   margin: 0 auto;
   text-align: center;
 }
-
-
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -275,6 +271,16 @@ section {
 
   .video-overlay h1 {
     font-size: 1.5rem;
+  }
+
+  .intro-content {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .about-section {
+    max-width: 90%;
+    margin: auto;
   }
 }
 </style>

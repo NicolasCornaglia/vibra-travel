@@ -1,19 +1,17 @@
 <template>
-  <section id="contact" class="contact-section">
+  <section id="contact" class="contact-section" :style="{ backgroundColor: props.backgroundColor }">
     <div class="section-header">
       <h2>Contact Us</h2>
     </div>
     <div class="contact-container">
       <div class="contact-info">
         <div class="contact-item">
-          <span class="contact-label">Phone:</span>
-          <span class="contact-value"><a href="tel:+34 744484995">+34 744484995</a></span>
+          <span class="contact-value bold">info@vibra-travel.com</span>
         </div>
-        <div class="contact-item">
-          <span class="contact-label">Email:</span>
-          <span class="contact-value">info@vibra-travel.com</span>
+        <div >
+          <span class="contact-value"><a class="social-link" href="tel:+34 744484995">+34 744484995</a></span>
         </div>
-        <div class="social-link">
+        <div >
           <a
             href="https://api.whatsapp.com/send?phone=34744484995"
             class="social-link"
@@ -21,7 +19,7 @@
             >Whatsapp</a
           >
         </div>
-        <div class="social-link">
+        <div >
           <a href="https://www.instagram.com/vibr.atravel/" class="social-link" target="_blank"
             >Instagram</a
           >
@@ -68,7 +66,14 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import emailjs from "@emailjs/browser";
+import { defineProps } from 'vue';
 
+const props = defineProps({
+  backgroundColor: {
+    type: String,
+    default: 'var(--color-light-grey)', // Default background color
+  }
+});
 // Reactive form data
 const formData = ref({
   name: "",
@@ -125,10 +130,6 @@ a {
   transition: background-color 0.3s ease-in-out;
 }
 
-a:hover {
-  background-color: var(--color-pink);
-  color: var(--color-white);
-}
 
 section {
   padding: 4rem 2rem;
@@ -187,10 +188,18 @@ section {
 }
 
 .social-link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   color: var(--color-pink);
-  border: 1px solid var(--color-pink);
+  border: 2px solid var(--color-pink);
   border-radius: 6px;
+  width: 170px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.social-link:hover {
+  background-color: var(--color-pink);
+  color: var(--color-white);
 }
 
 .contact-form {

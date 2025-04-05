@@ -11,8 +11,8 @@
       <div class="terms-content-title">
         <h2 class="sports-content-title">
           <div>
-            <span class="terms-pink">ENJOY </span>
-            <span class="terms-black">YOUR STAY!</span>
+            <span class="terms-white">LOOKING FOR </span>
+            <span class="terms-pink">MORE THAN PADEL</span>?
           </div>
         </h2>
         <p>
@@ -21,18 +21,23 @@
           experience or a mix of different activities, we can design the perfect
           program to suit your group’s needs. From football and padel to
           basketball, tennis, swimming, and more, we provide top facilities,
-          expert guidance, and a seamless experience. Let us create a customized
+          expert guidance, and a seamless experience. Let us create a customised
           sports trip that matches your goals!
         </p>
       </div>
     </div>
+
+    <div>
+      <AdditionalActivities :backgroundColor="'var(--color-light-grey)'" :showRelevantInfo="false"/>
+    </div>
     <div class="sports-content-contact">
-      <Contact />
+      <Contact :backgroundColor="'var(--color-white)'"/>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import AdditionalActivities from "../AdditionalActivities.vue";
 import Contact from "../Contact.vue";
 </script>
 
@@ -69,7 +74,7 @@ import Contact from "../Contact.vue";
 .sports-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 20px 0px 20px;
+  padding: 20px 20px 40px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,7 +89,7 @@ import Contact from "../Contact.vue";
 .sports-content-contact {
   width: 100vw;
   background-color: var(--color-white) !important;
-  padding: 40px 0 0 0;
+  padding: 0px 0 0 0;
 }
 .terms-black {
   color: var(--color-black);

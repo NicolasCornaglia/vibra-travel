@@ -38,6 +38,21 @@ const openFaqs = reactive<Record<number, boolean>>({});
 
 const faqs = ref<FAQ[]>([
   {
+    question: "Is there a minimum number of people to make a reservation?",
+    answer:
+      "No, If your looking to book alone then we can create a tailor made package for you. ",
+  },
+  {
+    question: "Are flights included?",
+    answer:
+      "No, however airport transfer can be arranged.",
+  },
+  {
+    question: "Is there a minimum skill or knowledge level?",
+    answer:
+      "No, we cater for all players regardless of skill and knowledge level, our top trainers are experienced to coach players of all backgrounds",
+  },
+  {
     question: "What if I regret and I don't want to travel and wish to cancel?",
     answer:
       "Don't worry! We will try our best to maintain your deposit so you can select another date.<br><br>If you are not sure when you will be able to travel again and prefer to have the money back we will <strong>refund 100% of the money with at least 48h notice</strong> and wish to see you in a future event. If you have accommodation we need 7 days notice.",

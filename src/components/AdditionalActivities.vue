@@ -1,6 +1,6 @@
 <template>
   <!-- Padel activities Highlight -->
-  <section>
+  <section :style="{ backgroundColor: props.backgroundColor }">
     <div id="activities" class="activities-section">
       <div class="section-header">
         <h2>Additional Activities</h2>
@@ -8,7 +8,7 @@
       <div class="activities-container">
         <div class="activities-card">
           <div class="activities-header">
-            <h3> Cultural Activities</h3>
+            <h3>Cultural Activities</h3>
           </div>
           <div class="activities-features">
             <ul>
@@ -20,29 +20,34 @@
               <li>City Tour</li>
               <li>Stadium Tour</li>
               <li>Watch a Local Football Game</li>
+              <li>Hiking</li>
             </ul>
           </div>
         </div>
-        <div class="activities-card">
+        <div class="activities-card" v-if="props.showRelevantInfo">
           <div class="activities-header">
             <h3>Relevant Information</h3>
           </div>
           <div class="activities-features">
             <ul>
-              <li>Activities suitable for all levels</li>
-              <li>English/Spanish-speaking coaches</li>
-              <li>Meet your trainer directly at the court</li>
-              <li>Warm-up at the beginning of each session</li>
               <li>
-                Private package: Your group decides the direction of the lessons
+                All Packages available in Barcelona and Sevilla. Other
+                destinations available upon request.
               </li>
-              <li>Strategy and final feedback at the end of each session</li>
+              <li>Activity for all levels.</li>
+              <li>English/Spanish Speaking Coaches</li>
               <li>
-                Bring sportswear and a racket (we provide one if you don't have
-                it)
+                Meet your trainer directly at the court. You'll be informed
+                about court number and trainer name.
               </li>
-              <li>Changing rooms and showers available at the club</li>
-              <li>Water fountains or vending machines on-site</li>
+              <li>Warm up at the beginning of each session.</li>
+              <li>Strategy and Final Feedback at the end of each session.</li>
+              <li>
+                Bring sportswear and a racket. If you don't have a racket, we'll
+                provide one for you
+              </li>
+              <li>The club has changing rooms and showers.</li>
+              <li>The club has water fountains or vending machine.</li>
             </ul>
           </div>
         </div>
@@ -51,7 +56,20 @@
   </section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { defineProps } from 'vue';
+
+const props = defineProps({
+  backgroundColor: {
+    type: String,
+    default: 'white', // Default background color
+  },
+  showRelevantInfo: {
+    type: Boolean,
+    default: true, // Default to showing the relevant information card
+  },
+});
+</script>
 
 <style scoped>
 /* Base Styles */
@@ -60,7 +78,6 @@
   margin: 0;
   padding: 0;
 }
-
 
 h1,
 h2,
@@ -86,9 +103,8 @@ a:hover {
 }
 
 section {
-  background-color: var(--color-light-grey);
+  background-color: var(--color-white);
   padding: 4rem 2rem;
-
 }
 
 .section-header {
@@ -128,11 +144,11 @@ section {
 }
 
 .activities-card {
-  width: 500px;
+  width: 550px;
   margin: 10px auto;
   background: white;
   border-radius: 6px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 

@@ -2,7 +2,10 @@
   <div class="terms-page">
     <div class="terms">
       <div class="terms-title">
-        <img src="../../assets/photos/terms.jpg" alt="Terms & Conditions image" />
+        <img
+          src="../../assets/photos/terms.jpg"
+          alt="Terms & Conditions image"
+        />
         <h1>Terms & Conditions</h1>
       </div>
       <div class="terms-content">
@@ -40,16 +43,12 @@
           <div class="terms-content-text-item">
             <h3>Cancellation Policy</h3>
             <p>
-              The participant is entitled to cancel the whole experience with full
-              refund up to 48h before arrival. Let's dive deep into every specific
-              scenario depending on the selected package:
+              The participant is entitled to cancel the whole experience with
+              full refund up to 48h before arrival. Let's dive deep into every
+              specific scenario depending on the selected package:
             </p>
-            <p>
-              30% NON-REFUNDABLE DEPOSIT FOR ACCOMMODATION
-            </p>
-            <p>
-              30% PAID UPON BOOKING 
-            </p>
+            <p>30% NON-REFUNDABLE DEPOSIT FOR ACCOMMODATION</p>
+            <p>30% PAID UPON BOOKING</p>
           </div>
         </div>
       </div>
@@ -59,7 +58,7 @@
 </template>
 
 <script setup lang="ts">
-import FAQ from '../FAQ.vue';
+import FAQ from "../FAQ.vue";
 </script>
 
 <style scoped>
@@ -106,7 +105,6 @@ import FAQ from '../FAQ.vue';
   align-items: center;
 }
 
-
 .terms-pink {
   color: var(--color-pink);
 }
@@ -121,8 +119,7 @@ import FAQ from '../FAQ.vue';
 
 /* Responsive Fix */
 @media (max-width: 768px) {
-
-  .terms-content-title  {
+  .terms-content-title {
     text-align: center;
     margin-bottom: 40px;
     padding: 0px;

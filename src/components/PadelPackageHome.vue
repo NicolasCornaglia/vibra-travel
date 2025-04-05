@@ -8,69 +8,43 @@
       <div class="package-card">
         <div class="package-header">
           <h3>100% Customised</h3>
-          <div class="package-desc">
-            Let us craft the perfect padel getaway for you, tailored to your
-            preferences and skill level. We’ll design a personalised itinerary
-            that offers an unforgettable padel experience in Spain. From
-            on-court action to immersive cultural experiences, customise every
-            detail to make the most of your trip. start designing your perfect
-            padel adventure today!
+          <div class="package-price">
+            Shape your padel experience to fit your skill level and preferences. Design your own itinerary combining padel training with cultural activities. 
           </div>
         </div>
         <div class="package-features">
           <ul>
-            <li>100% customised</li>
+            <li>100% customised </li>
             <li>Private Training</li>
             <li>All skill levels</li>
-            <li>Various Accommodation options (Hotels, Apartments, Villas)</li>
+            <li>Various Accommodation options</li>
             <li>Additional cultural experiences</li>
-            <li>Individual, Couple and Group options</li>
-            <li>
-              1 Padel lesson per day (2-hour lesson with Elite padel coach)
-            </li>
-            <li>1 Padel tournament with locals</li>
-            <li>Free play (Free court time)</li>
-            <li>Additional padel lessons available on request</li>
-            <li>Airport transfers available</li>
           </ul>
         </div>
         <div class="package-cta">
-          <a href="#" @click.prevent="scrollToContact" class="btn-book">
-            Book Now
+          <a href="/padel" class="btn-book">
+            Learn More
           </a>
         </div>
       </div>
       <div class="package-card">
         <div class="package-header">
           <h3>Team Building</h3>
-          <div class="package-desc">
-            Customised experiences for companies, teams or school groups
-            combining sports based collaborative challenges with unique cultural
-            experiences. Enhance your team’s collaboration with our
-            one-of-a-kind padel team-building experiences. Through strategic
-            play and engaging challenges, we nurture teamwork and communication
-            while immersing everyone in the excitement of this fast-paced sport.
-            Our skilled instructors make sure all participants, from beginners
-            to pros, feel confident and involved. And to top it off, we’ll
-            immerse your team in genuine Spanish experiences for a truly
-            memorable adventure!
+          <div class="package-price">Experiences for companies, teams or school groups combining sports based collaborative challenges with unique cultural activities.
           </div>
         </div>
         <div class="package-features">
           <ul>
             <li>100% customised</li>
-            <li>Team based padel training</li>
+            <li>Team based training</li>
             <li>All skill levels</li>
-            <li>Options for additional sports </li>
             <li>Various Accommodation options</li>
             <li>Additional cultural experiences</li>
-            <li>Airport transfer available </li>
-
           </ul>
         </div>
         <div class="package-cta">
-          <a href="#" @click.prevent="scrollToContact" class="btn-book">
-            Book Now
+          <a href="/padel" class="btn-book">
+            Learn More
           </a>
         </div>
       </div>
@@ -79,23 +53,6 @@
 </template>
 
 <script setup lang="ts">
-import { useRouter } from "vue-router";
-import { nextTick } from "vue";
-const router = useRouter();
-
-const scrollToContact = async () => {
-  if (router.currentRoute.value.path !== "/") {
-    await router.push("/");
-    await nextTick();
-  }
-
-  setTimeout(() => {
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  }, 500);
-};
 </script>
 
 <style scoped>
@@ -159,13 +116,20 @@ section {
 }
 /* Package Section */
 .package-section {
-  background-color: var(--color-light-grey);
+  background-color: #fff;
 }
 
 .package-card {
+/*   width: 500px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden; */
+
   flex: 1;
-  width: 80%;
-  max-width: 1000px;
+  min-width: 300px;
+  max-width: 500px;
   background: var(--color-white);
   border-radius: 6px;
   overflow: hidden;
@@ -183,7 +147,7 @@ section {
   margin: 0;
 }
 
-.package-desc {
+.package-price {
   margin-top: 0.5rem;
 }
 
@@ -233,8 +197,6 @@ section {
 
 .cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
