@@ -37,14 +37,18 @@
     "padelPackageHome": {
         "featuredPackages": "Our Featured Packages",
         "customisedPackage": "100% Customised",
-        "customisedDescription": "Shape your padel experience to fit your skill level and preferences. Design your own itinerary combining padel training with cultural activities.",
+        "customisedDescription": "Shape your padel experience to fit your skill level and preferences.\n Design your own itinerary combining padel training with cultural activities.",
         "privateTraining": "Private Training",
         "allSkillLevels": "All Skill Levels",
         "variousAccommodation": "Various Accommodation Options",
-        "additionalCultural": "Additional Cultural Experiences",
+        "additionalCultural": "Authentic Cultural Experiences",
         "learnMore": "Learn More",
         "teamBuilding": "Team Building",
-        "teamBuildingDescription": "Experiences for companies, teams, or school groups combining sports-based collaborative challenges with unique cultural activities."
+        "teamBuildingDescription": "Customised experiences for companies, teams, or school groups combining sports-based collaborative challenges with unique cultural activities.",
+        "teamBasedTraining": "Team based training",
+        "padelBased": "Padel based team-building programs",
+        "authenticExperience": "Unique group cultural experience"
+        
     },
     "locationsComponent": {
         "locations": "Locations",

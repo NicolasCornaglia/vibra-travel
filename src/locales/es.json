@@ -41,10 +41,13 @@
         "privateTraining": "Entrenamiento Privado",
         "allSkillLevels": "Todos los niveles de habilidad",
         "variousAccommodation": "Diversas opciones de alojamiento",
-        "additionalCultural": "Experiencias culturales adicionales",
+        "additionalCultural": "Experiencias culturales autenticas",
         "learnMore": "Más Información",
         "teamBuilding": "Construcción de Equipos",
-        "teamBuildingDescription": "Experiencias para empresas, equipos o grupos escolares que combinan desafíos colaborativos basados en deportes con actividades culturales únicas."
+        "teamBuildingDescription": "Experiencias customizadas para empresas, equipos o grupos escolares que combinan desafíos colaborativos basados en deportes con actividades culturales únicas.",
+        "teamBasedTraining": "Entrenamiento en equipo",
+        "padelBased": "Programas de team building a través del pádel.",
+        "authenticExperience": "Una experiencia cultural unica en grupo"
     },
     "locationsComponent": {
         "locations": "Ubicaciones",

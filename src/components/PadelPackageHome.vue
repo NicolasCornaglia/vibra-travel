@@ -36,11 +36,11 @@
         </div>
         <div class="package-features">
           <ul>
-            <li>{{ t('padelPackageHome.customisedPackage') }}</li>
+            <li>{{ t('padelPackageHome.teamBasedTraining') }}</li>
             <li>{{ t('padelPackageHome.privateTraining') }}</li>
             <li>{{ t('padelPackageHome.allSkillLevels') }}</li>
-            <li>{{ t('padelPackageHome.variousAccommodation') }}</li>
-            <li>{{ t('padelPackageHome.additionalCultural') }}</li>
+            <li>{{ t('padelPackageHome.padelBased') }}</li>
+            <li>{{ t('padelPackageHome.authenticExperience') }}</li>
           </ul>
         </div>
         <div class="package-cta">
