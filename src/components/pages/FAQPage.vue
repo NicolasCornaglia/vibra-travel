@@ -13,7 +13,7 @@
   </template>
   
   <script setup lang="ts">
-  import faqImg from '../../assets/photos/FAQ.png'
+  import faqImg from '../../assets/photos/faq.jpg';
   import FAQ from '../FAQ.vue';
   </script>
   
