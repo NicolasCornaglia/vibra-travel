@@ -67,7 +67,7 @@ const { t } = useI18n();
 const props = defineProps({
   backgroundColor: {
     type: String,
-    default: 'var(--color-light-grey)', // Default background color
+    default: 'var(--color-light-grey)',
   }
 });
 
@@ -83,14 +83,15 @@ const formData = ref({
 const submitEmail = async () => {
   try {
     await emailjs.send(
-      'service_hq1j668',
-      'template_241dg9q',
+      'service_6bh7gps',
+      'template_lp60trd',
       formData.value,
-      'U5ho_79mVcusJquXG' // Add your public key here as well
+      'rXl9T75PEg6BL6TxA'
     );
     alert(t('contactComponent.thankYouMessage'));
     formData.value = { name: "", surname: "", email: "", message: "" };
   } catch (error) {
+    alert(t('contactComponent.errorMessage'));
     console.error(error);
   }
 };
