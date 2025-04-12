@@ -16,7 +16,17 @@
           </div>
         </h2>
         <p>
-          {{ t('sportsPage.sportsDescription') }}
+          {{ t('sportsPage.sportsDescription1') }} 
+          <span class="bold">{{ t('sportsPage.sportsDescription2') }}</span>
+          {{ t('sportsPage.sportsDescription3') }}
+          <span class="bold">{{ t('sportsPage.sportsDescription4') }}</span>
+          {{ t('sportsPage.sportsDescription5') }}
+          <span class="bold">{{ t('sportsPage.sportsDescription6') }}</span>
+          {{ t('sportsPage.sportsDescription7') }}
+          <span class="bold">{{ t('sportsPage.sportsDescription8') }}</span>
+          {{ t('sportsPage.sportsDescription9') }}
+          <span class="bold">{{ t('sportsPage.sportsDescription10') }}</span>
+          {{ t('sportsPage.sportsDescription11') }}
         </p>
       </div>
     </div>

@@ -32,29 +32,29 @@
         "introText3_2": "deporte y cultura.",
         "ctaButton": "¡Contáctanos hoy para comenzar a planificar!",
         "aboutTitle": "Quiénes Somos",
-        "aboutContent": "Después de vivir en España durante más de una década, he desarrollado una profunda pasión por su cultura, estilo de vida y, especialmente, su escena deportiva. Como ávido jugador de padel, he visto de primera mano cómo este deporte dinámico se ha convertido en uno de los de más rápido crecimiento en el mundo. Con años de experiencia organizando prácticas laborales y experiencias culturales para grupos, entiendo qué hace que un viaje a España sea realmente especial, ya sea encontrando los mejores lugares para jugar al padel, sumergiéndose en la cultura local o creando momentos memorables que combinan deporte y ocio. Por eso fundé mi empresa de experiencias de padel: para combinar mi experiencia con mi pasión y ofrecer experiencias deportivas inolvidables en España."
+        "aboutContent": "Después de vivir en España durante más de una década, he desarrollado una profunda pasión por su cultura, estilo de vida y, especialmente, su escena deportiva. Como ávido jugador de pádel, he visto de primera mano cómo este deporte dinámico se ha convertido en uno de los de más rápido crecimiento en el mundo. Con años de experiencia organizando prácticas laborales y experiencias culturales para grupos, entiendo qué hace que un viaje a España sea realmente especial, ya sea encontrando los mejores lugares para jugar al pádel, sumergiéndose en la cultura local o creando momentos memorables que combinan deporte y ocio. Por eso fundé mi empresa de experiencias de pádel: para combinar mi experiencia con mi pasión y ofrecer experiencias deportivas inolvidables en España."
     },
     "padelPackageHome": {
         "featuredPackages": "Nuestros Paquetes Destacados",
         "customisedPackage": "100% Personalizado",
-        "customisedDescription": "Diseña tu experiencia de padel para que se adapte a tu nivel de habilidad y preferencias. Crea tu propio itinerario combinando entrenamiento de padel con actividades culturales.",
+        "customisedDescription": "Diseña tu experiencia de pádel para que se adapte a tu nivel de habilidad y preferencias. Crea tu propio itinerario combinando entrenamiento de pádel con actividades culturales.",
         "privateTraining": "Entrenamiento Privado",
         "allSkillLevels": "Todos los niveles de habilidad",
         "variousAccommodation": "Diversas opciones de alojamiento",
-        "additionalCultural": "Experiencias culturales autenticas",
+        "additionalCultural": "Experiencias culturales auténticas",
         "learnMore": "Más Información",
         "teamBuilding": "Construcción de Equipos",
-        "teamBuildingDescription": "Experiencias customizadas para empresas, equipos o grupos escolares que combinan desafíos colaborativos basados en deportes con actividades culturales únicas.",
+        "teamBuildingDescription": "Experiencias personalizadas para empresas, equipos o grupos escolares que combinan desafíos colaborativos basados en deportes con actividades culturales únicas.",
         "teamBasedTraining": "Entrenamiento en equipo",
         "padelBased": "Programas de team building a través del pádel.",
-        "authenticExperience": "Una experiencia cultural unica en grupo"
+        "authenticExperience": "Una experiencia cultural única en grupo"
     },
     "locationsComponent": {
         "locations": "Ubicaciones",
         "barcelona": "Barcelona",
         "barcelonaDescription": "Barcelona es una ciudad donde el deporte y la cultura se unen en un escenario espectacular. Hogar de equipos legendarios, instalaciones de clase mundial y una profunda pasión por el atletismo, es el destino perfecto para los entusiastas del deporte. Ya sea jugando, entrenando o simplemente empapándose de la atmósfera, esta ciudad es un sueño para cualquier viajero deportivo.",
         "sevilla": "Sevilla",
-        "sevillaDescription": "Sevilla es una ciudad celebrada por su rica cultura deportiva, sol durante todo el año y un ambiente vibrante. Con instalaciones de entrenamiento de primer nivel y clubes de fútbol de élite, es un destino ideal para grupos deportivos. Con sus plazas soleadas, tapas deliciosas, flamenco apasionado y un encanto interminable, Andalucía encarna verdaderamente el espíritu de España."
+        "sevillaDescription": "Sevilla es una ciudad celebrada por su rica cultura deportiva, sol durante todo el año y un ambiente vibrante. Con instalaciones de entrenamiento de primer nivel y clubes de fútbol de élite, es un destino ideal para grupos deportivos. Con sus plazas soleadas, tapas deliciosas, flamenco apasionado y un encanto interminable, Andalucía verdaderamente encarna el espíritu de España."
     },
     "contactComponent": {
         "contactUs": "Contáctenos",
@@ -83,17 +83,19 @@
         "variousAccommodation": "Diversas Opciones de Alojamiento (Hoteles, Apartamentos, Villas)",
         "additionalCultural": "Experiencias Culturales Adicionales",
         "individualCoupleGroup": "Opciones para Individuos, Parejas y Grupos",
-        "padelLesson": "1 Lección de Pádel por día (lección de 2 horas con entrenador de pádel de élite)",
-        "padelTournament": "1 Torneo de Pádel con locales",
+        "padelLesson": "Lecciones de pádel con entrenador top de pádel",
+        "padelTournament": "Torneo de Pádel con locales",
         "freePlay": "Juego libre (tiempo de cancha gratuito)",
         "additionalLessons": "Lecciones adicionales de pádel disponibles bajo solicitud",
         "airportTransfers": "Traslados al aeropuerto disponibles",
         "bookNow": "Reservar Ahora",
         "teamBuilding": "Construcción de Equipos",
-        "teamBuildingDescription": "Experiencias personalizadas para empresas, equipos o grupos escolares que combinan desafíos colaborativos basados en deportes con experiencias culturales únicas. Mejore la colaboración de su equipo con nuestras experiencias únicas de construcción de equipos de pádel. A través del juego estratégico y desafíos atractivos, fomentamos el trabajo en equipo y la comunicación mientras sumergimos a todos en la emoción de este deporte de ritmo rápido. Nuestros instructores capacitados se aseguran de que todos los participantes, desde principiantes hasta profesionales, se sientan seguros e involucrados. Y para rematar, sumergiremos a su equipo en experiencias españolas auténticas para una aventura verdaderamente memorable.",
+        "teamBuildingDescription": "Experiencias personalizadas para empresas, equipos o grupos escolares que combinan desafíos colaborativos basados en deportes con experiencias culturales únicas. Impulsa la colaboración de tu equipo con nuestras experiencias únicas de team building de pádel. Mediante divertidos desafíos y juego estratégico, fomentamos el trabajo en equipo y la comunicación para todos los niveles. Creamos una aventura de pádel inolvidable que sumerja a tu equipo en la auténtica cultura española.",
         "teamBasedTraining": "Entrenamiento de Pádel en Equipo",
         "additionalSports": "Opciones para Deportes Adicionales",
-        "airportTransfer": "Traslado al Aeropuerto Disponible"
+        "airportTransfer": "Traslado al Aeropuerto Disponible",
+        "authenticExperience": "Experiencia cultural grupal única",
+        "padelBased": "Programas de formación de equipos basados ​​en el pádel"
     },
     "additionalActivities": {
         "additionalActivities": "Actividades Adicionales",
@@ -108,7 +110,7 @@
         "localFootball": "Ver un Partido de Fútbol Local",
         "hiking": "Senderismo",
         "relevantInfo": "Información Relevante",
-        "availableDestinations": "Todos los paquetes disponibles en Barcelona y Sevilla. Otros destinos disponibles bajo solicitud.",
+        "availableDestinations": "Experiencias disponibles en Barcelona y Sevilla. Otros destinos disponibles bajo solicitud.",
         "allLevels": "Actividad para todos los niveles.",
         "englishSpanishCoaches": "Entrenadores que hablan Inglés/Español",
         "meetTrainer": "Conozca a su entrenador directamente en la cancha. Se le informará sobre el número de la cancha y el nombre del entrenador.",
@@ -116,12 +118,138 @@
         "strategyFeedback": "Estrategia y comentarios finales al final de cada sesión.",
         "bringSportswear": "Traiga ropa deportiva y una raqueta. Si no tiene una raqueta, le proporcionaremos una.",
         "changingRooms": "El club tiene vestuarios y duchas.",
-        "waterFountains": "El club tiene fuentes de agua o máquinas expendedoras."
+        "waterFountains": "El club tiene fuentes de agua o máquinas expendedoras.",
+        "sportsTickets": "Entradas para partidos deportivos profesionales"
     },
     "sportsPage": {
         "sports": "Deportes",
         "title1": "¿BUSCAS ",
-        "title2": "MÁS QUE PADEL",
-        "sportsDescription": "En Vibra Travel, ofrecemos paquetes deportivos a medida en una amplia gama de disciplinas. Ya sea que esté buscando una experiencia específica en un deporte o una mezcla de diferentes actividades, podemos diseñar el programa perfecto para satisfacer las necesidades de su grupo. Desde el fútbol y el pádel hasta el baloncesto, el tenis, la natación y más, ofrecemos instalaciones de primer nivel, orientación experta y una experiencia fluida. ¡Permítanos crear un viaje deportivo personalizado que se adapte a sus objetivos!"
+        "title2": "MÁS QUE PÁDEL",
+        "sportsDescription1": "En Vibra Travel, ofrecemos paquetes deportivos a medida en una amplia gama de disciplinas. Ya sea que esté buscando una experiencia específica de deporte o una mezcla de diferentes actividades, podemos diseñar el programa perfecto para satisfacer las necesidades de su grupo. Desde ",
+        "sportsDescription2": " fútbol ",
+        "sportsDescription3": "y ",
+        "sportsDescription4": "rugby",
+        "sportsDescription5": " hasta",
+        "sportsDescription6": " baloncesto",
+        "sportsDescription7": ", ",
+        "sportsDescription8": " tenis",
+        "sportsDescription9": ", ",
+        "sportsDescription10": "natación",
+        "sportsDescription11": ", y más, proporcionamos instalaciones de primer nivel, orientación experta y una experiencia fluida. ¡Déjanos crear un viaje deportivo personalizado que se adapte a tus objetivos!"
+    },
+    "faq": {
+        "frequent": "PREGUNTAS",
+        "askedQuestions": "FRECUENTES",
+        "questions": {
+            "advancedPlayer": "¿Necesito ser un jugador avanzado para unirme?",
+            "comeAlone": "¿Puedo venir solo o necesito venir con un grupo?",
+            "holidayBased": "¿Dónde se basan las vacaciones?",
+            "accommodation": "¿Cómo es el alojamiento?",
+            "typicalDay": "¿Cómo es un día típico en una vacación de pádel?",
+            "equipment": "¿Qué equipo necesito traer?",
+            "flightsIncluded": "¿Los vuelos están incluidos en el paquete?",
+            "whatToPack": "¿Qué debo empacar?",
+            "refund": "¿Puedo obtener un reembolso si cancelo?",
+            "travelInsurance": "¿Es necesario el seguro de viaje?",
+            "mealsIncluded": "¿Las comidas están incluidas?",
+            "privateGroup": "¿Pueden ayudarme a organizar unas vacaciones en grupo privado o un evento corporativo?"
+        },
+        "answers": {
+            "advancedPlayer": "¡En absoluto! Aceptamos jugadores de <strong>todos los niveles</strong>, desde principiantes hasta avanzados. Nuestros entrenadores adaptarán las sesiones según tu habilidad y te agruparán en consecuencia. Ya sea que estés comenzando o buscando perfeccionar tu técnica, obtendrás algo de la experiencia.",
+            "comeAlone": "Nuestras vacaciones de pádel están diseñadas para <strong>grupos privados</strong>, ¡pero los <strong>viajeros solitarios también son muy bienvenidos</strong>! Si vienes solo, <strong>personalizaremos la experiencia</strong> solo para ti: organizando sesiones de entrenamiento, coordinando parejas para partidos y asegurándonos de que tengas un tiempo increíble tanto dentro como fuera de la cancha.",
+            "holidayBased": "Nuestras vacaciones de pádel se basan principalmente en <strong>Barcelona</strong> y <strong>Sevilla</strong>, dos ciudades fantásticas conocidas por su vibrante cultura, excelente comida y instalaciones de pádel de alta calidad. ¿Buscas un destino diferente? También podemos organizar viajes a <strong>otras ubicaciones a solicitud</strong>; ¡solo háznos saber qué tienes en mente!",
+            "accommodation": "Generalmente nos asociamos con <strong>hoteles, villas o resorts cómodos</strong> con fácil acceso a las canchas de pádel. Todos los alojamientos se seleccionan por su calidad, limpieza y ubicación. Se proporcionarán todos los detalles al momento de la reserva.",
+            "typicalDay": "Un día típico puede incluir:<br><br><ul><li>Sesión de entrenamiento de pádel por la mañana</li><li>Tiempo libre para relajarse, explorar y almorzar</li><li>Tarde: actividad cultural o sesión adicional de pádel</li></ul><br>Hay un equilibrio entre el pádel estructurado y el tiempo libre, para que también puedas disfrutar del ambiente de vacaciones.",
+            "equipment": "Trae tu <strong>raqueta de pádel, ropa deportiva y calzado adecuado</strong>. Si no tienes una raqueta, avísanos con antelación; podemos proporcionarte una.",
+            "flightsIncluded": "No, <strong>los vuelos no están incluidos</strong> en el paquete. Deberás organizar tu propio viaje al destino. Sin embargo, podemos <strong>organizar traslados privados al aeropuerto</strong> desde y hacia tu alojamiento para hacer tu llegada y salida lo más suaves posible. Solo háznos saber los detalles de tu vuelo con antelación.",
+            "whatToPack": "Te recomendamos traer:<br><br><ul><li>Ropa deportiva ligera para pádel y otras actividades deportivas.</li><li>Ropa cómoda para las noches</li><li>Protección solar (sombrero, gafas de sol, crema solar)</li><li>Traje de baño (¡muchas ubicaciones tienen piscinas o playas!)</li><li>Documentación del seguro de viaje</li></ul>",
+            "refund": "Por favor, consulta nuestros <strong>Términos y Condiciones</strong> para obtener todos los detalles.",
+            "travelInsurance": "Aunque no es obligatorio, <strong>recomendamos encarecidamente</strong> un seguro de viaje que cubra el pádel y las vacaciones activas. Es una tranquilidad en caso de lesiones, retrasos o cancelaciones.",
+            "mealsIncluded": "Esto varía según el destino. Algunos paquetes incluyen desayuno o cenas en grupo, mientras que otros te dejan libre para explorar la escena gastronómica local. Consulta los detalles de tu reserva para obtener información específica.",
+            "privateGroup": "¡Por supuesto! Nos encanta trabajar con grupos, clubes y empresas. Simplemente contáctanos con tus ideas y te ayudaremos a personalizar la experiencia de pádel perfecta."
+        }
+    },
+    "termsAndConditions": {
+        "title": "Términos y Condiciones – VIBRA TRAVEL",
+        "intro": "Por favor, lea estos Términos y Condiciones detenidamente antes de reservar su viaje con [VIBRA TRAVEL] ('nosotros', 'nos', 'nuestro'). Al reservar un viaje, acepta quedar sujeto a estos Términos y Condiciones.",
+        "bookingAndPayment": {
+            "title": "Reserva y Pago",
+            "content": [
+                "Se requiere un depósito no reembolsable para asegurar su lugar.",
+                "El saldo debe pagarse como máximo 4 semanas antes del inicio de su viaje. No hacerlo puede resultar en la cancelación de su reserva.",
+                "Las reservas realizadas con menos de [X semanas] de antelación a la fecha de inicio del viaje deben pagarse en su totalidad en el momento de la reserva."
+            ]
+        },
+        "whatsIncluded": {
+            "title": "Qué está incluido",
+            "content": [
+                "A menos que se indique lo contrario, nuestros paquetes de vacaciones suelen incluir:",
+                "- Tiempo en la cancha de pádel",
+                "- Sesiones de entrenamiento, partidos/torneo",
+                "- Traslados locales (cuando sea aplicable)",
+                "- Alojamiento por el número de noches especificado (como se acuerde en su paquete)",
+                "- Eventos sociales o excursiones (si se incluyen en su paquete)",
+                "Los vuelos y el seguro de viaje no están incluidos a menos que se indique explícitamente."
+            ]
+        },
+        "cancellationsAndRefunds": {
+            "title": "Cancelaciones y Reembolsos",
+            "byYouTitle": "Por usted",
+            "byYou": [
+                "Las cancelaciones deben realizarse por escrito.",
+                "Si cancela con más de 4 semanas de antelación a la fecha de inicio, retendremos el depósito."
+            ],
+            "byUsTitle": "Por nosotros",
+            "byUs": [
+                "En el improbable caso de que debamos cancelar un viaje (debido a circunstancias imprevistas), se le ofrecerá un reembolso completo o una fecha alternativa."
+            ]
+        },
+        "travelAndInsurance": {
+            "title": "Viaje y Seguro",
+            "content": [
+                "Usted es responsable de reservar su propio viaje al destino.",
+                "Se recomienda encarecidamente el seguro de viaje, que incluya cobertura para pádel y otras actividades físicas.",
+                "No somos responsables de los costos incurridos debido a interrupciones en el viaje, enfermedad o lesiones personales no causadas directamente por nuestra negligencia."
+            ]
+        },
+        "healthAndFitness": {
+            "title": "Salud y Estado Físico",
+            "content": [
+                "Debe asegurarse de estar físicamente apto para participar en las sesiones de pádel.",
+                "Cualquier condición de salud o lesión debe ser revelada con antelación. Nos reservamos el derecho de rechazar la participación basándonos en preocupaciones médicas."
+            ]
+        },
+        "accommodationAndConduct": {
+            "title": "Alojamiento y Conducta",
+            "content": [
+                "Debe tratar el alojamiento y las instalaciones con respeto. Cualquier daño causado será de su responsabilidad.",
+                "Nos reservamos el derecho de eliminar a cualquier participante que se comporte de una manera que afecte negativamente al grupo o al entorno local, sin reembolso."
+            ]
+        },
+        "liability": {
+            "title": "Responsabilidad",
+            "content": [
+                "No aceptamos responsabilidad por la pérdida o daño de pertenencias personales durante el viaje.",
+                "Nuestra responsabilidad está limitada al costo de su reserva de viaje, excepto en casos de lesiones personales o muerte causadas por nuestra negligencia."
+            ]
+        },
+        "changesToItinerary": {
+            "title": "Cambios en el Itinerario",
+            "content": [
+                "Nos reservamos el derecho de realizar cambios razonables en el itinerario debido al clima, la disponibilidad o las necesidades operativas. Siempre haremos todo lo posible para proporcionar una alternativa similar."
+            ]
+        },
+        "photosAndMarketing": {
+            "title": "Fotos y Marketing",
+            "content": [
+                "Al asistir a uno de nuestros viajes, acepta que las fotos o videos tomados durante el viaje puedan ser utilizados con fines de marketing. Notifíquenos con antelación si no desea aparecer en ningún material promocional."
+            ]
+        },
+        "governingLaw": {
+            "title": "Ley Aplicable",
+            "content": [
+                "Estos Términos y Condiciones están regidos por las leyes de España y cualquier disputa estará sujeta a la jurisdicción exclusiva de sus tribunales."
+            ]
+        }
     }
 }

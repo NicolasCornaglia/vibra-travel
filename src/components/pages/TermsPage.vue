@@ -53,13 +53,13 @@
         </div>
       </div>
     </div>
-    <FAQ />
+    <Contact />
   </div>
 </template>
 
 <script setup lang="ts">
 import termsImg from '../../assets/photos/terms.jpg'
-import FAQ from "../FAQ.vue";
+import Contact from '../Contact.vue';
 </script>
 
 <style scoped>

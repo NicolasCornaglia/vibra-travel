@@ -48,7 +48,6 @@
         "teamBasedTraining": "Team based training",
         "padelBased": "Padel based team-building programs",
         "authenticExperience": "Unique group cultural experience"
-        
     },
     "locationsComponent": {
         "locations": "Locations",
@@ -84,17 +83,19 @@
         "variousAccommodation": "Various Accommodation Options (Hotels, Apartments, Villas)",
         "additionalCultural": "Additional Cultural Experiences",
         "individualCoupleGroup": "Individual, Couple and Group Options",
-        "padelLesson": "1 Padel lesson per day (2-hour lesson with Elite padel coach)",
-        "padelTournament": "1 Padel tournament with locals",
+        "padelLesson": "Padel lessons with top padel coaches",
+        "padelTournament": "Padel tournament with locals",
         "freePlay": "Free play (Free court time)",
         "additionalLessons": "Additional padel lessons available on request",
         "airportTransfers": "Airport transfers available",
         "bookNow": "Book Now",
         "teamBuilding": "Team Building",
-        "teamBuildingDescription": "Customised experiences for companies, teams or school groups combining sports-based collaborative challenges with unique cultural experiences. Enhance your team’s collaboration with our one-of-a-kind padel team-building experiences. Through strategic play and engaging challenges, we nurture teamwork and communication while immersing everyone in the excitement of this fast-paced sport. Our skilled instructors make sure all participants, from beginners to pros, feel confident and involved. And to top it off, we’ll immerse your team in genuine Spanish experiences for a truly memorable adventure!",
+        "teamBuildingDescription": "Customised experiences for companies, teams or school groups combining sports-based collaborative challenges with unique cultural experiences. Boost your team’s collaboration with our unique padel team-building experiences. Through fun challenges and strategic play, we build teamwork and communication for all levels. Let us create an unforgettable padel adventure that immerses your team in the heart of authentic Spanish culture.",
         "teamBasedTraining": "Team-based Padel Training",
         "additionalSports": "Options for Additional Sports",
-        "airportTransfer": "Airport Transfer Available"
+        "airportTransfer": "Airport Transfer Available",
+        "authenticExperience": "Unique group cultural experience",
+        "padelBased": "Padel based team-building programs"
     },
     "additionalActivities": {
         "additionalActivities": "Additional Activities",
@@ -106,10 +107,10 @@
         "spanishClass": "Spanish Language Class",
         "cityTour": "City Tour",
         "stadiumTour": "Stadium Tour",
-        "localFootball": "Watch a Local Football Game",
+        "plusMore": "Plus more...",
         "hiking": "Hiking",
         "relevantInfo": "Relevant Information",
-        "availableDestinations": "All Packages available in Barcelona and Sevilla. Other destinations available upon request.",
+        "availableDestinations": "Experiences available in Barcelona and Sevilla. Other destinations available upon request.",
         "allLevels": "Activity for all levels.",
         "englishSpanishCoaches": "English/Spanish Speaking Coaches",
         "meetTrainer": "Meet your trainer directly at the court. You'll be informed about court number and trainer name.",
@@ -117,12 +118,138 @@
         "strategyFeedback": "Strategy and Final Feedback at the end of each session.",
         "bringSportswear": "Bring sportswear and a racket. If you don't have a racket, we'll provide one for you.",
         "changingRooms": "The club has changing rooms and showers.",
-        "waterFountains": "The club has water fountains or vending machine."
+        "waterFountains": "The club has water fountains or vending machine.",
+        "sportsTickets": "Professional sports tickets and experiences"
     },
     "sportsPage": {
         "sports": "Sports",
         "title1": "LOOKING FOR ",
         "title2": "MORE THAN PADEL",
-        "sportsDescription": "At Vibra Travel, we offer tailor-made sports packages across a wide range of disciplines. Whether you’re looking for a sport-specific experience or a mix of different activities, we can design the perfect program to suit your group’s needs. From football and padel to basketball, tennis, swimming, and more, we provide top facilities, expert guidance, and a seamless experience. Let us create a customised sports trip that matches your goals!"
+        "sportsDescription1": "At Vibra Travel, we offer tailor-made sports packages across a wide range of disciplines. Whether you’re looking for a sport-specific experience or a mix of different activities, we can design the perfect program to suit your group’s needs. From ",
+        "sportsDescription2": " football ",
+        "sportsDescription3": "and ",
+        "sportsDescription4": "rugby",
+        "sportsDescription5": " to",
+        "sportsDescription6": " basketball",
+        "sportsDescription7": ", ",
+        "sportsDescription8": " tennis",
+        "sportsDescription9": ", ",
+        "sportsDescription10": "swimming",
+        "sportsDescription11": ", and more, we provide top facilities, expert guidance, and a seamless experience. Let us create a customised sports trip that matches your goals!"
+    },
+    "faq": {
+        "frequent": "FREQUENT",
+        "askedQuestions": "ASKED QUESTIONS",
+        "questions": {
+            "advancedPlayer": "Do I need to be an advanced player to join?",
+            "comeAlone": "Can I come alone, or do I need to come with a group?",
+            "holidayBased": "Where are the holidays based?",
+            "accommodation": "What’s the accommodation like?",
+            "typicalDay": "What’s a typical day like on a padel holiday?",
+            "equipment": "What equipment do I need to bring?",
+            "flightsIncluded": "Are flights included in the package?",
+            "whatToPack": "What should I pack?",
+            "refund": "Can I get a refund if I cancel?",
+            "travelInsurance": "Is travel insurance required?",
+            "mealsIncluded": "Are meals included?",
+            "privateGroup": "Can you help organise a private group holiday or corporate event?"
+        },
+        "answers": {
+            "advancedPlayer": "Not at all! We welcome players of <strong>all levels</strong>, from beginners to advanced. Our coaches will tailor sessions based on your ability and group you accordingly. Whether you’re just starting or looking to refine your technique, you’ll get something out of the experience.",
+            "comeAlone": "Our padel holidays are designed for <strong>private groups</strong>, but <strong>solo travellers are more than welcome too</strong>! If you’re coming on your own, we’ll <strong>personalise the experience</strong> just for you—organising coaching sessions, arranging partners for matches, and ensuring you have an incredible time both on and off the court.",
+            "holidayBased": "Our padel holidays are primarily based in <strong>Barcelona</strong> and <strong>Sevilla</strong>—two fantastic cities known for their vibrant culture, great food, and top-quality padel facilities. Looking for a different destination? We can also organise trips to <strong>other locations on request</strong>—just let us know what you have in mind!",
+            "accommodation": "We usually partner with <strong>comfortable hotels, villas, or resorts</strong> with easy access to the padel courts. All accommodations are selected for their quality, cleanliness, and location. Full details will be provided upon booking.",
+            "typicalDay": "A typical day might include:<br><br><ul><li>Morning padel coaching session</li><li>Free time to relax, explore and have lunch</li><li>Afternoon – cultural activity or additional padel session</li></ul><br>There’s a balance between structured padel and downtime, so you can also enjoy the holiday vibe.",
+            "equipment": "Bring your <strong>padel racket, sportswear, and suitable shoes</strong>. If you don’t have a racket, let us know in advance—we can arrange one for you.",
+            "flightsIncluded": "No, <strong>flights are not included</strong> in the package. You’ll need to arrange your own travel to the destination. However, we can <strong>arrange private airport transfers</strong> to and from your accommodation to make your arrival and departure as smooth as possible. Just let us know your flight details in advance.",
+            "whatToPack": "We recommend bringing:<br><br><ul><li>Lightweight sportswear for padel and other sports activities.</li><li>Comfortable clothes for evenings</li><li>Sun protection (hat, sunglasses, sun cream)</li><li>Swimsuit (many locations have pools or beaches!)</li><li>Travel insurance documentation</li></ul>",
+            "refund": "Please see our <strong>Terms and Conditions</strong> for full details.",
+            "travelInsurance": "While not mandatory, we <strong>highly recommend</strong> travel insurance that covers padel and active holidays. It’s peace of mind in case of injury, delays, or cancellations.",
+            "mealsIncluded": "This varies by destination. Some packages include breakfast or group dinners, while others leave you free to explore the local food scene. Check your booking details for specifics.",
+            "privateGroup": "Absolutely! We love working with groups, clubs, and companies. Just contact us with your ideas and we’ll help tailor the perfect padel experience."
+        }
+    },
+    "termsAndConditions": {
+        "title": "Terms and Conditions",
+        "intro": "Please read these Terms and Conditions carefully before booking your holiday with VIBRA TRAVEL ('we', 'us', 'our'). By booking a trip, you agree to be bound by these Terms and Conditions.",
+        "bookingAndPayment": {
+            "title": "Booking and Payment",
+            "content": [
+                "A non-refundable deposit is required to secure your place.",
+                "The balance must be paid no later than 4 weeks before the start of your holiday. Failure to do so may result in cancellation of your booking.",
+                "Bookings made less than [X weeks] before the holiday start date must be paid in full at the time of booking."
+            ]
+        },
+        "whatsIncluded": {
+            "title": "What’s Included",
+            "content": [
+                "Unless otherwise stated, our holiday packages typically include:",
+                "- Padel court time",
+                "- Coaching sessions, matches/tournament",
+                "- Local transfers (where applicable)",
+                "- Accommodation for the specified number of nights (as agreed in your package)",
+                "- Social events or excursions (if listed in your package)",
+                "Flights and travel insurance are **not included** unless explicitly stated."
+            ]
+        },
+        "cancellationsAndRefunds": {
+            "title": "Cancellations and Refunds",
+            "byYouTitle": "By You",
+            "byYou": [
+                "Cancellations must be made in writing.",
+                "If you cancel more than 4 weeks before the start date, we retain the deposit."
+            ],
+            "byUsTitle": "By Us",
+            "byUs": [
+                "In the unlikely event we must cancel a trip (due to unforeseen circumstances), you will be offered a full refund or an alternative date."
+            ]
+        },
+        "travelAndInsurance": {
+            "title": "Travel and Insurance",
+            "content": [
+                "You are responsible for booking your own travel to the destination.",
+                "Travel insurance is **strongly recommended**, including cover for padel and other physical activities.",
+                "We are not liable for costs incurred due to travel disruption, illness, or personal injury not directly caused by our negligence."
+            ]
+        },
+        "healthAndFitness": {
+            "title": "Health and Fitness",
+            "content": [
+                "You must ensure you are physically fit to take part in padel sessions.",
+                "Any health conditions or injuries must be disclosed in advance. We reserve the right to decline participation based on medical concerns."
+            ]
+        },
+        "accommodationAndConduct": {
+            "title": "Accommodation and Conduct",
+            "content": [
+                "You must treat the accommodation and facilities with respect. Any damage caused will be your responsibility.",
+                "We reserve the right to remove any participant who behaves in a way that negatively impacts the group or the local environment, without refund."
+            ]
+        },
+        "liability": {
+            "title": "Liability",
+            "content": [
+                "We accept no responsibility for loss or damage to personal belongings during the holiday.",
+                "Our liability is limited to the cost of your holiday booking, except in cases of personal injury or death caused by our negligence."
+            ]
+        },
+        "changesToItinerary": {
+            "title": "Changes to Itinerary",
+            "content": [
+                "We reserve the right to make reasonable changes to the itinerary due to weather, availability, or operational needs. We’ll always do our best to provide a similar alternative."
+            ]
+        },
+        "photosAndMarketing": {
+            "title": "Photos and Marketing",
+            "content": [
+                "By attending one of our holidays, you agree that photos or videos taken during the trip may be used for marketing purposes. Please notify us in advance if you do not wish to appear in any promotional material."
+            ]
+        },
+        "governingLaw": {
+            "title": "Governing Law",
+            "content": [
+                "These Terms and Conditions are governed by the laws of Spain and any disputes will be subject to the exclusive jurisdiction of its courts."
+            ]
+        }
     }
 }

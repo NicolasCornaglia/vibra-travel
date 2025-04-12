@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
     <div class="footer-logo">
-      <img v-lazy="'../assets/photos/logo.jpg'" alt="logo">
+      <img v-lazy="logo" alt="logo">
     </div>
     <div class="footer-content">
       <div class="footer-section">
@@ -29,6 +29,7 @@
 import { useRouter } from 'vue-router';
 import { nextTick } from 'vue';
 import { useI18n } from 'vue-i18n';
+import logo from '../assets/photos/logo.jpg';
 
 const { t } = useI18n();
 const router = useRouter();

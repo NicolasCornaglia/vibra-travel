@@ -19,8 +19,9 @@
               <li>{{ t('additionalActivities.spanishClass') }}</li>
               <li>{{ t('additionalActivities.cityTour') }}</li>
               <li>{{ t('additionalActivities.stadiumTour') }}</li>
-              <li>{{ t('additionalActivities.localFootball') }}</li>
+              <li>{{ t('additionalActivities.sportsTickets') }}</li>
               <li>{{ t('additionalActivities.hiking') }}</li>
+              <li>{{ t('additionalActivities.plusMore') }}</li>
             </ul>
           </div>
         </div>

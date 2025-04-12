@@ -47,7 +47,8 @@
             <li>{{ t('padelPackage.allSkillLevels') }}</li>
             <li>{{ t('padelPackage.additionalSports') }}</li>
             <li>{{ t('padelPackage.variousAccommodation') }}</li>
-            <li>{{ t('padelPackage.additionalCultural') }}</li>
+            <li>{{ t('padelPackage.padelBased') }}</li>
+            <li>{{ t('padelPackage.authenticExperience') }}</li>
             <li>{{ t('padelPackage.airportTransfer') }}</li>
           </ul>
         </div>
