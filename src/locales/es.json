@@ -171,85 +171,93 @@
         }
     },
     "termsAndConditions": {
-        "title": "Términos y Condiciones – VIBRA TRAVEL",
+        "title": "Términos y Condiciones",
+        "subtitle1": "RESERVA CON ",
+        "subtitle2": "CONFIANZA",
         "intro": "Por favor, lea estos Términos y Condiciones detenidamente antes de reservar su viaje con [VIBRA TRAVEL] ('nosotros', 'nos', 'nuestro'). Al reservar un viaje, acepta quedar sujeto a estos Términos y Condiciones.",
         "bookingAndPayment": {
-            "title": "Reserva y Pago",
+            "title": "1. Reserva y Pago",
             "content": [
-                "Se requiere un depósito no reembolsable para asegurar su lugar.",
-                "El saldo debe pagarse como máximo 4 semanas antes del inicio de su viaje. No hacerlo puede resultar en la cancelación de su reserva.",
-                "Las reservas realizadas con menos de [X semanas] de antelación a la fecha de inicio del viaje deben pagarse en su totalidad en el momento de la reserva."
+                "1.1 Se requiere un depósito no reembolsable para asegurar su lugar.",
+                "1.2 El saldo debe pagarse como máximo 4 semanas antes del inicio de su viaje. No hacerlo puede resultar en la cancelación de su reserva.",
+                "1.3 Las reservas realizadas con menos de [X semanas] de antelación a la fecha de inicio del viaje deben pagarse en su totalidad en el momento de la reserva."
             ]
         },
         "whatsIncluded": {
-            "title": "Qué está incluido",
+            "title": "2. Qué está incluido",
+            "content1": "A menos que se indique lo contrario, nuestros paquetes de vacaciones suelen incluir:",
             "content": [
-                "A menos que se indique lo contrario, nuestros paquetes de vacaciones suelen incluir:",
-                "- Tiempo en la cancha de pádel",
-                "- Sesiones de entrenamiento, partidos/torneo",
-                "- Traslados locales (cuando sea aplicable)",
-                "- Alojamiento por el número de noches especificado (como se acuerde en su paquete)",
-                "- Eventos sociales o excursiones (si se incluyen en su paquete)",
-                "Los vuelos y el seguro de viaje no están incluidos a menos que se indique explícitamente."
-            ]
+                " Tiempo en la cancha de pádel",
+                " Sesiones de entrenamiento, partidos/torneo",
+                " Traslados locales (cuando sea aplicable)",
+                " Alojamiento por el número de noches especificado (como se acuerde en su paquete)",
+                " Eventos sociales o excursiones (si se incluyen en su paquete)"
+            ],
+            "content2": "Los vuelos y el seguro de viaje<strong>no están incluidos</strong> a menos que se indique explícitamente."
         },
         "cancellationsAndRefunds": {
-            "title": "Cancelaciones y Reembolsos",
-            "byYouTitle": "Por usted",
+            "title": "3. Cancelaciones y Reembolsos",
+            "byYouTitle": "3.1 Por usted",
             "byYou": [
                 "Las cancelaciones deben realizarse por escrito.",
                 "Si cancela con más de 4 semanas de antelación a la fecha de inicio, retendremos el depósito."
             ],
-            "byUsTitle": "Por nosotros",
+            "byUsTitle": "3.2 Por nosotros",
             "byUs": [
                 "En el improbable caso de que debamos cancelar un viaje (debido a circunstancias imprevistas), se le ofrecerá un reembolso completo o una fecha alternativa."
             ]
         },
         "travelAndInsurance": {
-            "title": "Viaje y Seguro",
+            "title": "4. Viaje y Seguro",
             "content": [
-                "Usted es responsable de reservar su propio viaje al destino.",
-                "Se recomienda encarecidamente el seguro de viaje, que incluya cobertura para pádel y otras actividades físicas.",
-                "No somos responsables de los costos incurridos debido a interrupciones en el viaje, enfermedad o lesiones personales no causadas directamente por nuestra negligencia."
+                "4.1 Usted es responsable de reservar su propio viaje al destino.",
+                "4.2 Se <strong>recomienda encarecidamente</strong> el seguro de viaje, que incluya cobertura para pádel y otras actividades físicas.",
+                "4.3 No somos responsables de los costos incurridos debido a interrupciones en el viaje, enfermedad o lesiones personales no causadas directamente por nuestra negligencia."
             ]
         },
         "healthAndFitness": {
-            "title": "Salud y Estado Físico",
+            "title": "5. Salud y Estado Físico",
             "content": [
-                "Debe asegurarse de estar físicamente apto para participar en las sesiones de pádel.",
-                "Cualquier condición de salud o lesión debe ser revelada con antelación. Nos reservamos el derecho de rechazar la participación basándonos en preocupaciones médicas."
+                "5.1 Debe asegurarse de estar físicamente apto para participar en las sesiones de pádel.",
+                "5.2 Cualquier condición de salud o lesión debe ser revelada con antelación. Nos reservamos el derecho de rechazar la participación basándonos en preocupaciones médicas."
             ]
         },
         "accommodationAndConduct": {
-            "title": "Alojamiento y Conducta",
+            "title": "6. Alojamiento y Conducta",
             "content": [
-                "Debe tratar el alojamiento y las instalaciones con respeto. Cualquier daño causado será de su responsabilidad.",
-                "Nos reservamos el derecho de eliminar a cualquier participante que se comporte de una manera que afecte negativamente al grupo o al entorno local, sin reembolso."
+                "6.1 Debe tratar el alojamiento y las instalaciones con respeto. Cualquier daño causado será de su responsabilidad.",
+                "6.2 Nos reservamos el derecho de eliminar a cualquier participante que se comporte de una manera que afecte negativamente al grupo o al entorno local, sin reembolso."
             ]
         },
         "liability": {
-            "title": "Responsabilidad",
+            "title": "7. Responsabilidad",
             "content": [
-                "No aceptamos responsabilidad por la pérdida o daño de pertenencias personales durante el viaje.",
-                "Nuestra responsabilidad está limitada al costo de su reserva de viaje, excepto en casos de lesiones personales o muerte causadas por nuestra negligencia."
+                "7.1 No aceptamos responsabilidad por la pérdida o daño de pertenencias personales durante el viaje.",
+                "7.2 Nuestra responsabilidad está limitada al costo de su reserva de viaje, excepto en casos de lesiones personales o muerte causadas por nuestra negligencia."
             ]
         },
         "changesToItinerary": {
-            "title": "Cambios en el Itinerario",
+            "title": "8.Cambios en el Itinerario",
             "content": [
                 "Nos reservamos el derecho de realizar cambios razonables en el itinerario debido al clima, la disponibilidad o las necesidades operativas. Siempre haremos todo lo posible para proporcionar una alternativa similar."
             ]
         },
         "photosAndMarketing": {
-            "title": "Fotos y Marketing",
+            "title": "9. Fotos y Marketing",
             "content": [
                 "Al asistir a uno de nuestros viajes, acepta que las fotos o videos tomados durante el viaje puedan ser utilizados con fines de marketing. Notifíquenos con antelación si no desea aparecer en ningún material promocional."
             ]
         },
         "governingLaw": {
-            "title": "Ley Aplicable",
+            "title": "10.Ley Aplicable",
             "content": [
                 "Estos Términos y Condiciones están regidos por las leyes de España y cualquier disputa estará sujeta a la jurisdicción exclusiva de sus tribunales."
+            ]
+        },
+        "contactUs": {
+            "title": "Contáctenos",
+            "content": [
+                "Si tiene alguna pregunta sobre estos Términos y Condiciones, por favor contáctenos por correo electrónico en el siguiente formulario:"
             ]
         }
     }

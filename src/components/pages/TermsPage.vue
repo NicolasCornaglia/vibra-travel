@@ -6,52 +6,98 @@
           v-lazy="termsImg"
           alt="Terms & Conditions image"
         />
-        <h1>Terms & Conditions</h1>
+        <h1>{{ t('termsAndConditions.title')}}</h1>
       </div>
       <div class="terms-content">
         <div class="terms-content-title">
           <h2>
-            <span class="terms-black">BOOK WITH</span>
-            <span class="terms-pink"> CONFIDENCE</span>
+            <span class="terms-black">{{ t('termsAndConditions.subtitle1')}}</span>
+            <span class="terms-pink"> {{ t('termsAndConditions.subtitle2')}}</span>
           </h2>
-          <p>When you choose a trip with us, changing plans is easy!</p>
+          <p class="terms-intro">{{ t('termsAndConditions.intro')}}</p>
         </div>
-        <div class="terms-content-text">
           <div class="terms-content-text-item">
-            <h3>Last Minute Changes</h3>
-            <p>
-              Vibra Travel & Sport reserves the right to adjust the schedule or
-              location of training sessions. Any changes will be communicated in
-              advance and will not impact the format or total number of training
-              hours.
+            <h3>{{ t('termsAndConditions.bookingAndPayment.title')}}</h3>
+            <p v-for="(paragraph, index) in tm('termsAndConditions.bookingAndPayment.content')" :key="index">
+              {{ paragraph }}
             </p>
-            <p>
-              In case of adverse weather conditions, the organization will take
-              all necessary measures, such as rescheduling or relocating
-              activities to indoor facilities, to ensure that the padel
-              experiences proceed smoothly.
+          </div>
+          <div class="terms-content-text-item">
+            <h3>{{ t('termsAndConditions.whatsIncluded.title')}}</h3>
+            <p >
+              {{ t('termsAndConditions.whatsIncluded.content1')}}
             </p>
-            <p>
-              Should force majeure circumstances prevent the activities from
-              taking place (such as continuous severe weather, unavailability of
-              indoor facilities or difficulties to find trainers), the
-              organization will provide a refund for any services that were not
-              used.
+            <ul>
+              <li class="list-item" v-for="(paragraph, index) in tm('termsAndConditions.whatsIncluded.contentList')" :key="index">
+                {{ paragraph }}
+              </li>
+            </ul>
+            <p v-html=" t('termsAndConditions.whatsIncluded.content2')">
             </p>
+          </div>
+          <div class="terms-content-text-item">
+            <h3>{{ t('termsAndConditions.cancellationsAndRefunds.title')}}</h3>
+            <p >
+              {{ t('termsAndConditions.cancellationsAndRefunds.byYouTitle')}}
+            </p>
+            <ul>
+              <li class="list-item" v-for="(paragraph, index) in tm('termsAndConditions.cancellationsAndRefunds.byYou')" :key="index">
+                {{ paragraph }}
+              </li>
+            </ul>
+            <p >
+              {{ t('termsAndConditions.cancellationsAndRefunds.byUsTitle')}}
+            </p>
+            <ul>
+              <li class="list-item" v-for="(paragraph, index) in tm('termsAndConditions.cancellationsAndRefunds.byUs')" :key="index">
+                {{ paragraph }}
+              </li>
+            </ul>
+          </div>
+          <div class="terms-content-text-item">
+            <h3>{{ t('termsAndConditions.travelAndInsurance.title')}}</h3>
+              <p class="list-item" v-for="(paragraph, index) in tm('termsAndConditions.travelAndInsurance.content')" :key="index">
+                {{ paragraph }}
+              </p>
+          </div>
+          <div class="terms-content-text-item">
+            <h3>{{ t('termsAndConditions.healthAndFitness.title')}}</h3>
+              <p class="list-item" v-for="(paragraph, index) in tm('termsAndConditions.healthAndFitness.content')" :key="index">
+                {{ paragraph }}
+              </p>
+          </div>
+          <div class="terms-content-text-item">
+            <h3>{{ t('termsAndConditions.liability.title')}}</h3>
+              <p class="list-item" v-for="(paragraph, index) in tm('termsAndConditions.liability.content')" :key="index">
+                {{ paragraph }}
+              </p>
+          </div>
+          <div class="terms-content-text-item">
+            <h3>{{ t('termsAndConditions.changesToItinerary.title')}}</h3>
+              <p class="list-item" v-for="(paragraph, index) in tm('termsAndConditions.changesToItinerary.content')" :key="index">
+                {{ paragraph }}
+              </p>
+          </div>
+          <div class="terms-content-text-item">
+            <h3>{{ t('termsAndConditions.photosAndMarketing.title')}}</h3>
+              <p class="list-item" v-for="(paragraph, index) in tm('termsAndConditions.photosAndMarketing.content')" :key="index">
+                {{ paragraph }}
+              </p>
+          </div>
+          <div class="terms-content-text-item">
+            <h3>{{ t('termsAndConditions.governingLaw.title')}}</h3>
+              <p class="list-item" v-for="(paragraph, index) in tm('termsAndConditions.governingLaw.content')" :key="index">
+                {{ paragraph }}
+              </p>
+          </div>
+          <div class="terms-content-text-item">
+            <h3>{{ t('termsAndConditions.contactUs.title')}}</h3>
+              <p class="list-item" v-for="(paragraph, index) in tm('termsAndConditions.contactUs.content')" :key="index">
+                {{ paragraph }}
+              </p>
           </div>
 
-          <div class="terms-content-text-item">
-            <h3>Cancellation Policy</h3>
-            <p>
-              The participant is entitled to cancel the whole experience with
-              full refund up to 48h before arrival. Let's dive deep into every
-              specific scenario depending on the selected package:
-            </p>
-            <p>30% NON-REFUNDABLE DEPOSIT FOR ACCOMMODATION</p>
-            <p>30% PAID UPON BOOKING</p>
-          </div>
         </div>
-      </div>
     </div>
     <Contact />
   </div>
@@ -60,6 +106,10 @@
 <script setup lang="ts">
 import termsImg from '../../assets/photos/terms.jpg'
 import Contact from '../Contact.vue';
+import { useI18n } from 'vue-i18n';
+
+const { t, tm } = useI18n();
+
 </script>
 
 <style scoped>
@@ -91,20 +141,27 @@ import Contact from '../Contact.vue';
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.terms-intro{
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
 .terms-content {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
+  width: 90%;
 }
 
 .terms-content-title {
-  margin-top: 20px;
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 
 .terms-pink {
   color: var(--color-pink);
@@ -115,7 +172,12 @@ import Contact from '../Contact.vue';
 }
 
 .terms-content-text-item p {
-  padding: 10px 0;
+  padding: 5px 0;
+  margin-left: 20px;
+}
+
+.list-item {
+  margin-left: 60px;
 }
 
 /* Responsive Fix */

@@ -7,7 +7,7 @@
       <div class="faq-content">
         <FAQ />
       </div>
-      
+      <Contact  />
     </div>
   
   </template>
@@ -15,6 +15,7 @@
   <script setup lang="ts">
   import faqImg from '../../assets/photos/faq.jpg';
   import FAQ from '../FAQ.vue';
+  import Contact from '../Contact.vue';
   </script>
   
   <style scoped>

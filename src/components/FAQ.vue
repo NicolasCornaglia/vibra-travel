@@ -23,13 +23,11 @@
       </div>
     </div>
   </div>
-  <Contact :backgroundColor="'var(--color-white)'" />
 </template>
 
 <script setup lang="ts">
 import { ref, reactive, watch } from "vue";
 import { useI18n } from "vue-i18n";
-import Contact from "./Contact.vue";
 
 const { t, locale } = useI18n();
 
@@ -115,8 +113,10 @@ const toggleFaq = (index: number) => {
 
 .faq-title {
   text-align: center;
-  margin-bottom: 40px;
+  margin: 20px;
+  padding-bottom: 20px;
 }
+
 
 .faq-title-frequent {
   color: var(--color-pink);

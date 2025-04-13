@@ -171,85 +171,93 @@
         }
     },
     "termsAndConditions": {
-        "title": "Terms and Conditions",
+        "title": "Terms & Conditions",
+        "subtitle1": "BOOK WITH ",
+        "subtitle2": "CONFIDENCE",
         "intro": "Please read these Terms and Conditions carefully before booking your holiday with VIBRA TRAVEL ('we', 'us', 'our'). By booking a trip, you agree to be bound by these Terms and Conditions.",
         "bookingAndPayment": {
-            "title": "Booking and Payment",
+            "title": "1. Booking and Payment",
             "content": [
-                "A non-refundable deposit is required to secure your place.",
-                "The balance must be paid no later than 4 weeks before the start of your holiday. Failure to do so may result in cancellation of your booking.",
-                "Bookings made less than [X weeks] before the holiday start date must be paid in full at the time of booking."
+                "1.1 A non-refundable deposit is required to secure your place.",
+                "1.2 The balance must be paid no later than 4 weeks before the start of your holiday. Failure to do so may result in cancellation of your booking.",
+                "1.3 Bookings made less than [X weeks] before the holiday start date must be paid in full at the time of booking."
             ]
         },
         "whatsIncluded": {
-            "title": "What’s Included",
-            "content": [
-                "Unless otherwise stated, our holiday packages typically include:",
-                "- Padel court time",
-                "- Coaching sessions, matches/tournament",
-                "- Local transfers (where applicable)",
-                "- Accommodation for the specified number of nights (as agreed in your package)",
-                "- Social events or excursions (if listed in your package)",
-                "Flights and travel insurance are **not included** unless explicitly stated."
-            ]
+            "title": "2. What’s Included",
+            "content1":"Unless otherwise stated, our holiday packages typically include:",
+            "contentList": [
+                " Padel court time",
+                " Coaching sessions, matches/tournament",
+                " Local transfers (where applicable)",
+                " Accommodation for the specified number of nights (as agreed in your package)",
+                " Social events or excursions (if listed in your package)"
+            ],
+            "content2": "Flights and travel insurance are <strong>not included</strong> unless explicitly stated."
         },
         "cancellationsAndRefunds": {
-            "title": "Cancellations and Refunds",
-            "byYouTitle": "By You",
+            "title": "3. Cancellations and Refunds",
+            "byYouTitle": "3.1 By You",
             "byYou": [
                 "Cancellations must be made in writing.",
                 "If you cancel more than 4 weeks before the start date, we retain the deposit."
             ],
-            "byUsTitle": "By Us",
+            "byUsTitle": "3.2 By Us",
             "byUs": [
                 "In the unlikely event we must cancel a trip (due to unforeseen circumstances), you will be offered a full refund or an alternative date."
             ]
         },
         "travelAndInsurance": {
-            "title": "Travel and Insurance",
+            "title": "4. Travel and Insurance",
             "content": [
-                "You are responsible for booking your own travel to the destination.",
-                "Travel insurance is **strongly recommended**, including cover for padel and other physical activities.",
-                "We are not liable for costs incurred due to travel disruption, illness, or personal injury not directly caused by our negligence."
+                "4.1 You are responsible for booking your own travel to the destination.",
+                "4.2 Travel insurance is <strong>strongly recommended</strong>, including cover for padel and other physical activities.",
+                "4.3 We are not liable for costs incurred due to travel disruption, illness, or personal injury not directly caused by our negligence."
             ]
         },
         "healthAndFitness": {
-            "title": "Health and Fitness",
+            "title": "5. Health and Fitness",
             "content": [
-                "You must ensure you are physically fit to take part in padel sessions.",
-                "Any health conditions or injuries must be disclosed in advance. We reserve the right to decline participation based on medical concerns."
+                "5.1 You must ensure you are physically fit to take part in padel sessions.",
+                "5.2 Any health conditions or injuries must be disclosed in advance. We reserve the right to decline participation based on medical concerns."
             ]
         },
         "accommodationAndConduct": {
-            "title": "Accommodation and Conduct",
+            "title": "6. Accommodation and Conduct",
             "content": [
-                "You must treat the accommodation and facilities with respect. Any damage caused will be your responsibility.",
-                "We reserve the right to remove any participant who behaves in a way that negatively impacts the group or the local environment, without refund."
+                "6.1 You must treat the accommodation and facilities with respect. Any damage caused will be your responsibility.",
+                "6.2 We reserve the right to remove any participant who behaves in a way that negatively impacts the group or the local environment, without refund."
             ]
         },
         "liability": {
-            "title": "Liability",
+            "title": "7. Liability",
             "content": [
-                "We accept no responsibility for loss or damage to personal belongings during the holiday.",
-                "Our liability is limited to the cost of your holiday booking, except in cases of personal injury or death caused by our negligence."
+                "7.1 We accept no responsibility for loss or damage to personal belongings during the holiday.",
+                "7.2 Our liability is limited to the cost of your holiday booking, except in cases of personal injury or death caused by our negligence."
             ]
         },
         "changesToItinerary": {
-            "title": "Changes to Itinerary",
+            "title": "8. Changes to Itinerary",
             "content": [
                 "We reserve the right to make reasonable changes to the itinerary due to weather, availability, or operational needs. We’ll always do our best to provide a similar alternative."
             ]
         },
         "photosAndMarketing": {
-            "title": "Photos and Marketing",
+            "title": "9 Photos and Marketing",
             "content": [
                 "By attending one of our holidays, you agree that photos or videos taken during the trip may be used for marketing purposes. Please notify us in advance if you do not wish to appear in any promotional material."
             ]
         },
         "governingLaw": {
-            "title": "Governing Law",
+            "title": "10.Governing Law",
             "content": [
                 "These Terms and Conditions are governed by the laws of Spain and any disputes will be subject to the exclusive jurisdiction of its courts."
+            ]
+        },
+        "contactUs": {
+            "title": "Contact Us",
+            "content": [
+                "If you have any questions about these Terms and Conditions, please contact us by email in the following form:"
             ]
         }
     }
