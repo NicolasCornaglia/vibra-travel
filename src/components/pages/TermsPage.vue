@@ -56,8 +56,7 @@
           </div>
           <div class="terms-content-text-item">
             <h3>{{ t('termsAndConditions.travelAndInsurance.title')}}</h3>
-              <p class="list-item" v-for="(paragraph, index) in tm('termsAndConditions.travelAndInsurance.content')" :key="index">
-                {{ paragraph }}
+              <p class="list-item" v-for="(paragraph, index) in tm('termsAndConditions.travelAndInsurance.content')" :key="index" v-html="paragraph">
               </p>
           </div>
           <div class="terms-content-text-item">
