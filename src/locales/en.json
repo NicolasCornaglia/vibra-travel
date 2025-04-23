@@ -120,7 +120,9 @@
         "bringSportswear": "Bring sportswear and a racket. If you don't have a racket, we'll provide one for you.",
         "changingRooms": "The club has changing rooms and showers.",
         "waterFountains": "The club has water fountains or vending machine.",
-        "sportsTickets": "Professional sports tickets and experiences"
+        "sportsTickets": "Professional sports tickets and experiences",
+        "vinyardTour": "Vinyard Tour",
+        "wineTasting": "Wine tasting"
     },
     "sportsPage": {
         "sports": "Sports",

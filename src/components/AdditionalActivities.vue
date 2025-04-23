@@ -21,6 +21,8 @@
               <li>{{ t('additionalActivities.stadiumTour') }}</li>
               <li>{{ t('additionalActivities.sportsTickets') }}</li>
               <li>{{ t('additionalActivities.hiking') }}</li>
+              <li>{{ t('additionalActivities.vinyardTour') }}</li>
+              <li>{{ t('additionalActivities.wineTasting') }}</li>
               <li>{{ t('additionalActivities.plusMore') }}</li>
             </ul>
           </div>
