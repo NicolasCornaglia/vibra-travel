@@ -1,149 +1,186 @@
 <template>
-  <div class="footer">
-    <div class="footer-logo">
-      <img v-lazy="logo" alt="logo">
-    </div>
+  <div class="footer-container">
     <div class="footer-content">
-      <div class="footer-section">
-        <h3>{{ t('footer.destinations') }}</h3>
-        <p><a href="#" @click.prevent="scrollToLocations"><span>{{ t('footer.barcelona') }}</span></a></p>
-        <p><a href="#" @click.prevent="scrollToLocations"><span>{{ t('footer.sevilla') }}</span></a></p>
+      <div class="footer-top">
+        <div class="logo-and-title">
+          <div class="icon">
+            <IconVibraTravel />
+          </div>
+          <div class="footer-title">
+            <p class="footer-title-text cooper-font">Your padel adventure in Spain starts here.</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="trips-container">
+            <p class="trips-title">Follow our trips</p>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/vibr.atravel/" target="_blank" class="nav-link">
+              <p class="button-text">Instagram</p>
+            </a>
+            <a href="https://www.instagram.com/vibr.atravel/" target="_blank" class="nav-link">
+              <p class="button-text">Tiktok</p>
+            </a>
+            <a href="https://www.instagram.com/vibr.atravel/" target="_blank" class="nav-link">
+              <p class="button-text">Youtube</p>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="footer-section">
-        <h3>{{ t('footer.whatWeOffer') }}</h3>
-        <p><RouterLink to="/padel"><span>{{ t('footer.padelPackages') }}</span></RouterLink></p>
-        <p><RouterLink to="/sports"><span>{{ t('footer.sportsActivities') }}</span></RouterLink></p>
+
+      <div class="footer-line"></div>
+
+      <div class="footer-bottom">
+        <p class="bottom-text">© 2025 Vibra Travel. All Rights Reserved. Crafted with ❤️ for Padel Lovers.</p>
       </div>
-      <div class="footer-section">
-        <h3>{{ t('footer.whoAreWe') }}</h3>
-        <p><a href="#" @click.prevent="scrollToAbout"><span>{{ t('footer.aboutUs') }}</span></a></p>
-        <p><RouterLink to="/terms"><span>{{ t('footer.termsAndConditions') }}</span></RouterLink></p>
-        <p><a href="#" @click.prevent="scrollToContact"><span>{{ t('footer.contactUs') }}</span></a></p>
-        <p><RouterLink to="/faq"><span>{{ t('footer.faq') }}</span></RouterLink></p>
-      </div>
+
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useRouter } from 'vue-router';
-import { nextTick } from 'vue';
-import { useI18n } from 'vue-i18n';
-import logo from '../assets/photos/logo.jpg';
-
-const { t } = useI18n();
-const router = useRouter();
-
-const scrollToLocations = async () => {
-  if (router.currentRoute.value.path !== '/') {
-    await router.push('/');
-    await nextTick();
-  }
-
-  setTimeout(() => {
-    const element = document.getElementById('locations');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, 500);
-};
-
-const scrollToAbout = async () => {
-  if (router.currentRoute.value.path !== '/') {
-    await router.push('/');
-    await nextTick();
-  }
-
-  setTimeout(() => {
-    const element = document.getElementById('about');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, 500);
-};
-
-const scrollToContact = async () => {
-  if (router.currentRoute.value.path !== '/') {
-    await router.push('/');
-    await nextTick();
-  }
-
-  setTimeout(() => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, 500);
-};
+import IconVibraTravel from './icons/IconVibraTravel.vue';
 </script>
 
 <style scoped>
-.footer {
-  color: var(--color-white);
-  background-color: var(--color-pink);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 20px;
-}
-
-.footer-logo {
-  border-radius: 50%;
+.footer-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
-  background-color: var(--color-white);
-}
-
-.footer-logo img {
-  border-radius: 50%;
-  width: 20vw;
-  max-width: 150px;
+  height: 480px;
+  background-color: var(--color-purple);
 }
 
 .footer-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  width: 70vw;
-  max-width: 1100px;
-}
-
-.footer-section {
+  width: 85vw;
+  margin: 81px 0px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 136px;
+  height: 44px;
+}
+
+.footer-top {
+  height: 172px;
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.logo-and-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 384px;
+  gap: 40px;
+}
+
+.footer-title-text {
+  font-size: 38px;
+  font-weight: 200;
+  line-height: 115%;
+  color: var(--color-cream);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
-  padding: 20px;
+  width: 40vw;
+  max-width: 736px;
+  height: 132px;
+}
+
+.trips-title {
+  color: var(--color-cream);
+  font-size: 24px;
+}
+
+.button-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-cream);
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button-text:hover {
+  opacity: 1;
+}
+
+.footer-line {
   width: 100%;
+  height: 1px;
+  opacity: 0.15;
+  background-color: var(--color-white);
 }
 
-.footer-section p {
-  margin: 0;
-}
-
-.footer-section p a {
-  text-decoration: none;
-  color: var(--color-black);
-  font-size: 0.9rem;
-  width: 20vw;
-}
-
-.footer-section p a:hover {
-  color: var(--color-white);
+.bottom-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-cream);
+  opacity: 0.5;
 }
 
 @media (max-width: 768px) {
-  .footer {
-    margin: 0;
-  }
-  .footer-content {
-    flex-direction: column;
+  .footer-container {
+    height: auto;
+    padding: 20px 0;
   }
 
-  .footer-logo {
-    display: none;
+  .footer-content {
+    width: 90vw;
+    margin: 20px 0;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo-and-title {
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-title-text {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .footer-links {
+    width: 100%;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+  }
+
+  .trips-title {
+    font-size: 20px;
+  }
+
+  .button-text {
+    font-size: 14px;
+  }
+
+  .footer-line {
+    margin: 15px 0;
+  }
+
+  .bottom-text {
+    font-size: 14px;
+    text-align: center;
   }
 }
+
 </style>
