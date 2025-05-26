@@ -18,12 +18,12 @@
             <a href="https://www.instagram.com/vibr.atravel/" target="_blank" class="nav-link">
               <p class="button-text">Instagram</p>
             </a>
-            <a href="https://www.instagram.com/vibr.atravel/" target="_blank" class="nav-link">
+<!--             <a href="https://www.instagram.com/vibr.atravel/" target="_blank" class="nav-link">
               <p class="button-text">Tiktok</p>
             </a>
             <a href="https://www.instagram.com/vibr.atravel/" target="_blank" class="nav-link">
               <p class="button-text">Youtube</p>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>

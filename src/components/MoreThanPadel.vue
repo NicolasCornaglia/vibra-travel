@@ -33,7 +33,7 @@
                     </div>
                     <div class="mtp-info">
                         <div class="mtp-card-title">
-                            <p>Authentic Spaion</p>
+                            <p>Authentic Spain</p>
                         </div>
                         <div class="mtp-card-text">
                             <p>Beyond the court: dive into local life with vineyard tours, food festivals, scenic hikes,  and endless tapas nights.</p>
