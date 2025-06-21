@@ -3,7 +3,6 @@
     <Presentation />
     <MoreThanPadel />
     <Images />
-    <VibreExperiences />
     <PadelTripSteps />
     <ContactForm />
   </div>
@@ -14,7 +13,7 @@ import Presentation from '../Presentation.vue';
 import MoreThanPadel from '../MoreThanPadel.vue';
 import Images from '../Images.vue';
 import PadelTripSteps from '../PadelTripSteps.vue';
-import VibreExperiences from '../VibreExperiences.vue';
+
 import ContactForm from '../ContactForm.vue';
 </script>
 

@@ -1,0 +1,34 @@
+<template>
+  <svg
+    width="21"
+    height="21"
+    viewBox="0 0 21 21"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <line
+      x1="0.5"
+      y1="3.87622"
+      x2="20.5"
+      y2="3.87622"
+      stroke="#F44C30"
+      stroke-width="1.5"
+    />
+    <line
+      x1="0.5"
+      y1="9.87622"
+      x2="20.5"
+      y2="9.87622"
+      stroke="#F44C30"
+      stroke-width="1.5"
+    />
+    <line
+      x1="12.0293"
+      y1="15.8762"
+      x2="20.5"
+      y2="15.8762"
+      stroke="#F44C30"
+      stroke-width="1.5"
+    />
+  </svg>
+</template>
