@@ -7,23 +7,59 @@
             <IconVibraTravel />
           </div>
           <div class="footer-title">
-            <p class="footer-title-text cooper-font">Your padel adventure in Spain starts here.</p>
+            <p class="footer-title-text cooper-font">
+              Your padel adventure in Spain starts here.
+            </p>
           </div>
         </div>
-        <div class="footer-links">
-          <div class="trips-container">
-            <p class="trips-title">Follow our trips</p>
+        <div class="footer-links-content">
+          <div class="footer-links-section">
+            <p class="trips-title">Explore</p>
+            <div class="links">
+              <a href="/padel-trips">
+                <p class="button-text">Padel Trips</p>
+              </a>
+              <a href="/team-building">
+                <p class="button-text">Team Building</p>
+              </a>
+            </div>
           </div>
-          <div>
-            <a href="https://www.instagram.com/vibr.atravel/" target="_blank" class="nav-link">
-              <p class="button-text">Instagram</p>
-            </a>
-<!--             <a href="https://www.instagram.com/vibr.atravel/" target="_blank" class="nav-link">
-              <p class="button-text">Tiktok</p>
-            </a>
-            <a href="https://www.instagram.com/vibr.atravel/" target="_blank" class="nav-link">
-              <p class="button-text">Youtube</p>
-            </a> -->
+          <div class="footer-links-section">
+            <p class="trips-title">About Us</p>
+            <div class="links">
+              <a href="/why-vibra">
+                <p class="button-text">Why Vibra</p>
+              </a>
+              <a href="/contact">
+                <p class="button-text">Contact</p>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links-section">
+            <p class="trips-title">Follow our trips</p>
+            <div class="links">
+              <a
+                href="https://www.instagram.com/vibr.atravel/"
+                target="_blank"
+                class="nav-link"
+              >
+                <p class="button-text">Instagram</p>
+              </a>
+              <a
+                href="https://www.instagram.com/vibr.atravel/"
+                target="_blank"
+                class="nav-link"
+              >
+                <p class="button-text">Tiktok</p>
+              </a>
+              <a
+                href="https://www.instagram.com/vibr.atravel/"
+                target="_blank"
+                class="nav-link"
+              >
+                <p class="button-text">Youtube</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -31,15 +67,21 @@
       <div class="footer-line"></div>
 
       <div class="footer-bottom">
-        <p class="bottom-text">© 2025 Vibra Travel. All Rights Reserved. Crafted with ❤️ for Padel Lovers.</p>
+        <p class="bottom-text">
+          © 2025 Vibra Travel. All Rights Reserved. Crafted with ❤️ for Padel
+          Lovers.
+        </p>
+        <div class="bottom-links">
+          <a href="/legal" class="nav-link buttom-text"> <p class="button-text">Terms & Conditions</p></a>
+          <a href="/legal" class="nav-link buttom-text"><p class="button-text">Public Policy</p></a>
+        </div>
       </div>
-
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import IconVibraTravel from './icons/IconVibraTravel.vue';
+import IconVibraTravel from "./icons/IconVibraTravel.vue";
 </script>
 
 <style scoped>
@@ -85,14 +127,19 @@ import IconVibraTravel from './icons/IconVibraTravel.vue';
   color: var(--color-cream);
 }
 
-.footer-links {
+.footer-links-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 23px;
   align-items: flex-start;
-  width: 40vw;
   max-width: 736px;
   height: 132px;
+}
+
+.footer-links-content {
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
 }
 
 .trips-title {
@@ -128,7 +175,18 @@ import IconVibraTravel from './icons/IconVibraTravel.vue';
   opacity: 0.5;
 }
 
-@media (max-width: 768px) {
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@media (max-width: 1024px) {
   .footer-container {
     height: auto;
     padding: 20px 0;
@@ -158,11 +216,29 @@ import IconVibraTravel from './icons/IconVibraTravel.vue';
     margin: 20px 0;
   }
 
-  .footer-links {
-    width: 100%;
+  .footer-links-content {
+    flex-direction: column;
     align-items: center;
+    width: 70vw;
+    min-width: 350px;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin: 10px 0;
+  }
+
+  .footer-links-section {
+    align-items: start;
+    flex-direction: column;
+    width: 90vw;
+    justify-content: space-between;
     height: auto;
-    gap: 10px;
+    padding-left: 10px;
+  }
+
+  .links {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
   }
 
   .trips-title {
@@ -174,13 +250,20 @@ import IconVibraTravel from './icons/IconVibraTravel.vue';
   }
 
   .footer-line {
-    margin: 15px 0;
+    margin: 45px 0;
   }
 
   .bottom-text {
     font-size: 14px;
     text-align: center;
   }
-}
 
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+  }
+}
 </style>
