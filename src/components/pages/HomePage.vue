@@ -4,7 +4,7 @@
     <MoreThanPadel />
     <Images />
     <PadelTripSteps />
-    <ContactForm />
+    <ReadyAdventure />
   </div>
 </template>
 
@@ -13,8 +13,7 @@ import Presentation from '../Presentation.vue';
 import MoreThanPadel from '../MoreThanPadel.vue';
 import Images from '../Images.vue';
 import PadelTripSteps from '../PadelTripSteps.vue';
-
-import ContactForm from '../ContactForm.vue';
+import ReadyAdventure from '../ReadyAdventure.vue';
 </script>
 
 <style scoped>

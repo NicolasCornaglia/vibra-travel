@@ -11,7 +11,7 @@
                 <p class="presentation-title cooper-font">
                     Personalised Padel holidays combining unforgettable court time with authentic Spanish experiences.
                 </p>
-                <a href="#" @click.prevent="scrollToContact" class="presentation-button fgrotesk-font">
+                <a href="padel-trips" class="presentation-button fgrotesk-font">
                     <p class="button-text">Plan your trip</p>
                 </a>
             </div>
@@ -21,7 +21,6 @@
 
 <script setup lang="ts">
 import presentationImage from '../assets/photos/presentation.jpg';
-import scrollToContact from '../composables/scrollToContact';
 </script>
 
 <style scoped>

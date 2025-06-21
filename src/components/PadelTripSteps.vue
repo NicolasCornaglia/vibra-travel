@@ -49,7 +49,7 @@
                         With everything arranged, all that's left is for you to immerse yourselves in the Padel action
                         and Spanish charm. Get ready for an unforgettable Vibra trip!
 
-                        <a href="#" @click.prevent="scrollToContact" class="nav-link fgrotesk-font">
+                        <a href="/contact" class="nav-link fgrotesk-font">
                             <p class="button-text">Start now</p>
                         </a>
                     </div>
@@ -61,7 +61,6 @@
 </template>
 
 <script setup lang="ts">
-import scrollToContact from '../composables/scrollToContact';
 </script>
 
 <style scoped>

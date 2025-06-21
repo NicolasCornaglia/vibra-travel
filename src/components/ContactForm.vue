@@ -7,9 +7,8 @@
             <div class="contact-form-content">
                 <div class="contact-items  cooper-font">
                     <div class="title">
-                        Ready for an <span class="orange">unforgettable</span>
+                        <span>Prefer to reach out directly?</span>
                     </div>
-                    <div class="title">Padel Adventure?</div>
                 </div>
                 <div class="contact-form">
                     <form @submit.prevent="submitEmail">
@@ -135,11 +134,12 @@ const submitEmail = async () => {
 }
 
 .title {
-    font-size: 60px;
+    font-size:  38px;
     font-weight: 400;
-    line-height: 113%;
+    line-height: 115%;
     text-align: center;
     margin: 0;
+    color: var(--color-purple);
 }
 
 .contact-form {
@@ -228,12 +228,7 @@ const submitEmail = async () => {
 
 @media (max-width: 768px) {
     .title {
-        font-size: 45px;
-        /* Adjust the font size for mobile */
         width: 90%;
-        /* Adjust the width to fit better on mobile screens */
-        ;
-        /* Add some top margin for spacing */
     }
 
     .contact-form {
