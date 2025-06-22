@@ -2,12 +2,11 @@
   <div class="presentation-container">
     <div class="presentation-content">
       <div class="left-content">
-        <p class="title cooper-font">Build Your Ideal Padel Holiday in Spain</p>
+        <p class="title cooper-font">Power Up Your Team with a Padel Adventure in Spain</p>
         <p class="desc fgrotesk-font">
-          Discover how Vibra Travel combine top-tier padel coaching with
-          unforgettable local experiences to craft truly personalised group
-          adventures in <span class="orange">Barcelona</span> and
-          <span class="orange">Sevilla</span>
+          Discover the ultimate team building experience: Fully tailored Padel
+          trips designed to foster collaboration, boost morale, and create
+          lasting bonds
         </p>
         <a href="/contact" class="nav-link fgrotesk-font">
           <p class="button-text">Plan your trip</p>
@@ -15,8 +14,8 @@
       </div>
       <div class="right-content">
         <img
-          :src="PadelPresentation"
-          alt="Padel Presentation Image"
+          :src="TeamPresentation"
+          alt="Team Building Presentation Image"
           class="img"
         />
       </div>
@@ -25,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import PadelPresentation from "../assets/photos/padelPresentation.png"
+import TeamPresentation from "../assets/photos/teamPresentation.png";
 </script>
 
 <style scoped>
@@ -40,7 +39,7 @@ import PadelPresentation from "../assets/photos/padelPresentation.png"
   justify-content: space-between;
   align-items: center;
   width: 85vw;
-  margin: 125px 0;
+  margin: 85px 0;
   gap: 20px;
   position: relative; /* Add this for any potential absolute positioning inside */
 }
@@ -49,8 +48,8 @@ import PadelPresentation from "../assets/photos/padelPresentation.png"
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 450px;
-  max-width: 50%; /* Ensure left content doesn't grow beyond half */
+  height: 530px;
+  width: 80%;
   flex: 1;
 }
 
@@ -61,8 +60,8 @@ import PadelPresentation from "../assets/photos/padelPresentation.png"
 }
 
 .right-content img {
-  max-height: 630px;
-  max-width: 800px;
+  max-height: 500px;
+  max-width: 700px;
   width: auto;
   position: absolute;
   width: 50vw;
