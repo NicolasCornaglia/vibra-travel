@@ -7,7 +7,7 @@
             <IconVibraTravel />
           </div>
           <div class="footer-title">
-            <p class="footer-title-text cooper-font">
+            <p class="footer-title-text -font">
               Your padel adventure in Spain starts here.
             </p>
           </div>

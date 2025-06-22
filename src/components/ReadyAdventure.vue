@@ -1,13 +1,13 @@
 <template>
   <section>
-    <div class="ready-container">
+    <div class="ready-container" :class="{ 'orange-variant': variant === 'orange' }">
       <div class="tr-decoration">
-        <IconBallBL />
+        <component :is="BallBLIcon" />
       </div>
       <div class="ready-content">
         <div class="ready-items cooper-font">
           <div class="title">
-            Ready for an <span class="orange">unforgettable</span><br />
+            Ready for an <span :class="{ orange: variant !== 'orange' }">unforgettable</span><br />
             Padel Adventure?
           </div>
           <p class="description fgrotesk-font">
@@ -22,15 +22,23 @@
         </div>
       </div>
       <div class="bl-decoration">
-        <IconBallTR />
+        <component :is="BallTRIcon" />
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
+import { computed } from "vue";
+const props = defineProps<{ variant?: string }>();
+
 import IconBallTR from "./icons/IconBallTR.vue";
+import IconBallTRDark from "./icons/IconBallTRDark.vue";
 import IconBallBL from "./icons/IconBallBL.vue";
+import IconBallBLDark from "./icons/IconBallBLDark.vue";
+
+const BallTRIcon = computed(() => props.variant === "orange" ? IconBallTRDark : IconBallTR);
+const BallBLIcon = computed(() => props.variant === "orange" ? IconBallBLDark : IconBallBL);
 </script>
 
 <style scoped>
@@ -38,6 +46,10 @@ import IconBallBL from "./icons/IconBallBL.vue";
   display: flex;
   justify-content: center;
   background-color: var(--color-cream);
+}
+
+.ready-container.orange-variant {
+  background-color: var(--color-orange);
 }
 
 .ready-content {
@@ -121,6 +133,26 @@ import IconBallBL from "./icons/IconBallBL.vue";
 .button-text:hover {
   background-color: var(--color-cream);
   color: var(--color-orange);
+}
+
+/* Orange variant overrides */
+.ready-container.orange-variant .title,
+.ready-container.orange-variant .description,
+.ready-container.orange-variant .cooper-font,
+.ready-container.orange-variant .fgrotesk-font {
+  color: var(--color-white) !important;
+}
+
+.ready-container.orange-variant .button-text {
+  background-color: var(--color-white);
+  color: var(--color-orange);
+  border: 1px solid var(--color-orange);
+}
+
+.ready-container.orange-variant .button-text:hover {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
 }
 
 @media (max-width: 768px) {

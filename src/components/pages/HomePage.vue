@@ -1,15 +1,13 @@
 <template>
-  <div class="home-container">
-    <Presentation />
+    <HomePresentation />
     <MoreThanPadel />
     <Images />
     <PadelTripSteps />
     <ReadyAdventure />
-  </div>
 </template>
 
 <script setup lang="ts">
-import Presentation from '../Presentation.vue';
+import HomePresentation from '../HomePresentation.vue';
 import MoreThanPadel from '../MoreThanPadel.vue';
 import Images from '../Images.vue';
 import PadelTripSteps from '../PadelTripSteps.vue';

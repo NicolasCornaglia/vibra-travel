@@ -1,13 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 import HomePage from '../components/pages/HomePage.vue'
+import PadelTripsPage from '../components/pages/PadelTripsPage.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
     component: HomePage
-  }
+  },
+  {
+    path: '/padel-trips',
+    name: 'PadelTrips',
+    component: PadelTripsPage
+  },
 ]
 
 const router = createRouter({
