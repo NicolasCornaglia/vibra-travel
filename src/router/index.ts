@@ -3,6 +3,7 @@ import type { RouteRecordRaw } from 'vue-router'
 import HomePage from '../components/pages/HomePage.vue'
 import PadelTripsPage from '../components/pages/PadelTripsPage.vue'
 import TeamBuildingPage from '../components/pages/TeamBuildingPage.vue'
+import WhyVibraPage from '../components/pages/WhyVibraPage.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -19,6 +20,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/team-building',
     name: 'TeamBuilding',
     component: TeamBuildingPage
+  },
+  {
+    path: '/why-vibra',
+    name: 'WhyVibra',
+    component: WhyVibraPage
   },
 ]
 
