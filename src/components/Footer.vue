@@ -4,7 +4,9 @@
       <div class="footer-top">
         <div class="logo-and-title">
           <div class="icon">
+            <a href="/">
             <IconVibraTravel />
+          </a>
           </div>
           <div class="footer-title">
             <p class="footer-title-text -font">

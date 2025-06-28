@@ -85,7 +85,7 @@
             </div>
           </div>
         </div>
-        <div class="mtp-card">
+<!--         <div class="mtp-card">
           <div class="mtp-icon">
             <IconHassle />
           </div>
@@ -99,7 +99,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

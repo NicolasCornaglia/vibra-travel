@@ -119,15 +119,28 @@ const experiences = ref([
 .experience-card {
   border-radius: 16px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   flex: 1 1 300px;
   min-width: 300px;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card:hover .image-container img {
+  transform: scale(1.03);
+}
+
+.experience-card:hover .card-content h3,
+.experience-card:hover .card-content p {
+  padding: 0 10px;
 }
 
 .experience-card.double-width {
   flex: 2 1 620px;
 }
-
 
 .image-container {
   width: 100%;
@@ -136,6 +149,7 @@ const experiences = ref([
 }
 
 .image-container img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 16px;
   width: 100%;
   height: 100%;
@@ -151,6 +165,7 @@ const experiences = ref([
   font-size: 1.1rem;
   margin-bottom: 0.8rem;
   font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .card-content p {
@@ -158,6 +173,7 @@ const experiences = ref([
   font-weight: 400;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.41);
+  transition: all 0.3s ease;
 }
 
 /* Mobile responsiveness */

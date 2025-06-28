@@ -49,14 +49,14 @@
                 </div>
             </div>
             <div class="bl-decoration">
-                <IconBallTR />
+                <!-- <IconBallTR /> -->
             </div>
         </div>
     </section>
 </template>
 
 <script setup lang="ts">
-import IconBallTR from './icons/IconBallTR.vue';
+/* import IconBallTR from './icons/IconBallTR.vue'; */
 import IconBallBL from './icons/IconBallBL.vue';
 import { ref } from "vue";
 import emailjs from "@emailjs/browser";
