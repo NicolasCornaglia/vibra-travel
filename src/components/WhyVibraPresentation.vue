@@ -52,7 +52,7 @@ import charlie from "../assets/photos/charlie.png";
 
 .presentation {
   max-width: 850px;
-  margin-top: 50px;
+  margin: 50px 0;
   gap: 50px;
   width: 70vw;
   display: flex;

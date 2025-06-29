@@ -9,7 +9,7 @@
           </a>
           </div>
           <div class="footer-title">
-            <p class="footer-title-text -font">
+            <p class="footer-title-text cooper-font">
               Your padel adventure in Spain starts here.
             </p>
           </div>
@@ -18,10 +18,10 @@
           <div class="footer-links-section">
             <p class="trips-title">Explore</p>
             <div class="links">
-              <a href="/padel-trips">
+              <a href="/padel-trips" class="nav-link">
                 <p class="button-text">Padel Trips</p>
               </a>
-              <a href="/team-building">
+              <a href="/team-building" class="nav-link">
                 <p class="button-text">Team Building</p>
               </a>
             </div>
@@ -29,10 +29,10 @@
           <div class="footer-links-section">
             <p class="trips-title">About Us</p>
             <div class="links">
-              <a href="/why-vibra">
+              <a href="/why-vibra" class="nav-link">
                 <p class="button-text">Why Vibra</p>
               </a>
-              <a href="/contact">
+              <a href="/contact" class="nav-link">
                 <p class="button-text">Contact</p>
               </a>
             </div>

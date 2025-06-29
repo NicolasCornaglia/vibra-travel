@@ -10,7 +10,7 @@
         </p>
       </div>
 
-      <div class="miy-bottom">
+      <div>
         <CultureGastronomy />
         <SportsAdventure />
         <RelaxWellness />
