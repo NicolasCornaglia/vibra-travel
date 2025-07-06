@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import presentationImage from '../assets/photos/presentation.jpg';
+import presentationImage from '../assets/photos/presentation.webp';
 </script>
 
 <style scoped>

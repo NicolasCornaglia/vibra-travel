@@ -18,10 +18,10 @@
 </template>
 
 <script setup lang="ts">
-import walk from '../assets/photos/walk.png';
-import resting from '../assets/photos/resting.jpg';
-import paella from '../assets/photos/paella.jpg';
-import beers from '../assets/photos/beers.png';
+import walk from '../assets/photos/walk.webp';
+import resting from '../assets/photos/resting.webp';
+import paella from '../assets/photos/paella.webp';
+import beers from '../assets/photos/beers.webp';
 </script>
 
 <style scoped>
