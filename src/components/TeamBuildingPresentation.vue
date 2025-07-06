@@ -15,6 +15,7 @@
       <div class="right-content">
         <img
           :src="TeamPresentation"
+          fetchpriority="high"
           alt="Team Building Presentation Image"
           class="img"
         />

@@ -3,7 +3,7 @@
     <div class="wv-content">
       <p class="cooper-font title">Meet the Heart <br />Behind Vibra</p>
       <div class="presentation">
-        <img :src="charlie" alt="Charlie Photo" />
+        <img :src="charlie" fetchpriority="high" alt="Charlie Photo" />
         <div class="presentation-right">
           <h3>Hi, I'm Charlie!</h3>
           <p class="desc">

@@ -16,6 +16,7 @@
       <div class="right-content">
         <img
           :src="PadelPresentation"
+          fetchpriority="high"
           alt="Padel Presentation Image"
           class="img"
         />

@@ -4,8 +4,7 @@
       <div class="presentation-image">
         <img
           :src="charlie"
-          decoding="async"
-          loading="lazy"
+          fetchpriority="high"
           alt="Contact Image"
         />
       </div>
