@@ -61,18 +61,22 @@ const BallBLIcon = computed(() => props.variant === "orange" ? IconBallBLDark : 
   min-width: 200px;
   width: 90vw;
   padding: clamp(60px, 8vw, 120px) 0px;
+  position: relative;
 }
 
 /* Icons are rotated here I assume, but will keep it for now and modify their order in the template, should be fixed in the future */
 .tr-decoration {
-  align-self: flex-end;
+  position: absolute; 
+  left: 0;
+  bottom: 0;
   width: clamp(60px, 8vw, 120px);
   height: clamp(60px, 8vw, 120px);
   color: aqua;
 }
 
 .bl-decoration {
-  align-self: flex-start;
+  position: absolute;
+  right: 0;
   width: clamp(60px, 8vw, 120px);
   height: clamp(60px, 8vw, 120px);
 }

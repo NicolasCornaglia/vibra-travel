@@ -48,7 +48,7 @@ const experiences = ref([
     id: 3,
     title: "Spa & Wellness Session",
     description:
-      "Unwind after your matches with a massage, spa treatment, or beauty service tailored to your needs.",
+      "Unwind after padel with a massage, spa treatment, or beauty service tailored to your needs.",
     image: massage,
     doubleWidth: true,
   },

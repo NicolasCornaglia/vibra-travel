@@ -41,23 +41,23 @@
             <p class="trips-title">Follow our trips</p>
             <div class="links">
               <a
-                href="https://www.instagram.com/vibr.atravel/"
+                href="https://www.instagram.com/vibratravel__/"
                 target="_blank"
                 class="nav-link"
               >
                 <p class="button-text">Instagram</p>
               </a>
               <a
-                href="https://www.instagram.com/vibr.atravel/"
+                href="https://www.instagram.com/vibratravel__/"
                 target="_blank"
-                class="nav-link"
+                class="nav-link not-clickable"
               >
                 <p class="button-text">Tiktok</p>
               </a>
               <a
-                href="https://www.instagram.com/vibr.atravel/"
+                href="https://www.instagram.com/vibratravel__/"
                 target="_blank"
-                class="nav-link"
+                class="nav-link not-clickable"
               >
                 <p class="button-text">Youtube</p>
               </a>
@@ -186,6 +186,10 @@ import IconVibraTravel from "./icons/IconVibraTravel.vue";
   display: flex;
   justify-content: space-between;
   gap: 30px;
+}
+
+.not-clickable {
+  pointer-events: none;
 }
 
 @media (max-width: 1024px) {

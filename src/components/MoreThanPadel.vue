@@ -7,15 +7,11 @@
           It's an <span class="orange">experience.</span>
         </h1>
         <p class="mtp-left-desc">
-          From tailored coaching to handpicked cultural add-ons, our padel trips
-          in <span class="orange">Barcelona</span> and
-          <span class="orange">Sevilla</span> go beyond the court. Choose a
-          fully customised experience or one of our curated packages—each
-          designed for players who want more than just training.
+          Tailored coaching to handpicked cultural add-ons, our padel trips in
+          <span class="orange">Barcelona</span> and
+          <span class="orange">Sevilla</span> go beyond the court.
         </p>
-        <a
-          href="/padel-trips"
-          class="nav-link fgrotesk-font"
+        <a href="/padel-trips" class="nav-link fgrotesk-font"
           ><p class="button-text">Learn more</p></a
         >
       </div>
@@ -31,8 +27,8 @@
             </div>
             <div class="mtp-card-text">
               <p>
-                Top courts, expert coaching, and exciting local tournaments
-                await. All skill levels welcome!
+                Top courts, expert coaching, and tournaments with local players.
+                All skill levels welcome!
               </p>
             </div>
           </div>
@@ -48,7 +44,7 @@
             <div class="mtp-card-text">
               <p>
                 Beyond the court: dive into local life with vineyard tours, food
-                festivals, scenic hikes, and endless tapas nights.
+                festivals, scenic hikes and endless tapas nights.
               </p>
             </div>
           </div>
@@ -64,7 +60,7 @@
             <div class="mtp-card-text">
               <p>
                 Custom trips designed around your group’s skill level,
-                interests, and dynamic.
+                interests and dynamic.
               </p>
             </div>
           </div>
@@ -80,12 +76,12 @@
             <div class="mtp-card-text">
               <p>
                 We handle the logistics, from courts to culture, leaving you
-                free to train, explore, and relax.
+                free to train, explore and relax.
               </p>
             </div>
           </div>
         </div>
-<!--         <div class="mtp-card">
+        <!--         <div class="mtp-card">
           <div class="mtp-icon">
             <IconHassle />
           </div>

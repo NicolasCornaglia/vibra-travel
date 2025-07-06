@@ -6,11 +6,12 @@
 
 html {
   scroll-behavior: smooth;
+  zoom: var(--zoom-level); /* zoom out requested by client */
 }
 
 :root {
-  font-family: 'Host Grotesk';  /* replace with downlaoded font */
-
+  --zoom-level: 0.9; /* zoom out requested by client */
+  font-family: "Host Grotesk"; /* replace with downlaoded font */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -24,18 +25,19 @@ html {
 }
 
 @font-face {
-  font-family: 'Cooper Lt BT';
-  src: url('/src/assets/fonts/CooperLtBTLight.ttf') format('truetype');
+  font-family: "Cooper Lt BT";
+  src: url("/src/assets/fonts/CooperLtBTLight.ttf") format("truetype");
+  font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 
 .fgrotesk-font {
-  font-family: 'Familjen Grotesk';
+  font-family: "Familjen Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 .cooper-font {
-  font-family: 'Cooper Lt BT';
+  font-family: "Cooper Lt BT", Georgia, "Times New Roman", serif;
 }
 
 .nav-link {
@@ -51,17 +53,16 @@ html {
 /* Responsive typography for mobile */
 @media (max-width: 768px) {
   :root {
-    --font-size-xs: 0.7rem;     /* 11.2px */
-    --font-size-sm: 0.8125rem;  /* 13px */
+    --font-size-xs: 0.7rem; /* 11.2px */
+    --font-size-sm: 0.8125rem; /* 13px */
     --font-size-base: 0.9375rem; /* 15px */
-    --font-size-lg: 1rem;       /* 16px */
-    --font-size-xl: 1.125rem;   /* 18px */
-    --font-size-2xl: 1.25rem;   /* 20px */
-    --font-size-3xl: 1.5rem;    /* 24px */
-    --font-size-4xl: 1.875rem;  /* 30px */
-  } 
+    --font-size-lg: 1rem; /* 16px */
+    --font-size-xl: 1.125rem; /* 18px */
+    --font-size-2xl: 1.25rem; /* 20px */
+    --font-size-3xl: 1.5rem; /* 24px */
+    --font-size-4xl: 1.875rem; /* 30px */
+  }
   body {
     padding-top: 70px; /* Adjust this value to match the height of your header */
   }
-
-} 
+}

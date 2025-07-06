@@ -66,7 +66,7 @@ import PadelPresentation from "../assets/photos/padelPresentation.png"
   width: auto;
   position: absolute;
   width: 50vw;
-  right: -8vw;
+  right: -13vw; /* forced to be 13vw to the right of the screen due to zoomed out requirement */
   top: 0;
 }
 
