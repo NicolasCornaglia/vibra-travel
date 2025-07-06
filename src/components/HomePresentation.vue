@@ -2,7 +2,7 @@
     <div class="presentation-container">
         <div class="presentation-content">
             <div class="presentation-image">
-                <img :src="presentationImage" decoding="async" loading="lazy" alt="Presentation Image" />
+                <img :src="presentationImage" fetchpriority="high" decoding="async" alt="Presentation Image" />
                 <div class="image-overlay">
                     <h2 class="image-title cooper-font">Your ultimate padel<span style="display: block;"></span> getaway in Spain.</h2>
                 </div>
