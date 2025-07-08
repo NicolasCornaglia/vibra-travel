@@ -171,7 +171,7 @@ const submitEmail = async () => {
 }
 
 .title {
-  font-size: 38px;
+  font-size: 60px;
   font-weight: 400;
   line-height: 115%;
   text-align: center;
@@ -180,7 +180,8 @@ const submitEmail = async () => {
 }
 
 .contact-form {
-  max-width: 600px;
+  width: 45vw;
+  max-width: 800px;
   margin: 0 auto;
   padding-top: 60px;
 }
@@ -265,16 +266,17 @@ const submitEmail = async () => {
 
 @media (max-width: 768px) {
   .title {
-    width: 90%;
+    font-size: 38px;
   }
 
   .contact-form {
     padding-top: 30px;
+    width: 90vw;
   }
 
   .form-line {
     flex-direction: column;
-    width: 70vw;
+    width: 90vw;
   }
 
   .form-group {

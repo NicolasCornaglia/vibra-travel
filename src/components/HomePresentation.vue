@@ -4,7 +4,7 @@
             <div class="presentation-image">
                 <img :src="presentationImage" fetchpriority="high" decoding="async" alt="Presentation Image" />
                 <div class="image-overlay">
-                    <h2 class="image-title cooper-font">Your ultimate padel<span style="display: block;"></span> getaway in Spain.</h2>
+                    <h2 class="image-title cooper-font">From Court to Culture<span style="display: block;"></span>A Spanish Padel Experience</h2>
                 </div>
             </div>
             <div class="presentation-text">
@@ -71,7 +71,7 @@ import presentationImage from '../assets/photos/presentation.webp';
     text-align: center;
     margin: 0;
     padding: 20px;
-    width: 70%;
+    width: 100%;
 }
 
 .presentation-text {

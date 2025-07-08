@@ -72,18 +72,20 @@ import charlie from "../assets/photos/charlie.png";
 
 @media (max-width: 768px) {
   .presentation-content {
-    width: 70vw;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
+    text-align: start;
   }
 
   .presentation-title {
     font-size: 38px;
     max-width: 100%;
     margin-bottom: 0px;
+    text-align: center;
   }
 
   .presentation-image img {
@@ -91,7 +93,7 @@ import charlie from "../assets/photos/charlie.png";
   }
 
   .presentation-text {
-    width: 80vw;
+    width: 90vw;
   }
 }
 </style>

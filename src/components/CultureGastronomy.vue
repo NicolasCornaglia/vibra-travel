@@ -36,7 +36,7 @@ const experiences = ref([
     id: 1,
     title: "Vineyard tour, wine tasting & tapas",
     description:
-      "A perfect blend of sport and indulgence. Tour a local vineyard near Barcelona or Sevilla, learn about winemaking, and sample unique local grape varieties. Enjoy a curated wine tasting with panoramic countryside views. Available as a stand-alone experience or part of a vineyard visit.",
+      "Tour a local vineyard near Barcelona or Sevilla, learn about winemaking, and sample unique local grape varieties. Enjoy a curated wine tasting with panoramic countryside views followed by local tapas at the vineyard.",
     image: vineyard,
     doubleWidth: true,
   },
@@ -58,9 +58,9 @@ const experiences = ref([
   },
   {
     id: 4,
-    title: "Food Market & Tapas Tour",
+    title: "Tapas Tour",
     description:
-      "Guided visit to a bustling local market followed by a tapas tasting tour in authentic neighbourhood bars.",
+      "A guided tapas tasting tour through the most authentic local neighbourhood bars. Discover hidden gems as you sample regional delicacies, traditional dishes, and classic Spanish drinks, just like the locals do.",
     image: foodMarket,
     doubleWidth: false,
   },
@@ -76,15 +76,15 @@ const experiences = ref([
     id: 6,
     title: "Flamenco Show (Sevilla Only)",
     description:
-      "Discover the flavors of Spain in a hands-on cooking class using fresh, seasonal ingredients. Learn to prepare local dishes with expert guidance and enjoy a true taste of the region.",
+      "Experience the power and passion of live flamenco in an intimate setting.",
     image: flamenco,
     doubleWidth: false,
   },
   {
     id: 7,
-    title: "Spanish Cooking Class",
+    title: "Food Market & Cooking Class",
     description:
-      "Prepare classic Spanish dishes in a hands-on cooking session with a local chef.",
+      "Guided visit to a bustling local food market followed by a hands-on cooking class. Learn to prepare local dishes with expert guidance and enjoy a true taste of the region.",
     image: cooking,
     doubleWidth: false,
   },

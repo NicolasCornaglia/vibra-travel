@@ -24,8 +24,8 @@
 
 .calendar-content {
   background-color: white; 
-  width: 100%;
-  max-width: 1200px;
+  width: 45vw;
+  max-width: 800px;
   border-radius: 30px;
   transition: all 0.3s ease-in-out;
 }
@@ -35,5 +35,8 @@
 }
 
 @media (max-width: 768px) {
+  .calendar-content {
+  width: 95vw;
+  }
 }
 </style>
