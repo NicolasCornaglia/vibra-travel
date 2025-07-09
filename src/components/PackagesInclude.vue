@@ -70,7 +70,7 @@ const cards = [
   },
   {
     icon: IconGuide,
-    title: 'An authentic activity, handpicked by you.',
+    title: 'Personalised Local Guide',
     desc: 'Tips for local events, festivals, and hidden gems.'
   },
 ]
