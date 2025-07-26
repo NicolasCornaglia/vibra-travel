@@ -62,13 +62,14 @@ import PadelPresentation from "../assets/photos/padelPresentation.png"
 }
 
 .right-content img {
-  max-height: 630px;
+  max-height: 500px;
   max-width: 800px;
-  width: auto;
+  width: 40vw;
+  min-width: 300px;
   position: absolute;
-  width: 50vw;
   right: -13vw; /* forced to be 13vw to the right of the screen due to zoomed out requirement */
   top: 0;
+  object-fit: contain;
 }
 
 .title {

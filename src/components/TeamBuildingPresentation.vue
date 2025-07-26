@@ -63,11 +63,13 @@ import TeamPresentation from "../assets/photos/teamPresentation.png";
 .right-content img {
   max-height: 500px;
   max-width: 700px;
-  width: auto;
   position: absolute;
   width: 50vw;
   right: -13vw; /* forced to be 13vw to the right of the screen due to zoomed out requirement */
   top: 0;
+  width: 40vw;
+  min-width: 300px;
+  object-fit: contain;
 }
 
 .title {

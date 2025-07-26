@@ -4,7 +4,8 @@ import HomePage from '../components/pages/HomePage.vue'
 import PadelTripsPage from '../components/pages/PadelTripsPage.vue'
 import TeamBuildingPage from '../components/pages/TeamBuildingPage.vue'
 import WhyVibraPage from '../components/pages/WhyVibraPage.vue'
-import Contact from '../components/pages/ContactPage.vue'
+import ContactPage from '../components/pages/ContactPage.vue'
+import LegalPage from '../components/pages/LegalPage.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -30,7 +31,12 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/contact',
     name: 'Contact',
-    component: Contact
+    component: ContactPage
+  },
+  {
+    path: '/legal',
+    name: 'Legal',
+    component: LegalPage
   },
 ]
 
