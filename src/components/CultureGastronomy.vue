@@ -40,14 +40,14 @@ const experiences = ref([
     image: vineyard,
     doubleWidth: true,
   },
-  {
+/*   {
     id: 2,
     title: "Football Stadium Tour",
     description:
       "Go behind the scenes at iconic football stadiums: Camp Nou (Barcelona), Sanchez-Pizjuan or Benito Villamarin (Sevilla).",
     image: footballStadium,
     doubleWidth: false,
-  },
+  }, */
   {
     id: 3,
     title: "La Liga Matchday Experience",
@@ -62,7 +62,7 @@ const experiences = ref([
     description:
       "A guided tapas tasting tour through the most authentic local neighbourhood bars. Discover hidden gems as you sample regional delicacies, traditional dishes, and classic Spanish drinks, just like the locals do.",
     image: foodMarket,
-    doubleWidth: false,
+    doubleWidth: true,
   },
   {
     id: 5,

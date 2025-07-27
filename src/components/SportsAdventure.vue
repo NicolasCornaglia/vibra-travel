@@ -44,23 +44,23 @@ const experiences = ref([
     description:
       "Play at a picturesque golf course near the city. Includes transfers, equipment rental, and optional drinks or dinner at the clubhouse.",
     image: golf,
-    doubleWidth: true,
+    doubleWidth: false,
   },
-  {
+/*   {
     id: 3,
     title: "Stand-Up Paddleboarding (SUP)",
     description:
       "Glide over calm waters and enjoy a new perspective of the city. Available in both Barcelona and Sevilla.",
     image: padelBoard,
     doubleWidth: false,
-  },
+  }, */
   {
     id: 4,
     title: "Sunrise or Sunset Guided Running Tour",
     description:
       "Discover the magic of Barcelona or Sevilla with passionate local running guides on a scenic city run, the perfect way to energize your morning or unwind at sunset. Typically 10km, but both distance and pace can be tailored to suit your group.",
     image: running,
-    doubleWidth: true,
+    doubleWidth: false,
   },
   {
     id: 5,

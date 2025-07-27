@@ -104,16 +104,24 @@ import charlie from "../assets/photos/charlie.png";
 @media (max-width: 1024px) {
   .wv-content {
     width: 90vw;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .presentation {
     flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .presentation-right {
+    width: 100%;
   }
 
   .desc {
-    width: 90vw;
+    width: 100%;
+    text-align: left;
   }
 }
 

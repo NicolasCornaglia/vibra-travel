@@ -85,7 +85,7 @@ const cards = [
 }
 
 .pi-content {
-  margin: 50px 0;
+  margin: 50px auto;
   width: 85vw;
   display: flex;
   flex-direction: column;
@@ -168,7 +168,7 @@ const cards = [
   }
 
   .pi-top {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 
@@ -176,12 +176,13 @@ const cards = [
     font-size: 40px;
     width: 100%;
     height: 100px;
+    padding-top: 35px;
   }
 
   .pi-top-subtitle {
     height: auto;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .pi-bottom {
