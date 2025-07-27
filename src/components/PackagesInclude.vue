@@ -51,11 +51,11 @@ const cards = [
   {
     icon: IconShield,
     title: 'Daily Padel Coaching',
-    desc: '2 hours each morning, tailored to your group’s level.'
+    desc: '2 hours each morning, tailored to your group’s level. Want more or fewer hours? We’ll adapt the schedule to match your preferences.'
   },
   {
     icon: IconTrophy,
-    title: 'Americana Tournament',
+    title: 'Americano Tournament',
     desc: 'Friendly competition with local club players.'
   },
   {
@@ -66,7 +66,7 @@ const cards = [
   {
     icon: IconGlobe,
     title: 'Cultural Experience',
-    desc: 'An authentic activity, handpicked by you.'
+    desc: 'Choose your own authentic local experience – we’ll make it unforgettable.'
   },
   {
     icon: IconGuide,

@@ -21,7 +21,7 @@
             team's specific goals, budget, and preferences.
           </p>
           <a href="/contact" class="nav-link fgrotesk-font">
-            <p class="button-text">Get free consultation</p>
+            <p class="button-text">Plan your trip</p>
           </a>
         </div>
       </div>

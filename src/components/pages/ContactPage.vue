@@ -1,7 +1,7 @@
 <template>
     <ContactPresentation />
-    <Calendar />
     <ContactForm />
+    <Calendar />
 </template>
 
 <script setup lang="ts">

@@ -56,9 +56,9 @@ const experiences = ref([
   },
   {
     id: 4,
-    title: "Sunrise or Sunset Run Club",
+    title: "Sunrise or Sunset Guided Running Tour",
     description:
-      "Join a casual running group led by a local. A refreshing way to explore and energise.",
+      "Discover the magic of Barcelona or Sevilla with passionate local running guides on a scenic city run, the perfect way to energize your morning or unwind at sunset. Typically 10km, but both distance and pace can be tailored to suit your group.",
     image: running,
     doubleWidth: true,
   },
@@ -66,7 +66,7 @@ const experiences = ref([
     id: 5,
     title: "Kayaking Adventure",
     description:
-      "Paddle along Barcelona’s coastline or through Sevilla’s historic riverfront. Guided or independent options available.",
+      "Paddle along Barcelona’s coastline or through Sevilla’s historic riverfront. Guided or independent options available. Stand up paddle-boarding (SUP) also available.",
     image: kayak,
     doubleWidth: false,
   },

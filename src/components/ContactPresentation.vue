@@ -2,19 +2,16 @@
   <div class="presentation-container">
     <div class="presentation-content">
       <div class="presentation-image">
-        <img
-          :src="charlie"
-          fetchpriority="high"
-          alt="Contact Image"
-        />
+        <img :src="charlie" fetchpriority="high" alt="Contact Image" />
       </div>
       <div class="presentation-text">
         <p class="presentation-title cooper-font">
-          Book your free online consultation
+          Game On <br />Let’s Plan Your Trip
         </p>
         <p class="desc">
-          Discover the ultimate padel getaway. Book a free online consultation
-          and start creating your perfect padel holiday with Vibra Travel.
+          Discover the ultimate padel getaway. Reach out through the contact
+          form and let’s start creating your ideal padel holiday with Vibra
+          Travel.
         </p>
       </div>
     </div>

@@ -9,7 +9,7 @@
             </div>
             <div class="presentation-text">
                 <p class="presentation-title cooper-font">
-                    Personalised Padel holidays combining unforgettable court time with authentic Spanish experiences.
+                    Personalised Padel holidays in <span class="orange">Barcelona</span> and <span class="orange">Sevilla</span> - combining unforgettable court time with authentic Spanish experiences.
                 </p>
                 <a href="padel-trips" class="presentation-button fgrotesk-font">
                     <p class="button-text">Plan your trip</p>

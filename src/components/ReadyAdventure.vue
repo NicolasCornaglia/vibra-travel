@@ -10,14 +10,14 @@
             Ready for an <span :class="{ orange: variant !== 'orange' }">unforgettable</span><br />
             Padel Adventure?
           </div>
-          <p class="description fgrotesk-font">
+          <p v-if="!hideDescription" class="description fgrotesk-font">
             At Vibra Travel, we're passionate about creating Padel holidays that
             go beyond the ordinary. We combine our love for the game with deep
             local knowledge of Spain to deliver experiences you'll talk about
             for years.
           </p>
           <a href="/contact" class="nav-link fgrotesk-font">
-            <p class="button-text">Get free consultation</p>
+            <p class="button-text">Plan your trip</p>
           </a>
         </div>
       </div>
@@ -30,7 +30,7 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-const props = defineProps<{ variant?: string }>();
+const props = defineProps<{ variant?: string; hideDescription?: boolean }>();
 
 import IconBallTR from "./icons/IconBallTR.vue";
 import IconBallTRDark from "./icons/IconBallTRDark.vue";

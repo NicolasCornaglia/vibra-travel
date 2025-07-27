@@ -5,11 +5,6 @@
         <IconBallBL />
       </div>
       <div class="contact-form-content">
-        <div class="contact-items cooper-font">
-          <div class="title">
-            <span>Prefer to reach out directly?</span>
-          </div>
-        </div>
         <div class="contact-form">
           <form @submit.prevent="submitEmail">
             <div class="form-line">
@@ -76,6 +71,15 @@ Any specific requests"
             </div>
           </form>
         </div>
+        <div class="contact-items cooper-font">
+          <div class="title">
+            <span>Prefer to book a free online consultation?</span>
+          </div>
+          <div class="desc fgrotesk-font">
+            Pick a time that works for you and start creating your perfect padel
+            holiday with Vibra Travel.
+          </div>
+        </div>
       </div>
       <!-- <div class="bl-decoration">
         <IconBallTR />
@@ -137,12 +141,12 @@ const submitEmail = async () => {
   min-height: 200px;
   min-width: 200px;
   width: 90vw;
-  padding: clamp(60px, 8vw, 120px) 0px;
+  padding: clamp(40px, 8vw, 0px) 0px;
 }
 
 /* Icons are rotated here I assume, but will keep it for now and modify their order in the template, should be fixed in the future */
 .tr-decoration {
-  position: absolute; 
+  position: absolute;
   left: 0;
   bottom: 0;
   width: clamp(60px, 8vw, 120px);
@@ -171,6 +175,7 @@ const submitEmail = async () => {
 }
 
 .title {
+  padding-top: 120px;
   font-size: 60px;
   font-weight: 400;
   line-height: 115%;
@@ -179,11 +184,18 @@ const submitEmail = async () => {
   color: var(--color-purple);
 }
 
+.desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.41);
+  margin-top: 20px;
+}
+
 .contact-form {
   width: 45vw;
   max-width: 800px;
   margin: 0 auto;
-  padding-top: 60px;
 }
 
 .form-line {
@@ -270,8 +282,12 @@ const submitEmail = async () => {
   }
 
   .contact-form {
-    padding-top: 30px;
+    padding-top: 0px;
     width: 90vw;
+  }
+
+  .contact-form-content {
+    padding-top: 0px;
   }
 
   .form-line {

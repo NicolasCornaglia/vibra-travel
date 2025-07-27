@@ -75,7 +75,7 @@
               <span class="time">8:00:</span> Breakfast.
             </li>
             <li class="activity-item">
-              <span class="time">10:00 - 12:00:</span> Americana style
+              <span class="time">10:00 - 12:00:</span> Americano style
               competition with local club members.
             </li>
             <li class="activity-item">

@@ -20,6 +20,7 @@
   display: flex;
   justify-content: center;
   background-color: var(--color-cream);
+  padding-bottom: clamp(60px, 8vw, 120px);
 }
 
 .calendar-content {

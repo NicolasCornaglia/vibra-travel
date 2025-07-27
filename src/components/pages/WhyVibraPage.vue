@@ -1,6 +1,6 @@
 <template>
   <WhyVibraPresentation />
-  <ReadyAdventure variant="orange" />
+  <ReadyAdventure variant="orange" :hideDescription="true"/>
 </template>
 
 <script setup lang="ts">

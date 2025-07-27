@@ -68,7 +68,7 @@ const experiences = ref([
     id: 5,
     title: "Flamenco Dancing Workshop (Sevilla Only)",
     description:
-      "Feel the rhythm of Andalucia with a fun, hands-on Flamenco class led by local dance experts.",
+      "Feel the rhythm of Andalucía in a lively, hands-on Flamenco class led by local dance experts, followed by tapas and drinks at an authentic local bar.",
     image: dance,
     doubleWidth: false,
   },
@@ -76,7 +76,7 @@ const experiences = ref([
     id: 6,
     title: "Flamenco Show (Sevilla Only)",
     description:
-      "Experience the power and passion of live flamenco in an intimate setting.",
+      "Experience the power and passion of live flamenco in an intimate setting, an unforgettable cultural experience unique to Andalucia.",
     image: flamenco,
     doubleWidth: false,
   },

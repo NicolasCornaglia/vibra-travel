@@ -28,7 +28,7 @@
               <span class="header-text">Why Vibra</span>
             </a>
             <a href="/contact" class="nav-link">
-              <p class="button-text">Free consultation</p>
+              <p class="button-text">Plan your trip</p>
             </a>
           </div>
         </div>
@@ -70,7 +70,7 @@
               href="/contact"
               class="mobile-nav-link"
             >
-              <span class="mobile-button-text">Free consultation</span>
+              <span class="mobile-button-text">Plan your trip</span>
             </a>
           </div>
         </div>
