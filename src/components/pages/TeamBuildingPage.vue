@@ -1,10 +1,12 @@
 <template>
+  <div>
     <TeamBuildingPresentation />
     <ForEvryTeam />
     <Images />
     <AllInclusive />
     <MakeItYours />
     <ReadyTeam />
+  </div>
   </template>
   
   <script setup lang="ts">

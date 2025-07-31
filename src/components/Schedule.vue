@@ -1,5 +1,5 @@
 <template>
-  <div class="s-container">
+  <div class="s-container" id="timetable">
     <div class="s-content">
       <div class="title cooper-font">
         Get a taste of what your Vibra <br />

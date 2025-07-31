@@ -9,9 +9,14 @@
           adventures in <span class="orange">Barcelona</span> and
           <span class="orange">Sevilla</span>
         </p>
-        <a href="/contact" class="nav-link fgrotesk-font">
+        <div class="buttons">
+          <a href="/contact" class="nav-link fgrotesk-font">
           <p class="button-text">Plan your trip</p>
         </a>
+        <a href="#" @click.prevent="scrollToTimetable()" class="nav-link fgrotesk-font">
+          <p class="button-text">Imagine your trip</p>
+        </a>
+        </div>
       </div>
       <div class="right-content">
         <img
@@ -27,6 +32,22 @@
 
 <script setup lang="ts">
 import PadelPresentation from "../assets/photos/padelPresentation.png"
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+function scrollToTimetable() {
+  // If we're already on the padel trips page, just scroll
+  if (router.currentRoute.value.name === 'PadelTrips') {
+    const el = document.getElementById('timetable');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  } else {
+    // If we're on a different page, navigate with hash
+    router.push({ name: 'PadelTrips', hash: '#timetable' });
+  }
+}
 </script>
 
 <style scoped>
@@ -88,6 +109,12 @@ import PadelPresentation from "../assets/photos/padelPresentation.png"
   max-width: 395px;
 }
 
+.buttons {
+  display: flex;
+  gap: 30px
+}
+
+
 .button-text {
   font-size: 16px;
   font-weight: 600;
@@ -103,6 +130,7 @@ import PadelPresentation from "../assets/photos/padelPresentation.png"
   align-items: center;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  width: 165px;
 }
 
 .button-text:hover {

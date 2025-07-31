@@ -3,9 +3,9 @@
     <Header />
     <main class="content">
       <router-view v-slot="{ Component }">
-        <transition name="page" mode="out-in">
+        <Transition name="page" mode="out-in">
           <component :is="Component" />
-        </transition>
+        </Transition>
       </router-view>
     </main>
     <Footer />

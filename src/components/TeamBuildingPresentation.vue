@@ -2,15 +2,27 @@
   <div class="presentation-container">
     <div class="presentation-content">
       <div class="left-content">
-        <p class="title cooper-font">Power Up Your Team with a Padel Adventure in Spain</p>
+        <p class="title cooper-font">
+          Power Up Your Team with a Padel Adventure in Spain
+        </p>
         <p class="desc fgrotesk-font">
           Discover the ultimate team building experience: Fully tailored Padel
           trips designed to foster collaboration, boost morale, and create
           lasting bonds
         </p>
-        <a href="/contact" class="nav-link fgrotesk-font">
-          <p class="button-text">Plan your trip</p>
-        </a>
+        <div class="buttons">
+          <a href="/contact" class="nav-link fgrotesk-font">
+            <p class="button-text">Plan your trip</p>
+          </a>
+          <!-- fix here... must go to /padel-trips and go down to timetable -->
+          <a
+            href="#"
+            @click.prevent="goToTimetable"
+            class="nav-link fgrotesk-font"
+          >
+            <p class="button-text">Imagine your trip</p>
+          </a>
+        </div>
       </div>
       <div class="right-content">
         <img
@@ -26,6 +38,14 @@
 
 <script setup lang="ts">
 import TeamPresentation from "../assets/photos/teamPresentation.png";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+
+function goToTimetable() {
+  console.log('Navigating to PadelTrips with hash')
+  router.push({ name: 'PadelTrips', hash: '#timetable' })
+}
 </script>
 
 <style scoped>
@@ -88,6 +108,11 @@ import TeamPresentation from "../assets/photos/teamPresentation.png";
   max-width: 395px;
 }
 
+.buttons {
+  display: flex;
+  gap: 30px;
+}
+
 .button-text {
   font-size: 16px;
   font-weight: 600;
@@ -103,6 +128,7 @@ import TeamPresentation from "../assets/photos/teamPresentation.png";
   align-items: center;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  width: 165px;
 }
 
 .button-text:hover {
@@ -141,6 +167,12 @@ import TeamPresentation from "../assets/photos/teamPresentation.png";
   .desc {
     text-align: center;
     width: 90vw;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
   .right-content {
