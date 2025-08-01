@@ -1,10 +1,10 @@
 <template>
     <div class="presentation-container">
         <div class="presentation-content">
-            <div class="presentation-image">
-                <img :src="presentationImage" fetchpriority="high" decoding="async" alt="Presentation Image" />
-                <div class="image-overlay">
-                    <h2 class="image-title cooper-font">From Court to Culture<span style="display: block;"></span>A Spanish Padel Experience</h2>
+            <div class="presentation-video">
+                <HomeVideo class="video"/>
+                <div class="video-overlay">
+                    <h2 class="video-title cooper-font">From Court to Culture<span style="display: block;"></span>A Spanish Padel Experience</h2>
                 </div>
             </div>
             <div class="presentation-text">
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import presentationImage from '../assets/photos/presentation.webp';
+import HomeVideo from '../components/HomeVideo.vue'
 </script>
 
 <style scoped>
@@ -35,43 +35,50 @@ import presentationImage from '../assets/photos/presentation.webp';
     margin: 40px 0px;
 }
 
-.presentation-image {
+.presentation-video {
     position: relative;
     width: 100%;
     max-height: 688px;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 10px; /* Ensure the container has border radius */
+    overflow: hidden; /* Ensure the container clips the content */
 }
 
-.presentation-image img {
+.presentation-video .video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
-.image-overlay {
+.video-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.55);
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
-.image-title {
+.presentation-video:hover .video-overlay {
+    opacity: 0;
+}
+
+.video-title {
     color: white;
-    font-size: 80px;
+    font-size: 55px;
     font-weight: 400;
     text-align: center;
     margin: 0;
-    padding: 20px;
-    width: 100%;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    line-height: 1.5;
+    border-radius: 10px;
 }
 
 .presentation-text {
@@ -98,14 +105,13 @@ import presentationImage from '../assets/photos/presentation.webp';
     font-weight: 600;
     line-height: 113%;
     padding: 10px 20px;
-    border: 1px-solid var(--color-orange);
+    border: 1px solid var(--color-orange);
     background-color: var(--color-orange);
     border-radius: 25px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--color-orange);
     margin-top: 30px;
     color: var(--color-cream);
     text-decoration: none;
@@ -123,19 +129,19 @@ import presentationImage from '../assets/photos/presentation.webp';
 }
 
 @media (max-width: 768px) {
-  .image-title {
-    font-size: 30px; 
+  .video-title {
+    font-size: 20px;
+    padding: 10px;
   }
 
   .presentation-title {
-    font-size: 20px; 
+    font-size: 20px;
     max-width: 100%;
-     margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   .presentation-text {
     width: 80vw;
   }
 }
-
 </style>

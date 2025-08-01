@@ -171,7 +171,7 @@ function goToTimetable() {
 
   .buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 30px;
   }
 
