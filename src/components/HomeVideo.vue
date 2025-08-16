@@ -7,7 +7,7 @@
       class="blurry-image"
     />
     <video
-      src="../assets/videos/Vibra Travel_Video_Web_OK.mp4"
+      src="../assets/videos/Video Vibra Travel_newOK .mp4"
       autoplay
       muted
       loop
