@@ -1,11 +1,7 @@
 <template>
-  <div
-    class="header-container"
-    :style="{
-      backgroundColor: isMobileMenuOpen ? 'white' : 'var(--color-cream)',
-    }"
-    :class="{ 'header-shadow': hasShadow }"
-  >
+  <div class="header-container" :style="{
+    backgroundColor: isMobileMenuOpen ? 'white' : 'var(--color-cream)',
+  }" :class="{ 'header-shadow': hasShadow }">
     <div class="header-content">
       <!-- Desktop Navigation -->
       <div class="desktop-nav">
@@ -15,6 +11,9 @@
           </a>
           <a href="/corporate" class="nav-link">
             <span class="header-text">Corporate</span>
+          </a>
+          <a href="/schools" class="nav-link">
+            <span class="header-text">Schools</span>
           </a>
         </div>
         <div class="icon">
@@ -42,11 +41,7 @@
               <IconVibraTravel />
             </a>
           </div>
-          <button
-            class="mobile-menu-toggle"
-            @click="toggleMobileMenu"
-            :class="{ active: isMobileMenuOpen }"
-          >
+          <button class="mobile-menu-toggle" @click="toggleMobileMenu" :class="{ active: isMobileMenuOpen }">
             <!-- CSS-based hamburger/cross icon -->
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
@@ -63,13 +58,13 @@
             <a href="/corporate" class="mobile-nav-link" @click="closeMobileMenu">
               <span class="mobile-nav-text">Corporate</span>
             </a>
+            <a href="/schools" class="mobile-nav-link" @click="closeMobileMenu">
+              <span class="mobile-nav-text">Schools</span>
+            </a>
             <a href="/why-vibra" class="mobile-nav-link" @click="closeMobileMenu">
               <span class="mobile-nav-text">Why Vibra</span>
             </a>
-            <a
-              href="/contact"
-              class="mobile-nav-link"
-            >
+            <a href="/contact" class="mobile-nav-link">
               <span class="mobile-button-text">Plan your trip</span>
             </a>
           </div>
@@ -319,12 +314,15 @@ onUnmounted(() => {
   .mobile-menu.open .mobile-nav-link:nth-child(1) {
     transition-delay: 0.1s;
   }
+
   .mobile-menu.open .mobile-nav-link:nth-child(2) {
     transition-delay: 0.15s;
   }
+
   .mobile-menu.open .mobile-nav-link:nth-child(3) {
     transition-delay: 0.2s;
   }
+
   .mobile-menu.open .mobile-nav-link:nth-child(4) {
     transition-delay: 0.25s;
   }

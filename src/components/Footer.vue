@@ -5,8 +5,8 @@
         <div class="logo-and-title">
           <div class="icon">
             <a href="/">
-            <IconVibraTravel />
-          </a>
+              <IconVibraTravel />
+            </a>
           </div>
           <div class="footer-title">
             <p class="footer-title-text cooper-font">
@@ -24,6 +24,9 @@
               <a href="/corporate" class="nav-link">
                 <p class="button-text">Corporate</p>
               </a>
+              <a href="/schools" class="nav-link">
+                <p class="button-text">Schools</p>
+              </a>
             </div>
           </div>
           <div class="footer-links-section">
@@ -40,18 +43,10 @@
           <div class="footer-links-section">
             <p class="trips-title">Follow our trips</p>
             <div class="links">
-              <a
-                href="https://www.instagram.com/vibratravel__/"
-                target="_blank"
-                class="nav-link"
-              >
+              <a href="https://www.instagram.com/vibratravel__/" target="_blank" class="nav-link">
                 <p class="button-text">Instagram</p>
               </a>
-              <a
-                href="https://www.tiktok.com/@vibratravel"
-                target="_blank"
-                class="nav-link"
-              >
+              <a href="https://www.tiktok.com/@vibratravel" target="_blank" class="nav-link">
                 <p class="button-text">Tiktok</p>
               </a>
             </div>
@@ -67,7 +62,9 @@
           Lovers.
         </p>
         <div class="bottom-links">
-          <a href="/legal" class="nav-link buttom-text"> <p class="button-text">Terms & Conditions</p></a>
+          <a href="/legal" class="nav-link buttom-text">
+            <p class="button-text">Terms & Conditions</p>
+          </a>
         </div>
       </div>
     </div>
