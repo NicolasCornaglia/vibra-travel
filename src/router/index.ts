@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 import HomePage from '../components/pages/HomePage.vue'
-import PadelTripsPage from '../components/pages/PadelTripsPage.vue'
+import GroupsPage from '../components/pages/GroupsPage.vue'
 import TeamBuildingPage from '../components/pages/TeamBuildingPage.vue'
 import WhyVibraPage from '../components/pages/WhyVibraPage.vue'
 import ContactPage from '../components/pages/ContactPage.vue'
@@ -14,9 +14,9 @@ const routes: Array<RouteRecordRaw> = [
     component: HomePage
   },
   {
-    path: '/padel-trips',
-    name: 'PadelTrips',
-    component: PadelTripsPage
+    path: '/groups',
+    name: 'Groups',
+    component: GroupsPage
   },
   {
     path: '/team-building',

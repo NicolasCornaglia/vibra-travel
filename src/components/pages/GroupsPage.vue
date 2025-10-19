@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PadelTripsPresentation />
+    <GroupsPresentation />
     <PackagesInclude />
     <MakeItYours />
     <Schedule />
@@ -12,7 +12,7 @@
 import { onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import PackagesInclude from "../PackagesInclude.vue"
-import PadelTripsPresentation from "../PadelTripsPresentation.vue";
+import GroupsPresentation from "../GroupsPresentation.vue";
 import MakeItYours from "../MakeItYours.vue"
 import Schedule from "../Schedule.vue";
 import ReadyAdventure from "../ReadyAdventure.vue"

@@ -10,8 +10,8 @@
       <!-- Desktop Navigation -->
       <div class="desktop-nav">
         <div class="header-sides">
-          <a href="/padel-trips" class="nav-link">
-            <span class="header-text">Padel trips</span>
+          <a href="/groups" class="nav-link">
+            <span class="header-text">Groups</span>
           </a>
           <a href="/team-building" class="nav-link">
             <span class="header-text">Team building</span>
@@ -57,8 +57,8 @@
         <!-- Mobile Menu -->
         <div class="mobile-menu" :class="{ open: isMobileMenuOpen }">
           <div class="mobile-menu-items">
-            <a href="/padel-trips" class="mobile-nav-link" @click="closeMobileMenu">
-              <span class="mobile-nav-text">Padel trips</span>
+            <a href="/groups" class="mobile-nav-link" @click="closeMobileMenu">
+              <span class="mobile-nav-text">Groups</span>
             </a>
             <a href="/team-building" class="mobile-nav-link" @click="closeMobileMenu">
               <span class="mobile-nav-text">Team building</span>

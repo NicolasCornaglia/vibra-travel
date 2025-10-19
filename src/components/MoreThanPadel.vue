@@ -11,7 +11,7 @@
           <span class="orange">Barcelona</span> and
           <span class="orange">Sevilla</span> go beyond the court.
         </p>
-        <a href="/padel-trips" class="nav-link fgrotesk-font"
+        <a href="/groups" class="nav-link fgrotesk-font"
           ><p class="button-text">Learn more</p></a
         >
       </div>

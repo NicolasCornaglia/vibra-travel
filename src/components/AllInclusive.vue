@@ -11,7 +11,7 @@
           Padel, and soaking up the Spanish sun. Our team packages are designed
           for convenience and maximum fun.
         </p>
-        <a href="/padel-trips" class="nav-link fgrotesk-font"
+        <a href="/groups" class="nav-link fgrotesk-font"
           ><p class="button-text">Organise your trip</p></a
         >
       </div>

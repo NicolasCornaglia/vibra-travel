@@ -14,7 +14,6 @@
           <a href="/contact" class="nav-link fgrotesk-font">
             <p class="button-text">Plan your trip</p>
           </a>
-          <!-- fix here... must go to /padel-trips and go down to timetable -->
           <a
             href="#"
             @click.prevent="goToTimetable"
@@ -43,8 +42,7 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 function goToTimetable() {
-  console.log('Navigating to PadelTrips with hash')
-  router.push({ name: 'PadelTrips', hash: '#timetable' })
+  router.push({ name: 'Groups', hash: '#timetable' })
 }
 </script>
 

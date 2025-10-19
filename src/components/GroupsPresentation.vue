@@ -37,15 +37,15 @@ import { useRouter } from 'vue-router'
 const router = useRouter()
 
 function scrollToTimetable() {
-  // If we're already on the padel trips page, just scroll
-  if (router.currentRoute.value.name === 'PadelTrips') {
+  // If we're already on the groups page, just scroll
+  if (router.currentRoute.value.name === 'Groups') {
     const el = document.getElementById('timetable');
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
   } else {
     // If we're on a different page, navigate with hash
-    router.push({ name: 'PadelTrips', hash: '#timetable' });
+    router.push({ name: 'Groups', hash: '#timetable' });
   }
 }
 </script>
