@@ -13,8 +13,8 @@
           <a href="/groups" class="nav-link">
             <span class="header-text">Groups</span>
           </a>
-          <a href="/team-building" class="nav-link">
-            <span class="header-text">Team building</span>
+          <a href="/corporate" class="nav-link">
+            <span class="header-text">Corporate</span>
           </a>
         </div>
         <div class="icon">
@@ -60,8 +60,8 @@
             <a href="/groups" class="mobile-nav-link" @click="closeMobileMenu">
               <span class="mobile-nav-text">Groups</span>
             </a>
-            <a href="/team-building" class="mobile-nav-link" @click="closeMobileMenu">
-              <span class="mobile-nav-text">Team building</span>
+            <a href="/corporate" class="mobile-nav-link" @click="closeMobileMenu">
+              <span class="mobile-nav-text">Corporate</span>
             </a>
             <a href="/why-vibra" class="mobile-nav-link" @click="closeMobileMenu">
               <span class="mobile-nav-text">Why Vibra</span>

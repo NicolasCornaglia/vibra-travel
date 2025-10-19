@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 import HomePage from '../components/pages/HomePage.vue'
 import GroupsPage from '../components/pages/GroupsPage.vue'
-import TeamBuildingPage from '../components/pages/TeamBuildingPage.vue'
+import CorporatePage from '../components/pages/CorporatePage.vue'
 import WhyVibraPage from '../components/pages/WhyVibraPage.vue'
 import ContactPage from '../components/pages/ContactPage.vue'
 import LegalPage from '../components/pages/LegalPage.vue'
@@ -19,9 +19,9 @@ const routes: Array<RouteRecordRaw> = [
     component: GroupsPage
   },
   {
-    path: '/team-building',
-    name: 'TeamBuilding',
-    component: TeamBuildingPage
+    path: '/corporate',
+    name: 'Corporate',
+    component: CorporatePage
   },
   {
     path: '/why-vibra',

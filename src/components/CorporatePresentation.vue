@@ -27,7 +27,7 @@
         <img
           :src="TeamPresentation"
           fetchpriority="high"
-          alt="Team Building Presentation Image"
+          alt="Corporate Presentation Image"
           class="img"
         />
       </div>

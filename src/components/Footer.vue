@@ -21,8 +21,8 @@
               <a href="/groups" class="nav-link">
                 <p class="button-text">Groups</p>
               </a>
-              <a href="/team-building" class="nav-link">
-                <p class="button-text">Team Building</p>
+              <a href="/corporate" class="nav-link">
+                <p class="button-text">Corporate</p>
               </a>
             </div>
           </div>
