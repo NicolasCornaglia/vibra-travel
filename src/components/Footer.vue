@@ -48,18 +48,11 @@
                 <p class="button-text">Instagram</p>
               </a>
               <a
-                href="https://www.instagram.com/vibratravel__/"
+                href="https://www.tiktok.com/@vibratravel"
                 target="_blank"
-                class="nav-link not-clickable"
+                class="nav-link"
               >
                 <p class="button-text">Tiktok</p>
-              </a>
-              <a
-                href="https://www.instagram.com/vibratravel__/"
-                target="_blank"
-                class="nav-link not-clickable"
-              >
-                <p class="button-text">Youtube</p>
               </a>
             </div>
           </div>
@@ -75,7 +68,6 @@
         </p>
         <div class="bottom-links">
           <a href="/legal" class="nav-link buttom-text"> <p class="button-text">Terms & Conditions</p></a>
-          <a href="/legal" class="nav-link buttom-text"><p class="button-text">Public Policy</p></a>
         </div>
       </div>
     </div>
