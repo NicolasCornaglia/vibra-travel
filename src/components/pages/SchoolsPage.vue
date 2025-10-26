@@ -5,6 +5,9 @@
       :cards="packageCards" 
       title="Sport, Culture & Learning <br /> Your Way"
       subtitle="" />
+      <!-- choose your activities -->
+      <!-- destinations -->
+    <SchoolsSchedule />
     <!--    <MakeItYours />
     <Schedule />
     <ReadyAdventure variant="orange" /> -->
@@ -16,6 +19,7 @@ import { onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import SchoolsPresentation from "../SchoolsPresentation.vue";
 import PackagesInclude from "../PackagesInclude.vue"
+import SchoolsSchedule from "../SchoolsSchedule.vue";
 /*import MakeItYours from "../MakeItYours.vue"
 import Schedule from "../Schedule.vue";
 import ReadyAdventure from "../ReadyAdventure.vue" */
