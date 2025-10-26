@@ -3,17 +3,11 @@
     <div class="pi-content">
       <div class="pi-top">
         <div class="pi-top-title">
-          <p class="cooper-font">
-            Every Vibra <br />
-            Package Includes
+          <p class="cooper-font" v-html="title">
           </p>
         </div>
         <div class="pi-top-subtitle">
-          <p>
-            We lay the foundation for an incredible trip. All elements can be
-            adjusted, added, or removed to suit your group’s preferences. We’ll
-            shape the experience around you.
-          </p>
+          <p>{{ subtitle }}</p>
         </div>
       </div>
       <div class="pi-bottom">
@@ -35,45 +29,19 @@
 </template>
 
 <script setup lang="ts">
-import IconStar from './icons/IconStar.vue';
-import IconShield from './icons/IconShield.vue';
-import IconTrophy from './icons/IconTrophy.vue'
-import IconFire from './icons/IconFire.vue'
-import IconGlobe from './icons/IconGlobe.vue'
-import IconGuide from './icons/IconGuide.vue'
+import type { Component } from 'vue'
 
-const cards = [
-  {
-    icon: IconStar,
-    title: '4★ Hotel & Breakfast',
-    desc: '3 nights with optional upgrade to private apartment or villa.'
-  },
-  {
-    icon: IconShield,
-    title: 'Daily Padel Coaching',
-    desc: '2 hours each morning, tailored to your group’s level. Want more or fewer hours? We’ll adapt the schedule to match your preferences.'
-  },
-  {
-    icon: IconTrophy,
-    title: 'Americano Tournament',
-    desc: 'Friendly competition with local club players.'
-  },
-  {
-    icon: IconFire,
-    title: 'Farewell Meal',
-    desc: 'Relaxed BBQ or traditional paella.'
-  },
-  {
-    icon: IconGlobe,
-    title: 'Cultural Experience',
-    desc: 'Choose your own authentic local experience – we’ll make it unforgettable.'
-  },
-  {
-    icon: IconGuide,
-    title: 'Personalised Local Guide',
-    desc: 'Tips for local events, festivals, and hidden gems.'
-  },
-]
+interface Card {
+  icon: Component;
+  title: string;
+  desc: string;
+}
+
+defineProps<{
+  cards: Card[]
+  title: string;
+  subtitle: string;
+}>()
 
 </script>
 
@@ -102,7 +70,7 @@ const cards = [
 
 .pi-top-title {
   height: 150px;
-  max-width: 500px;
+  max-width: 800px;
   font-size: 64px;
   font-weight: 400;
   line-height: 115%;
