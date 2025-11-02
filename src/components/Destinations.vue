@@ -31,7 +31,7 @@
 
 <style scoped>
 .dt-container {
-    width: 90vw;
+    width: 85vw;
     margin: 0 auto 50px auto;
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@
 .dt-title {
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     font-size: 64px;
     color: var(--color-purple);
 }
@@ -58,10 +58,15 @@
 .dest-card {
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     width: 40vw;
+    transition: all 0.3s ease;
+}
+
+.dest-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .dest-title {

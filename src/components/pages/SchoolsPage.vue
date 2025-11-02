@@ -1,16 +1,11 @@
 <template>
   <div>
     <SchoolsPresentation />
-    <PackagesInclude 
-      :cards="packageCards" 
-      title="Sport, Culture & Learning <br /> Your Way"
-      subtitle="" />
-      <!-- choose your activities -->
+    <PackagesInclude :cards="packageCards" title="Sport, Culture & Learning <br /> Your Way" subtitle="" />
+    <ChooseYourActivities />
     <Destinations />
     <SchoolsSchedule />
-    <!--    <MakeItYours />
-    <Schedule />
-    <ReadyAdventure variant="orange" /> -->
+
   </div>
 </template>
 
@@ -21,9 +16,7 @@ import SchoolsPresentation from "../SchoolsPresentation.vue";
 import PackagesInclude from "../PackagesInclude.vue"
 import SchoolsSchedule from "../SchoolsSchedule.vue";
 import Destinations from "../Destinations.vue";
-/*import MakeItYours from "../MakeItYours.vue"
-import Schedule from "../Schedule.vue";
-import ReadyAdventure from "../ReadyAdventure.vue" */
+import ChooseYourActivities from "../ChooseYourActivities.vue";
 import IconStar from '../icons/IconStar.vue';
 import IconShield from '../icons/IconShield.vue';
 import IconTailor from '../icons/IconTailor.vue';
