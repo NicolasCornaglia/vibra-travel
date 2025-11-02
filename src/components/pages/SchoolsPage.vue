@@ -59,7 +59,6 @@ const packageCards = [
 
 const route = useRoute()
 
-// TODO: check 'imagine your trip' button takes to the schools timemable section and not the one on groups
 onMounted(() => {
   // Check for hash in URL (from router navigation)
   if (route.hash === '#timetable') {
@@ -77,8 +76,6 @@ onMounted(() => {
     setTimeout(() => {
       clearInterval(interval);
     }, 5000);
-  } else {
-    console.log('No hash or hash does not match #timetable')
   }
 });
 </script>

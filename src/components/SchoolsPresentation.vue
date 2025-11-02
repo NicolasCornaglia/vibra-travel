@@ -29,7 +29,6 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
-// TODO: check 'imagine your trip' button takes to the schools timemable section and does it smoothly
 function scrollToTimetable() {
   // If we're already on the schools page, just scroll
   if (router.currentRoute.value.name === 'Schools') {
