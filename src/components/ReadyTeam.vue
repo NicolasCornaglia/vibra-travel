@@ -15,7 +15,7 @@
             Team?
           </div>
           <p class="description fgrotesk-font">
-            Our all-inclusive Padel team building trips are designed to deliver
+            Our Padel team building trips are designed to deliver
             results and create unforgettable memories. While we offer fantastic
             packages, we're also experts at tailoring every detail to your
             team's specific goals, budget, and preferences.

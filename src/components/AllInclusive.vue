@@ -46,13 +46,13 @@ import IconHost from "./icons/IconHost.vue";
 const cards = [
   {
     icon: IconMoon,
-    title: "Shared Accommodation",
-    desc: "Comfortable and convenient shared rooms in quality hotels or apartments, fostering team spirit. (Private room options available)."
+    title: "Accommodation Options",
+    desc: "Choose from a carefully selected range of accommodation to suit your group — from stylish city hotels to boutique countryside retreats, all chosen for comfort, convenience, and local charm."
   },
   {
     icon: IconBattery,
-    title: "Fully Catered Meals",
-    desc: "Delicious and energizing breakfasts, lunches, and dinners included, featuring local Spanish cuisine and healthy options."
+    title: "Local Cuisine",
+    desc: "Start each day with a delicious, energising breakfast, and enjoy tailored options for group lunches and dinners featuring authentic Spanish flavours and healthy choices."
   },
   {
     icon: IconGroup,
