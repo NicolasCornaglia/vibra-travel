@@ -96,7 +96,7 @@ const cards = [
 }
 
 .fet-card {
-  width: 25vw;
+  width: 40vw;
   margin: 40px 0;
 }
 
