@@ -10,14 +10,17 @@
         </div>
         <div class="fet-top-subtitle">
           <p>
-            We lay the foundation for an incredible trip. All elements can be
-            adjusted, added, or removed to suit your group’s preferences. We’ll
-            shape the experience around you.
+            Take your team to the next level with a corporate padel experience in <span class="orange">Barcelona</span>
+            or <span class="orange">Sevilla</span> - designed to strengthen connections, boost motivation, and create
+            lasting memories. <br> <br> Whether it’s a client getaway, team incentive, or break from the boardroom,
+            we’ll craft a fully hosted escape where everything is taken care of. <br> <br> All elements can be adjusted,
+            added, or removed to suit your group’s preferences. We’ll shape the experience around you.
+
           </p>
         </div>
       </div>
       <div class="fet-bottom">
-        <div class="fet-card" v-for="card in cards" :key="card.title">
+        <!--         <div class="fet-card" v-for="card in cards" :key="card.title">
           <div class="fet-card-icon">
             <component :is="card.icon" />
           </div>
@@ -25,22 +28,13 @@
             <p>{{ card.title }}</p>
           </div>
           <div class="fet-card-desc" v-html="card.desc"></div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import IconChart from "./icons/IconChart.vue";
-
-const cards = [
-  {
-    icon: IconChart,
-    title: "Corporate Team Building",
-    desc: 'Take your team to the next level with a corporate padel experience in <span class="orange">Barcelona</span> or <span class="orange">Sevilla</span> - designed to strengthen connections, boost motivation, and create lasting memories. <br> <br> Whether it’s a client getaway, team incentive, or break from the boardroom, we’ll craft a fully hosted escape where everything is taken care of.',
-  },
-];
 </script>
 
 <style scoped>
@@ -76,14 +70,13 @@ const cards = [
 }
 
 .fet-top-subtitle {
-  height: 150px;
   display: flex;
   align-items: end;
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
   color: rgba(0, 0, 0, 0.41);
-  width: 25vw;
+  width: 30vw;
 }
 
 .fet-bottom {
